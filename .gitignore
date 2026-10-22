@@ -8,3 +8,5 @@ build/preview/
 build/smooth.log
 build/smooth.err
 nohup.out
+# private notes
+PROJECT_NOTES.md
