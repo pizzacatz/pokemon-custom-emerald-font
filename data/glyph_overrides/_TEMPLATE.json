@@ -1,0 +1,186 @@
+{
+ "char": "TEMPLATE",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1.0,
+ "joint_radius": 1.0,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     3.5
+    ],
+    [
+     0.5,
+     11.5
+    ]
+   ],
+   "_": "straight stem: two points"
+  },
+  {
+   "points": [
+    [
+     0.5,
+     3.5
+    ],
+    [
+     3.5,
+     3.5,
+     1.5
+    ],
+    [
+     3.5,
+     7.5,
+     1.5
+    ],
+    [
+     0.5,
+     7.5
+    ]
+   ],
+   "_": "polyline; third value = joint radius px, 0 = sharp; join = round | miter (sharp) | bevel (flat), per stroke or glyph-level 'join'",
+   "join": "miter"
+  },
+  {
+   "points": [
+    [
+     0.5,
+     3.5
+    ],
+    [
+     2.5,
+     3.5,
+     0,
+     -0.4142
+    ],
+    [
+     4.5,
+     5.5,
+     0
+    ],
+    [
+     4.5,
+     9.5,
+     0,
+     -0.4142
+    ],
+    [
+     2.5,
+     11.5,
+     0
+    ],
+    [
+     0.5,
+     11.5
+    ]
+   ],
+   "_": "4th value = bulge (DXF style, tan(angle/4)): the segment to the NEXT point becomes a circular arc; + bends counter-clockwise on the page, - clockwise. Lines and arcs mix in one path (this is a D bowl with two quarter circles)"
+  },
+  {
+   "points": [
+    [
+     1,
+     9
+    ],
+    [
+     4,
+     9
+    ],
+    [
+     4,
+     11
+    ],
+    [
+     1,
+     11
+    ]
+   ],
+   "closed": true,
+   "sharp": true,
+   "_": "closed polygon"
+  },
+  {
+   "arc": {
+    "center": [
+     2.5,
+     9.0
+    ],
+    "radius": 2.0,
+    "start": 0,
+    "end": 180
+   },
+   "_": "arc: degrees CCW as on the page, 0 = right, 90 = up"
+  },
+  {
+   "circle": {
+    "center": [
+     2.5,
+     9.0
+    ],
+    "radius": 2.0
+   },
+   "width": 1.0,
+   "_": "full ring; width overrides the glyph width"
+  },
+  {
+   "cut": [
+    [
+     3,
+     10.5
+    ],
+    [
+     5,
+     10.5
+    ],
+    [
+     5,
+     12.5
+    ],
+    [
+     3,
+     12.5
+    ]
+   ],
+   "_": "cut mask polygon: subtracted from the finished outline"
+  }
+ ],
+ "dots": [
+  [
+   2.5,
+   1.5,
+   0.5
+  ],
+  [
+   4.5,
+   1.5,
+   0.5,
+   "square"
+  ],
+  [
+   6.5,
+   1.5,
+   0.5,
+   "rounded",
+   0.2
+  ],
+  {
+   "x": 8.5,
+   "y": 1.5,
+   "r": 0.5,
+   "shape": "rounded",
+   "corner": 0.15,
+   "_": "dots: [x,y,r], [x,y,r,shape], [x,y,r,shape,corner] or an object; r = half size; shape circle|square|rounded; glyph-level dot_shape/dot_corner set the defaults"
+  }
+ ],
+ "_comment": "Copy to <name>.json, set char to the real character (or a list of characters), delete the '_' notes. rows = band of the pixel mask to discard (accents outside it are still traced automatically). clip_y / clip_x = [min, max]: everything outside the band is cut away (trims round joins flush with cap/baseline).",
+ "join": "round",
+ "clip_y": [
+  3,
+  12
+ ],
+ "dot_shape": "circle",
+ "dot_corner": 0.25
+}

@@ -1,0 +1,10 @@
+# project-local toolchain (fetch with scripts/get_fontforge.sh and pip --target pylib)
+tools/
+pylib/
+__pycache__/
+*.pyc
+# scratch output from preview.sh
+build/preview/
+build/smooth.log
+build/smooth.err
+nohup.out

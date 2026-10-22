@@ -1,0 +1,47 @@
+{
+ "char": "×",
+ "rows": [
+  6,
+  12
+ ],
+ "width": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0,
+     6
+    ],
+    [
+     6,
+     12
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     6,
+     6
+    ],
+    [
+     0,
+     12
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "joint_radius": 1,
+ "join": "round",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "clip_x": [
+  0,
+  6
+ ],
+ "clip_y": [
+  6,
+  12
+ ]
+}

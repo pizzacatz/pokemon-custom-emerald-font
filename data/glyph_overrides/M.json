@@ -1,0 +1,66 @@
+{
+ "char": "M",
+ "rows": [
+  3,
+  12
+ ],
+ "width": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     11.5
+    ],
+    [
+     0.5,
+     2.5
+    ],
+    [
+     2.5,
+     7.75,
+     0
+    ],
+    [
+     4.5,
+     2.5
+    ],
+    [
+     4.5,
+     11.5
+    ]
+   ],
+   "sharp": true
+  },
+  {
+   "cut": [
+    [
+     5.5,
+     3
+    ],
+    [
+     0,
+     3
+    ],
+    [
+     0,
+     2.25
+    ],
+    [
+     5.5,
+     2
+    ],
+    [
+     5.25,
+     3
+    ]
+   ]
+  }
+ ],
+ "_comment": "A third value on a point is that joint's rounding radius in px; 0 keeps a sharp vertex.",
+ "dots": [],
+ "joint_radius": 1,
+ "join": "bevel",
+ "dot_shape": "circle",
+ "dot_corner": 0.25
+}
