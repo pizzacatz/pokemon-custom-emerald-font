@@ -129,16 +129,22 @@ def svg_for(contours, w=CELL, h=CELL):
             f'<path d="{d}" fill="#000" fill-rule="nonzero"/>\n</svg>\n')
 
 def main():
-    im = Image.open(os.path.join(SRC, 'graphics/fonts', VINFO['sheet']))
+    # Fonts from pokeemerald use its sheet, with cells that are blank there but inked in pokeemerald-expansion
+    # (0x38 V_D_ARROW, 0x118 CIRCLE_HOLLOW, 0xF7 in Small) taken from the expansion. The expansion-only fonts
+    # use the expansion's sheet throughout. Either way character names and Unicode come from pokeemerald's
+    # charmap, except for those expansion cells, which take the expansion's names.
+    base = EXP_SRC if VINFO.get('expansion') else SRC
+    im = Image.open(os.path.join(base, 'graphics/fonts', VINFO['sheet']))
     assert im.size == (256, 512) and im.mode == 'P', (im.size, im.mode)
     px = im.load()
-    widths = parse_widths(os.path.join(SRC, 'src/fonts.c'))
+    widths = parse_widths(os.path.join(base, 'src/fonts.c'))
     cmap = parse_charmap(os.path.join(SRC, 'charmap.txt'))
-    # pokeemerald-expansion draws a few more glyphs in cells that are blank in pokeemerald; those cells
-    # (and only those) are taken from the expansion's sheet, width table and charmap
     xpx = Image.open(os.path.join(EXP_SRC, 'graphics/fonts', VINFO['sheet'])).load()
     xwidths = parse_widths(os.path.join(EXP_SRC, 'src/fonts.c'))
     xcmap = parse_charmap(os.path.join(EXP_SRC, 'charmap.txt'))
+    npx = Image.open(os.path.join(SRC, 'graphics/fonts/latin_normal.png')).load()
+    normal_w = parse_widths(os.path.join(SRC, 'src/fonts.c'), 'gFontNormalLatinGlyphWidths')
+    exp_cells = [g for g in range(512) if not any(map(any, cell_mask(npx, g, FG, normal_w[g])))]
     added = []
     os.makedirs(os.path.join(DATA, 'masks'), exist_ok=True)
     os.makedirs(os.path.join(DATA, 'svg_exact'), exist_ok=True)
@@ -148,14 +154,15 @@ def main():
     for gid in range(512):
         fg = cell_mask(px, gid, FG, widths[gid])
         sh = cell_mask(px, gid, SHADOW, widths[gid])
-        source = 'pokeemerald'
-        if not any(map(any, fg)):
+        source = 'pokeemerald-expansion' if VINFO.get('expansion') else 'pokeemerald'
+        if source == 'pokeemerald' and not any(map(any, fg)):
             xfg = cell_mask(xpx, gid, FG, xwidths[gid])
             if any(map(any, xfg)):
                 fg, sh, source = xfg, cell_mask(xpx, gid, SHADOW, xwidths[gid]), 'pokeemerald-expansion'
                 widths[gid] = xwidths[gid]
-                cmap[gid] = xcmap.get(gid, {'unicode': [], 'name': None})
                 added.append(gid)
+        if gid in exp_cells and any(map(any, fg)):
+            cmap[gid] = xcmap.get(gid, {'unicode': [], 'name': None})
         ink = sum(map(sum, fg))
         ink_cols = [x for x in range(CELL) if any(fg[y][x] for y in range(CELL))]
         ink_rows = [y for y in range(CELL) if fg[y][x] for x in range(CELL) if fg[y][x]] if False else [y for y in range(CELL) if any(fg[y])]
@@ -179,7 +186,7 @@ def main():
             'shadow_px': sum(map(sum, sh)),
             'contours': len(contours),
         }
-        if source != 'pokeemerald':
+        if source != 'pokeemerald' and not VINFO.get('expansion'):
             entry['source'] = source
         mapping[str(gid)] = entry
         if ink or info['unicode'] or info['name']:

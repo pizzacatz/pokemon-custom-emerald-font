@@ -19,6 +19,7 @@ glyph models ported over from Normal (see [Other game fonts](#other-game-fonts))
 | Emerald Pixel Soft (reference) | `build/fonts/EmeraldPixelSoft-Regular.ttf` | Pixel outline with every corner softened. Kept for comparison only. |
 | **Emerald Rounded Narrow Game** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldRounded{Narrow,Small,Short,SmallNarrow}Game-Regular.ttf` | The game's other Latin fonts as smooth outlines, game spacing and line pitch. |
 | **Emerald Pixel Vector Narrow** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldPixelVector{Narrow,Small,Short,SmallNarrow}-Regular.ttf` | Exact pixel outlines of those fonts (the reference the smooth ones are tuned against). |
+| **Emerald Rounded Narrower** / **Small Narrower** / **Short Narrow** / **Short Narrower Game**, and their Pixel Vector versions | `build/fonts/EmeraldRounded{Narrower,SmallNarrower,ShortNarrow,ShortNarrower}Game-Regular.ttf`, `build/fonts/EmeraldPixelVector{…}-Regular.ttf` | The four extra Latin fonts of [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), same treatment. |
 
 Each font also ships as `.otf` and as an editable FontForge `.sfd` next to the TTF. The ready-made
 fonts are committed, so you can download them from `build/fonts/` without building anything.
@@ -46,6 +47,9 @@ On Windows or macOS, double-click a TTF and choose Install.
   `src/text.c` (`DecompressGlyph_*`, `CHAR_EXTRA_SYMBOL`), `include/constants/characters.h`
 - Repository: https://github.com/pret/pokeemerald, revision `731ad5bfd6e6f265508d0efcca0ba42f9dcf5881`
   (master, 2026-10-01). Local copies of the files used are in `source/pokeemerald/`.
+- pokeemerald-expansion's four extra fonts (`latin_narrower.png`, `latin_small_narrower.png`,
+  `latin_short_narrow.png`, `latin_short_narrower.png`, `gFont{Narrower,SmallNarrower,ShortNarrow,ShortNarrower}LatinGlyphWidths`)
+  are built from its files throughout, with pokeemerald's character map.
 - Glyphs added by [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) in cells
   that are blank in pokeemerald come from its sheets, width tables and charmap (revision `68a5890`,
   2026-05-14, copies in `source/pokeemerald-expansion/`): 0x38 V_D_ARROW (U+E038), 0x118 CIRCLE_HOLLOW
@@ -105,7 +109,7 @@ depends on it (it is still handy for opening the SVGs in `data/`).
 ## Rebuild
 
 ```sh
-./build.sh                 # all five game fonts
+./build.sh                 # all nine game fonts
 ./build.sh small short     # just these
 ```
 
@@ -119,7 +123,8 @@ chosen with `EMERALD_VARIANT` (`normal` if unset), e.g. `EMERALD_VARIANT=narrow 
 Use `Emerald Pixel Vector` at multiples of 16 px (16, 32, 48 …) with hinting/antialiasing off for
 pixel-perfect output. `Emerald Rounded` is intended for ordinary antialiased use at any size.
 All fonts share the same scale (16 px text = the game's pixels 1:1); their line heights are the game's
-line pitch: 16 px for Normal and Narrow, 14 px for Short, 12 px for Small and Small Narrow.
+line pitch: 16 px for Normal, Narrow and Narrower, 14 px for Short, Short Narrow and Short Narrower,
+12 px for Small, Small Narrow and Small Narrower.
 
 ## Code points
 
@@ -203,7 +208,8 @@ but those live only in the `.sfd` and are overwritten by the next `./build.sh`.
 Emerald has five Latin fonts: Normal (dialogue), Narrow, Small, Short and Small Narrow. They share the
 character map and the 16×16 cell layout but are drawn separately: Narrow keeps Normal's height with most
 glyphs a pixel narrower; Short keeps the width but is a row shorter (baseline y = 11); Small is narrower
-with a 7 px cap height (rows 4–10, baseline y = 11); Small Narrow is Small with a few narrower glyphs. Each has its own override folder, `data/<variant>/glyph_overrides/`, with the same JSON
+with a 7 px cap height (rows 4–10, baseline y = 11); Small Narrow is Small with a few narrower glyphs. pokeemerald-expansion adds Narrower, Small Narrower, Short Narrow and Short Narrower,
+narrower again, which are handled the same way. Each has its own override folder, `data/<variant>/glyph_overrides/`, with the same JSON
 format and coordinate system (only the baseline row and the guides differ).
 
 Those folders were seeded once from Normal's hand-tuned models by `scripts/port_overrides.py`, in the
@@ -219,7 +225,8 @@ flush. Per glyph, the first that applies:
 - **hand**: modelled by hand where the result was not good enough (Narrow S X x ♂; Short W % S a e é s 2 y;
   Small & X x a e é s u ♂ , ; №), and anything saved from the glyph editor.
 
-Small and Narrow serve as sources too (Small Narrow mostly copies Small). Each ported file has a
+Small and Narrow serve as sources too (Small Narrow mostly copies Small), and each expansion font is
+ported from the font it narrows. Each ported file has a
 `_ported` note, and `data/<variant>/port_report.json` lists method and score per glyph (score = summed
 difference between the model's ink and the pixels over the cell; the hand-tuned Normal glyphs have a
 median of 2.5). The overrides are now the source of truth; the porting is not part of `./build.sh`.

@@ -117,6 +117,27 @@ and 0x118 CIRCLE_HOLLOW in all five, and 0xF7 EMOJI_DIZZYEGG in Small. Every oth
 identical. `extract.py` takes exactly those cells (bitmap, width, charmap name) from
 `source/pokeemerald-expansion/`, so the existing glyphs are unchanged. CIRCLE_HOLLOW also maps to ○ U+25CB.
 
+## pokeemerald-expansion's extra fonts (Narrower, Small Narrower, Short Narrow, Short Narrower)
+
+Added 2026-10-25. Sheets and width tables from pokeemerald-expansion (`source/pokeemerald-expansion/`),
+character map and code points as for the other fonts. Each is ported from the font it narrows.
+
+| Font | Baseline row | Line pitch | Overrides: identical, transfer, fuzzy, traced, hand | Median score |
+|---|---|---|---|---|
+| Narrower | 12 | 16 px | 13, 44, 11, 14, 2 | 2.02 |
+| Small Narrower | 11 | 12 px (the game's 8 is too tight for its descenders) | 9, 53, 7, 13, 2 | 2.09 |
+| Short Narrow | 11 | 14 px | 32, 34, 5, 13, 0 | 2.28 |
+| Short Narrower | 11 | 14 px | 25, 37, 7, 14, 1 | 1.99 |
+
+Hand-fitted: Narrower `/` `×`, Small Narrower `/` `Z`, Short Narrower `V`. Verification as for the others:
+the exact fonts round-trip pixel for pixel; no missing or empty glyphs; no model misses a pixel. Game-data
+quirks kept: Small Narrower gives `=` width 0 like Small Narrow; Short Narrower's arrows are wider than
+their advance.
+
+While doing this, dot sizes in transfers were fixed: a dot over a deleted row or column now shrinks with
+it (never below one pixel). This corrected the quote marks of Small and Small Narrow, whose dots were a
+row too tall, and slightly reduced their i/j dots.
+
 ## Cut masks and FontForge's boolean bug
 
 FontForge's `exclude` misbehaves when a cut edge lies exactly on an outline edge, which clip boxes and

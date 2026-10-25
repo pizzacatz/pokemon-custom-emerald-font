@@ -1,0 +1,65 @@
+{
+ "char": "z",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     6.5
+    ],
+    [
+     3.0,
+     6.5
+    ],
+    [
+     0.5,
+     9.5
+    ],
+    [
+     0.5,
+     10.5
+    ],
+    [
+     3.0,
+     10.5
+    ]
+   ],
+   "sharp": true
+  },
+  {
+   "cut": [
+    [
+     3,
+     5
+    ],
+    [
+     3,
+     7.5
+    ],
+    [
+     4,
+     7.5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     3,
+     5
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "transfer from narrow (2 row/column edits)"
+}

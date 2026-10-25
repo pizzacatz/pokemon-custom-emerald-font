@@ -1,0 +1,88 @@
+{
+ "char": "t",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.0,
+     6.5,
+     0
+    ],
+    [
+     2.0,
+     6.5,
+     0
+    ]
+   ],
+   "closed": false
+  },
+  {
+   "points": [
+    [
+     1.5,
+     4.5,
+     0
+    ],
+    [
+     1.5,
+     7.0,
+     0
+    ]
+   ],
+   "closed": false
+  },
+  {
+   "points": [
+    [
+     1.5,
+     6.0,
+     0
+    ],
+    [
+     1.5,
+     10.5,
+     0,
+     0.3033
+    ],
+    [
+     2.0,
+     11.5,
+     0,
+     0
+    ],
+    [
+     2.5,
+     11.5,
+     0
+    ]
+   ],
+   "closed": false
+  },
+  {
+   "points": [
+    [
+     1.0,
+     6.5,
+     0
+    ],
+    [
+     2.5,
+     6.5,
+     0
+    ]
+   ],
+   "closed": false
+  }
+ ],
+ "dots": [],
+ "join": "round",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "transfer from narrow (1 row/column edits)"
+}

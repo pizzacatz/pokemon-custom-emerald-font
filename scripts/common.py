@@ -1,6 +1,6 @@
 """Shared constants and helpers for the Emerald font project.
 
-The game has five Latin fonts. Which one a script works on is chosen with the environment variable
+Emerald has five Latin fonts, and pokeemerald-expansion adds four narrower ones. Which one a script works on is chosen with the environment variable
 EMERALD_VARIANT (default "normal"). Normal keeps its data at data/; every other variant has the same
 layout under data/<variant>/ (mapping.json, masks/, svg_*/, glyph_overrides/ ...)."""
 import json, os, re
@@ -10,13 +10,19 @@ EXP_SRC = os.path.join(ROOT, 'source', 'pokeemerald-expansion')   # glyphs the e
 BUILD = os.path.join(ROOT, 'build')
 
 # sheet, width table in src/fonts.c, baseline row, game line pitch (FontInfo.maxLetterHeight; Small Narrow's
-# 8 is too tight for its own descenders, so it uses Small's 12), and the name fragment used in font names.
+# and Small Narrower's 8 is too tight for their own descenders, so they use Small's 12), the name fragment used
+# in font names, and for the expansion-only fonts the source tree their sheet and widths come from.
 VARIANTS = {
     'normal':       dict(sheet='latin_normal.png',       widths='gFontNormalLatinGlyphWidths',      baseline=12, line=16, name=''),
     'narrow':       dict(sheet='latin_narrow.png',       widths='gFontNarrowLatinGlyphWidths',      baseline=12, line=16, name='Narrow'),
     'small':        dict(sheet='latin_small.png',        widths='gFontSmallLatinGlyphWidths',       baseline=11, line=12, name='Small'),
     'short':        dict(sheet='latin_short.png',        widths='gFontShortLatinGlyphWidths',       baseline=11, line=14, name='Short'),
     'small_narrow': dict(sheet='latin_small_narrow.png', widths='gFontSmallNarrowLatinGlyphWidths', baseline=11, line=12, name='Small Narrow'),
+    # pokeemerald-expansion only
+    'narrower':       dict(sheet='latin_narrower.png',       widths='gFontNarrowerLatinGlyphWidths',      baseline=12, line=16, name='Narrower', expansion=True),
+    'small_narrower': dict(sheet='latin_small_narrower.png', widths='gFontSmallNarrowerLatinGlyphWidths', baseline=11, line=12, name='Small Narrower', expansion=True),
+    'short_narrow':   dict(sheet='latin_short_narrow.png',   widths='gFontShortNarrowLatinGlyphWidths',   baseline=11, line=14, name='Short Narrow', expansion=True),
+    'short_narrower': dict(sheet='latin_short_narrower.png', widths='gFontShortNarrowerLatinGlyphWidths', baseline=11, line=14, name='Short Narrower', expansion=True),
 }
 VARIANT = os.environ.get('EMERALD_VARIANT', 'normal')
 if VARIANT not in VARIANTS:

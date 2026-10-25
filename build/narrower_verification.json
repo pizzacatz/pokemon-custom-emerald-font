@@ -1,0 +1,90 @@
+{
+ "fonts": {
+  "exact": {
+   "num_glyphs": 234,
+   "cmap_entries": 252,
+   "missing_required": [],
+   "missing_useful": [],
+   "missing_intended": [],
+   "upm": 1600,
+   "metrics": {
+    "hhea": [
+     1200,
+     -400,
+     0
+    ],
+    "typo": [
+     1200,
+     -400,
+     0
+    ],
+    "win": [
+     1200,
+     400
+    ],
+    "capH": 900,
+    "xH": 600
+   },
+   "empty_mapped_glyphs": [],
+   "vertical_overflow": [],
+   "zero_advance": [],
+   "ink_outside_advance": []
+  },
+  "smoothgame": {
+   "num_glyphs": 234,
+   "cmap_entries": 252,
+   "missing_required": [],
+   "missing_useful": [],
+   "missing_intended": [],
+   "upm": 1600,
+   "metrics": {
+    "hhea": [
+     1200,
+     -400,
+     0
+    ],
+    "typo": [
+     1200,
+     -400,
+     0
+    ],
+    "win": [
+     1200,
+     400
+    ],
+    "capH": 900,
+    "xH": 600
+   },
+   "empty_mapped_glyphs": [],
+   "vertical_overflow": [
+    "U+00C0",
+    "U+00C1",
+    "U+00C2",
+    "U+00C8",
+    "U+00C9",
+    "U+00CA",
+    "U+00CC",
+    "U+00CD",
+    "U+00CE",
+    "U+00D1",
+    "U+00D2",
+    "U+00D3",
+    "U+00D4",
+    "U+00D9",
+    "U+00DA",
+    "U+00DB"
+   ],
+   "zero_advance": [],
+   "ink_outside_advance": []
+  }
+ },
+ "exact_bitmap_roundtrip_mismatches": [],
+ "missing_in_specimen": {
+  "exact": [],
+  "smoothgame": []
+ },
+ "line_height_px_at_32": {
+  "exact": 32,
+  "smoothgame": 32
+ }
+}

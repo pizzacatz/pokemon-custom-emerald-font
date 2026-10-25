@@ -1,0 +1,36 @@
+{
+ "char": "/",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "clip_y": [
+  2,
+  12
+ ],
+ "clip_x": [
+  0,
+  3
+ ],
+ "strokes": [
+  {
+   "points": [
+    [
+     2.75,
+     2.25
+    ],
+    [
+     0.25,
+     12.5
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "round",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+}

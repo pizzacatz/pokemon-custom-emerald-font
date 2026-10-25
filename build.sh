@@ -1,11 +1,11 @@
 #!/bin/sh
-# Full reproducible rebuild of all five game fonts: extraction -> smoothing -> code points -> fonts -> verification.
-# Normal builds all four treatments; Narrow, Small, Short and Small Narrow build Pixel Vector + Rounded Game.
+# Full reproducible rebuild of all nine game fonts (Emerald's five + pokeemerald-expansion's four): extraction -> smoothing -> code points -> fonts -> verification.
+# Normal builds all four treatments; the others build Pixel Vector + Rounded Game.
 # usage: ./build.sh [variant ...]   (default: all)
 set -e
 cd "$(dirname "$0")"
 export PYTHONPATH="$PWD/pylib${PYTHONPATH:+:$PYTHONPATH}"
-VARIANTS=${*:-normal narrow small short small_narrow}
+VARIANTS=${*:-normal narrow small short small_narrow narrower small_narrower short_narrow short_narrower}
 for v in $VARIANTS; do
   echo "=== $v"
   export EMERALD_VARIANT=$v

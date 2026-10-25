@@ -1,0 +1,44 @@
+{
+ "char": ",",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     11.5
+    ],
+    [
+     0.5,
+     12.5,
+     null,
+     -0.3033
+    ],
+    [
+     0.0,
+     13.5
+    ],
+    [
+     0,
+     13.5
+    ]
+   ]
+  }
+ ],
+ "dots": [
+  {
+   "x": 0.5,
+   "y": 11,
+   "r": 0.5
+  }
+ ],
+ "join": "round",
+ "dot_shape": "square",
+ "dot_corner": 0.25,
+ "_ported": "fuzzy from narrow (1 row/column edits, 1 px differ)"
+}

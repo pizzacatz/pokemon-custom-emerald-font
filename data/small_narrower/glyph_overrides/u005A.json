@@ -1,0 +1,45 @@
+{
+ "char": "Z",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "join": "miter",
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     4.5
+    ],
+    [
+     2.5,
+     4.5
+    ],
+    [
+     2.5,
+     5.25
+    ],
+    [
+     0.5,
+     9
+    ],
+    [
+     0.5,
+     10.5
+    ],
+    [
+     2.5,
+     10.5
+    ]
+   ],
+   "sharp": true
+  }
+ ],
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+}

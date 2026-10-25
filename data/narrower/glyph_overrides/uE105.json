@@ -1,0 +1,66 @@
+{
+ "char": "",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     5.5
+    ],
+    [
+     0.5,
+     11.5
+    ]
+   ],
+   "sharp": true
+  },
+  {
+   "points": [
+    [
+     4.5,
+     8.5
+    ],
+    [
+     4.5,
+     10.5
+    ],
+    [
+     5.5,
+     11.75
+    ],
+    [
+     6.5,
+     10.5
+    ],
+    [
+     6.5,
+     8.5
+    ]
+   ],
+   "sharp": true
+  },
+  {
+   "points": [
+    [
+     0.5,
+     11.5
+    ],
+    [
+     2.5,
+     11.5
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "bevel",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "identical from narrow"
+}

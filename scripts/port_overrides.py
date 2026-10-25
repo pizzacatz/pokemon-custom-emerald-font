@@ -30,7 +30,11 @@ import smooth, raster
 
 ARC = 0.3033          # tan(67.5deg / 4): the bulge of every hand-drawn corner arc
 SOURCES = {'narrow': ['normal'], 'short': ['normal'], 'small': ['normal', 'narrow'],
-           'small_narrow': ['small', 'narrow', 'normal']}
+           'small_narrow': ['small', 'narrow', 'normal'],
+           # pokeemerald-expansion's fonts, ported from the font each one narrows (port them in this order)
+           'narrower': ['narrow', 'normal'], 'short_narrow': ['short', 'narrow', 'normal'],
+           'short_narrower': ['short_narrow', 'short', 'narrower', 'narrow', 'normal'],
+           'small_narrower': ['small_narrow', 'small', 'narrower', 'narrow', 'normal']}
 PREFER_TRANSFER = 1.0  # a fuzzy transfer wins unless a fresh trace scores this much better
 
 def overrides_of(variant):
@@ -172,10 +176,14 @@ def remap_spec(spec, kx, ky):
     out['strokes'] = [st for st in out.get('strokes', []) if st]
     dots = []
     for d in out.get('dots', []):
-        if isinstance(d, dict):
-            d = dict(d, x=fx(d['x']), y=fy(d['y']))
-        else:
-            d = [fx(d[0]), fy(d[1])] + list(d[2:])
+        # map the dot's box, not just its centre: a dot over a deleted column or row shrinks with it
+        n = smooth.norm_dot(d, out.get('dot_shape', 'circle'), out.get('dot_corner', 0.25))
+        x0, x1 = fx(n['x'] - n['r']), fx(n['x'] + n['r'])
+        y0, y1 = fy(n['y'] - n['r']), fy(n['y'] + n['r'])
+        r = round(max(min(n['r'], 0.5), min(x1 - x0, y1 - y0) / 2), 4)   # never below one pixel
+        x, y = round((x0 + x1) / 2, 4), round((y0 + y1) / 2, 4)
+        x, y, r = [int(v) if v == int(v) else v for v in (x, y, r)]
+        d = dict(d, x=x, y=y, r=r) if isinstance(d, dict) else [x, y, r] + list(d[3:])
         dots.append(d)
     out['dots'] = dots
     if out.get('clip_x'):
