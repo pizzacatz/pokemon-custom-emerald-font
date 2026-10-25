@@ -30,12 +30,14 @@ UNICODE_FOR_NAME = {
     'CIRCLE_1': 0x2460, 'CIRCLE_2': 0x2461, 'CIRCLE_3': 0x2462, 'CIRCLE_4': 0x2463, 'CIRCLE_5': 0x2464,
     'CIRCLE_6': 0x2465, 'CIRCLE_7': 0x2466, 'CIRCLE_8': 0x2467, 'CIRCLE_9': 0x2468,
     'EMOJI_UNION': 0x2282,              # annotated as ⊂ in charmap.txt itself
+    'CIRCLE_HOLLOW': 0x25CB,            # white circle (pokeemerald-expansion glyph)
     'UNK_SPACER': None, 'SPACER': None,
 }
 
 def main():
     mp = load_json('mapping.json')
-    ext = extra_names(os.path.join(SRC, 'charmap.txt'))
+    ext = extra_names(os.path.join(EXP_SRC, 'charmap.txt'))
+    ext.update(extra_names(os.path.join(SRC, 'charmap.txt')))   # pokeemerald's names win; the expansion adds e.g. CIRCLE_HOLLOW
     out = {}
     for gid in range(512):
         e = mp[str(gid)]

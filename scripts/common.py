@@ -6,6 +6,7 @@ layout under data/<variant>/ (mapping.json, masks/, svg_*/, glyph_overrides/ ...
 import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'pokeemerald')
+EXP_SRC = os.path.join(ROOT, 'source', 'pokeemerald-expansion')   # glyphs the expansion adds in blank cells
 BUILD = os.path.join(ROOT, 'build')
 
 # sheet, width table in src/fonts.c, baseline row, game line pitch (FontInfo.maxLetterHeight; Small Narrow's

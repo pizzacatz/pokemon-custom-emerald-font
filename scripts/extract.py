@@ -32,9 +32,9 @@ def parse_charmap(path):
                 out.setdefault(gid, {'unicode': [], 'name': None})['name'] = key
     return out
 
-def parse_widths(path):
+def parse_widths(path, name=None):
     src = open(path).read()
-    m = re.search(VINFO['widths'] + r'\[\] = \{(.*?)\};', src, re.S)
+    m = re.search((name or VINFO['widths']) + r'\[\] = \{(.*?)\};', src, re.S)
     w = [int(x) for x in re.findall(r'\d+', m.group(1))]
     assert len(w) == 512, len(w)
     return w
@@ -134,6 +134,12 @@ def main():
     px = im.load()
     widths = parse_widths(os.path.join(SRC, 'src/fonts.c'))
     cmap = parse_charmap(os.path.join(SRC, 'charmap.txt'))
+    # pokeemerald-expansion draws a few more glyphs in cells that are blank in pokeemerald; those cells
+    # (and only those) are taken from the expansion's sheet, width table and charmap
+    xpx = Image.open(os.path.join(EXP_SRC, 'graphics/fonts', VINFO['sheet'])).load()
+    xwidths = parse_widths(os.path.join(EXP_SRC, 'src/fonts.c'))
+    xcmap = parse_charmap(os.path.join(EXP_SRC, 'charmap.txt'))
+    added = []
     os.makedirs(os.path.join(DATA, 'masks'), exist_ok=True)
     os.makedirs(os.path.join(DATA, 'svg_exact'), exist_ok=True)
     sheet = Image.new('L', (256, 512), 255)
@@ -142,6 +148,14 @@ def main():
     for gid in range(512):
         fg = cell_mask(px, gid, FG, widths[gid])
         sh = cell_mask(px, gid, SHADOW, widths[gid])
+        source = 'pokeemerald'
+        if not any(map(any, fg)):
+            xfg = cell_mask(xpx, gid, FG, xwidths[gid])
+            if any(map(any, xfg)):
+                fg, sh, source = xfg, cell_mask(xpx, gid, SHADOW, xwidths[gid]), 'pokeemerald-expansion'
+                widths[gid] = xwidths[gid]
+                cmap[gid] = xcmap.get(gid, {'unicode': [], 'name': None})
+                added.append(gid)
         ink = sum(map(sum, fg))
         ink_cols = [x for x in range(CELL) if any(fg[y][x] for y in range(CELL))]
         ink_rows = [y for y in range(CELL) if fg[y][x] for x in range(CELL) if fg[y][x]] if False else [y for y in range(CELL) if any(fg[y])]
@@ -165,6 +179,8 @@ def main():
             'shadow_px': sum(map(sum, sh)),
             'contours': len(contours),
         }
+        if source != 'pokeemerald':
+            entry['source'] = source
         mapping[str(gid)] = entry
         if ink or info['unicode'] or info['name']:
             with open(os.path.join(DATA, 'masks', f'{gid:03d}.json'), 'w') as f:
@@ -178,6 +194,7 @@ def main():
     print('glyphs with ink:', sum(1 for e in mapping.values() if e['ink']))
     print('mapped to unicode:', sum(1 for e in mapping.values() if e['unicode']))
     print('raster mismatches:', mismatches)
+    print('cells added from pokeemerald-expansion:', [hex(g) for g in added])
     # metrics summary
     def rows(ch):
         gid = next(int(k) for k, e in mapping.items() if ord(ch) in e['unicode'])

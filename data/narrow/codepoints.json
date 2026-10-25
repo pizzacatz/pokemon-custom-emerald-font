@@ -328,6 +328,13 @@
   "name": null,
   "source": "charmap"
  },
+ "56": {
+  "codepoints": [
+   57400
+  ],
+  "name": "ext.v_d_arrow",
+  "source": "pua"
+ },
  "80": {
   "codepoints": [
    57424
@@ -1291,6 +1298,14 @@
   ],
   "name": "ext.big_mult_x",
   "source": "pua"
+ },
+ "280": {
+  "codepoints": [
+   57624,
+   9675
+  ],
+  "name": "ext.circle_hollow",
+  "source": "pua+unicode-equivalent"
  },
  "464": {
   "codepoints": [

@@ -1,8 +1,8 @@
 {
  "fonts": {
   "exact": {
-   "num_glyphs": 232,
-   "cmap_entries": 249,
+   "num_glyphs": 234,
+   "cmap_entries": 252,
    "missing_required": [],
    "missing_useful": [],
    "missing_intended": [],
@@ -28,11 +28,18 @@
    "empty_mapped_glyphs": [],
    "vertical_overflow": [],
    "zero_advance": [],
-   "ink_outside_advance": []
+   "ink_outside_advance": [
+    [
+     "U+E038",
+     100,
+     800,
+     700
+    ]
+   ]
   },
   "smoothgame": {
-   "num_glyphs": 232,
-   "cmap_entries": 249,
+   "num_glyphs": 234,
+   "cmap_entries": 252,
    "missing_required": [],
    "missing_useful": [],
    "missing_intended": [],
@@ -67,7 +74,14 @@
     "U+E0A0"
    ],
    "zero_advance": [],
-   "ink_outside_advance": []
+   "ink_outside_advance": [
+    [
+     "U+E038",
+     100,
+     800,
+     700
+    ]
+   ]
   }
  },
  "exact_bitmap_roundtrip_mismatches": [],

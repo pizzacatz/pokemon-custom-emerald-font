@@ -46,6 +46,10 @@ On Windows or macOS, double-click a TTF and choose Install.
   `src/text.c` (`DecompressGlyph_*`, `CHAR_EXTRA_SYMBOL`), `include/constants/characters.h`
 - Repository: https://github.com/pret/pokeemerald, revision `731ad5bfd6e6f265508d0efcca0ba42f9dcf5881`
   (master, 2026-10-01). Local copies of the files used are in `source/pokeemerald/`.
+- Glyphs added by [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) in cells
+  that are blank in pokeemerald come from its sheets, width tables and charmap (revision `68a5890`,
+  2026-05-14, copies in `source/pokeemerald-expansion/`): 0x38 V_D_ARROW (U+E038), 0x118 CIRCLE_HOLLOW
+  (U+E118 and ○ U+25CB) in all five fonts, and 0xF7 EMOJI_DIZZYEGG (U+E0F7) in Small.
 - Licensing: pokeemerald's own LICENSE file covers the decompiled *code*; the glyph artwork is
   Nintendo / Creatures / GAME FREAK property and no licence for it is asserted here. These fonts are
   a fan conversion for personal use.

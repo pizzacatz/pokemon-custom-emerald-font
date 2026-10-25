@@ -109,6 +109,14 @@ in `port_report.json`), with scores in the same range as the hand-tuned Normal m
 on `3` (Narrow, Small, Small Narrow) and U+E054 (Short), which render correctly; the 0.2 px cap
 overshoots of accents, `Ç` `ç` `Q` in Small, as with Normal's circumflexes.
 
+## Glyphs from pokeemerald-expansion
+
+Added 2026-10-25 for Showdown Advance, which draws text from pokeemerald-expansion's sheets. Compared
+cell by cell with pokeemerald, the expansion's five sheets add ink only in blank cells: 0x38 V_D_ARROW
+and 0x118 CIRCLE_HOLLOW in all five, and 0xF7 EMOJI_DIZZYEGG in Small. Every other glyph and width is
+identical. `extract.py` takes exactly those cells (bitmap, width, charmap name) from
+`source/pokeemerald-expansion/`, so the existing glyphs are unchanged. CIRCLE_HOLLOW also maps to ○ U+25CB.
+
 ## Cut masks and FontForge's boolean bug
 
 FontForge's `exclude` misbehaves when a cut edge lies exactly on an outline edge, which clip boxes and

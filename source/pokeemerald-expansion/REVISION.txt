@@ -1,0 +1,2 @@
+68a5890c8548bc04e92b9cdf188aedc11345fc87 2026-05-14T21:45:01+02:00
+https://github.com/rh-hideout/pokeemerald-expansion.git
