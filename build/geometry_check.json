@@ -527,6 +527,2086 @@
    "wrong-direction"
   ]
  },
+ "EmeraldPixelVectorNarrow-Regular.ttf": {
+  "percent U+0025": [
+   "wrong-direction"
+  ],
+  "ampersand U+0026": [
+   "wrong-direction"
+  ],
+  "parenleft U+0028": [
+   "wrong-direction"
+  ],
+  "parenright U+0029": [
+   "wrong-direction"
+  ],
+  "semicolon U+003B": [
+   "wrong-direction"
+  ],
+  "ordfeminine U+00AA": [
+   "wrong-direction"
+  ],
+  "ordmasculine U+00BA": [
+   "wrong-direction"
+  ],
+  "questiondown U+00BF": [
+   "wrong-direction"
+  ],
+  "Agrave U+00C0": [
+   "wrong-direction"
+  ],
+  "Aacute U+00C1": [
+   "wrong-direction"
+  ],
+  "Acircumflex U+00C2": [
+   "wrong-direction"
+  ],
+  "Ccedilla U+00C7": [
+   "wrong-direction"
+  ],
+  "Egrave U+00C8": [
+   "wrong-direction"
+  ],
+  "Eacute U+00C9": [
+   "wrong-direction"
+  ],
+  "Ecircumflex U+00CA": [
+   "wrong-direction"
+  ],
+  "Igrave U+00CC": [
+   "wrong-direction"
+  ],
+  "Iacute U+00CD": [
+   "wrong-direction"
+  ],
+  "Icircumflex U+00CE": [
+   "wrong-direction"
+  ],
+  "Ntilde U+00D1": [
+   "wrong-direction"
+  ],
+  "Ograve U+00D2": [
+   "wrong-direction"
+  ],
+  "Oacute U+00D3": [
+   "wrong-direction"
+  ],
+  "Ocircumflex U+00D4": [
+   "wrong-direction"
+  ],
+  "Ugrave U+00D9": [
+   "wrong-direction"
+  ],
+  "Uacute U+00DA": [
+   "wrong-direction"
+  ],
+  "Ucircumflex U+00DB": [
+   "wrong-direction"
+  ],
+  "germandbls U+00DF": [
+   "wrong-direction"
+  ],
+  "agrave U+00E0": [
+   "wrong-direction"
+  ],
+  "aacute U+00E1": [
+   "wrong-direction"
+  ],
+  "acircumflex U+00E2": [
+   "wrong-direction"
+  ],
+  "ccedilla U+00E7": [
+   "wrong-direction"
+  ],
+  "egrave U+00E8": [
+   "wrong-direction"
+  ],
+  "eacute U+00E9": [
+   "wrong-direction"
+  ],
+  "ecircumflex U+00EA": [
+   "wrong-direction"
+  ],
+  "edieresis U+00EB": [
+   "wrong-direction"
+  ],
+  "igrave U+00EC": [
+   "wrong-direction"
+  ],
+  "iacute U+00ED": [
+   "wrong-direction"
+  ],
+  "icircumflex U+00EE": [
+   "wrong-direction"
+  ],
+  "ntilde U+00F1": [
+   "wrong-direction"
+  ],
+  "ograve U+00F2": [
+   "wrong-direction"
+  ],
+  "oacute U+00F3": [
+   "wrong-direction"
+  ],
+  "ocircumflex U+00F4": [
+   "wrong-direction"
+  ],
+  "ugrave U+00F9": [
+   "wrong-direction"
+  ],
+  "uacute U+00FA": [
+   "wrong-direction"
+  ],
+  "ucircumflex U+00FB": [
+   "wrong-direction"
+  ],
+  "OE U+0152": [
+   "wrong-direction"
+  ],
+  "oe U+0153": [
+   "wrong-direction"
+  ],
+  "ext.super_er U+E02C": [
+   "wrong-direction"
+  ],
+  "ext.lv U+E034": [
+   "wrong-direction"
+  ],
+  "ext.pk U+E053": [
+   "wrong-direction"
+  ],
+  "uniE054 U+E054": [
+   "wrong-direction"
+  ],
+  "uniE056 U+E056": [
+   "wrong-direction"
+  ],
+  "uniE057 U+E057": [
+   "wrong-direction"
+  ],
+  "uniE058 U+E058": [
+   "wrong-direction"
+  ],
+  "uniE059 U+E059": [
+   "wrong-direction"
+  ],
+  "ext.super_e U+E084": [
+   "wrong-direction"
+  ],
+  "glyph70 U+003C": [
+   "wrong-direction"
+  ],
+  "glyph71 U+003E": [
+   "wrong-direction"
+  ],
+  "ext.super_re U+E0A0": [
+   "wrong-direction"
+  ],
+  "glyph73 U+0030": [
+   "wrong-direction"
+  ],
+  "glyph75 U+0032": [
+   "wrong-direction"
+  ],
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ],
+  "glyph77 U+0034": [
+   "wrong-direction"
+  ],
+  "glyph78 U+0035": [
+   "wrong-direction"
+  ],
+  "glyph79 U+0036": [
+   "wrong-direction"
+  ],
+  "glyph80 U+0037": [
+   "wrong-direction"
+  ],
+  "glyph81 U+0038": [
+   "wrong-direction"
+  ],
+  "glyph82 U+0039": [
+   "wrong-direction"
+  ],
+  "glyph84 U+003F": [
+   "wrong-direction"
+  ],
+  "glyph89 U+201C": [
+   "wrong-direction"
+  ],
+  "glyph90 U+201D": [
+   "wrong-direction"
+  ],
+  "glyph91 U+2018": [
+   "wrong-direction"
+  ],
+  "glyph92 U+0027": [
+   "wrong-direction"
+  ],
+  "glyph93 U+2642": [
+   "wrong-direction"
+  ],
+  "glyph94 U+2640": [
+   "wrong-direction"
+  ],
+  "glyph95 U+00A5": [
+   "wrong-direction"
+  ],
+  "glyph96 U+002C": [
+   "wrong-direction"
+  ],
+  "glyph97 U+00D7": [
+   "wrong-direction"
+  ],
+  "glyph98 U+002F": [
+   "wrong-direction"
+  ],
+  "glyph99 U+0041": [
+   "wrong-direction"
+  ],
+  "glyph100 U+0042": [
+   "wrong-direction"
+  ],
+  "glyph101 U+0043": [
+   "wrong-direction"
+  ],
+  "glyph102 U+0044": [
+   "wrong-direction"
+  ],
+  "glyph105 U+0047": [
+   "wrong-direction"
+  ],
+  "glyph108 U+004A": [
+   "wrong-direction"
+  ],
+  "glyph109 U+004B": [
+   "wrong-direction"
+  ],
+  "glyph112 U+004E": [
+   "wrong-direction"
+  ],
+  "glyph113 U+004F": [
+   "wrong-direction"
+  ],
+  "glyph114 U+0050": [
+   "wrong-direction"
+  ],
+  "glyph115 U+0051": [
+   "wrong-direction"
+  ],
+  "glyph116 U+0052": [
+   "wrong-direction"
+  ],
+  "glyph117 U+0053": [
+   "wrong-direction"
+  ],
+  "glyph119 U+0055": [
+   "wrong-direction"
+  ],
+  "glyph120 U+0056": [
+   "wrong-direction"
+  ],
+  "glyph122 U+0058": [
+   "wrong-direction"
+  ],
+  "glyph123 U+0059": [
+   "wrong-direction"
+  ],
+  "glyph124 U+005A": [
+   "wrong-direction"
+  ],
+  "glyph125 U+0061": [
+   "wrong-direction"
+  ],
+  "glyph126 U+0062": [
+   "wrong-direction"
+  ],
+  "glyph127 U+0063": [
+   "wrong-direction"
+  ],
+  "glyph128 U+0064": [
+   "wrong-direction"
+  ],
+  "glyph129 U+0065": [
+   "wrong-direction"
+  ],
+  "glyph130 U+0066": [
+   "wrong-direction"
+  ],
+  "glyph131 U+0067": [
+   "wrong-direction"
+  ],
+  "glyph132 U+0068": [
+   "wrong-direction"
+  ],
+  "glyph134 U+006A": [
+   "wrong-direction"
+  ],
+  "glyph135 U+006B": [
+   "wrong-direction"
+  ],
+  "glyph137 U+006D": [
+   "wrong-direction"
+  ],
+  "glyph138 U+006E": [
+   "wrong-direction"
+  ],
+  "glyph139 U+006F": [
+   "wrong-direction"
+  ],
+  "glyph140 U+0070": [
+   "wrong-direction"
+  ],
+  "glyph141 U+0071": [
+   "wrong-direction"
+  ],
+  "glyph142 U+0072": [
+   "wrong-direction"
+  ],
+  "glyph143 U+0073": [
+   "wrong-direction"
+  ],
+  "glyph144 U+0074": [
+   "wrong-direction"
+  ],
+  "glyph145 U+0075": [
+   "wrong-direction"
+  ],
+  "glyph146 U+0076": [
+   "wrong-direction"
+  ],
+  "glyph148 U+0078": [
+   "wrong-direction"
+  ],
+  "glyph149 U+0079": [
+   "wrong-direction"
+  ],
+  "glyph150 U+007A": [
+   "wrong-direction"
+  ],
+  "glyph153 U+00C4": [
+   "wrong-direction"
+  ],
+  "glyph154 U+00D6": [
+   "wrong-direction"
+  ],
+  "glyph155 U+00DC": [
+   "wrong-direction"
+  ],
+  "glyph156 U+00E4": [
+   "wrong-direction"
+  ],
+  "glyph157 U+00F6": [
+   "wrong-direction"
+  ],
+  "glyph158 U+00FC": [
+   "wrong-direction"
+  ],
+  "ext.lv_2 U+E105": [
+   "wrong-direction"
+  ],
+  "ext.pp U+E106": [
+   "wrong-direction"
+  ],
+  "ext.id U+E107": [
+   "wrong-direction"
+  ],
+  "ext.no U+2116": [
+   "wrong-direction"
+  ],
+  "ext.circle_1 U+2460": [
+   "wrong-direction"
+  ],
+  "ext.circle_2 U+2461": [
+   "wrong-direction"
+  ],
+  "ext.circle_3 U+2462": [
+   "wrong-direction"
+  ],
+  "ext.circle_4 U+2463": [
+   "wrong-direction"
+  ],
+  "ext.circle_5 U+2464": [
+   "wrong-direction"
+  ],
+  "ext.circle_6 U+2465": [
+   "wrong-direction"
+  ],
+  "ext.circle_7 U+2466": [
+   "wrong-direction"
+  ],
+  "ext.circle_8 U+2467": [
+   "wrong-direction"
+  ],
+  "ext.circle_9 U+2468": [
+   "wrong-direction"
+  ],
+  "ext.round_left_paren U+E113": [
+   "wrong-direction"
+  ],
+  "ext.round_right_paren U+E114": [
+   "wrong-direction"
+  ],
+  "ext.circle_dot U+E115": [
+   "wrong-direction"
+  ],
+  "ext.triangle U+E116": [
+   "wrong-direction"
+  ],
+  "ext.big_mult_x U+E117": [
+   "wrong-direction"
+  ],
+  "ext.emoji_greater_than U+E1D7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_eye U+E1D8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_eye U+E1D9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_at U+E1DA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_semicolon U+E1DB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_spiral U+E1DF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tongue U+E1E0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_triangle_outline U+E1E1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_acute U+E1E2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_grave U+E1E3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_moon U+E1E8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_ball U+E1EA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_leaf U+E1EC": [
+   "wrong-direction"
+  ],
+  "ext.emoji_fire U+E1ED": [
+   "wrong-direction"
+  ],
+  "ext.emoji_water U+E1EE": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_fist U+E1EF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_fist U+E1F0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigwheel U+E1F1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_smallwheel U+E1F2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_sphere U+E1F3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_mischievous U+E1F5": [
+   "wrong-direction"
+  ],
+  "ext.emoji_happy U+E1F6": [
+   "wrong-direction"
+  ],
+  "ext.emoji_angry U+E1F7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_surprised U+E1F8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigsmile U+E1F9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_evil U+E1FA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tired U+E1FB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_shocked U+E1FD": [
+   "wrong-direction"
+  ],
+  "ext.emoji_biganger U+E1FE": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldPixelVectorShort-Regular.ttf": {
+  "percent U+0025": [
+   "wrong-direction"
+  ],
+  "ampersand U+0026": [
+   "wrong-direction"
+  ],
+  "parenleft U+0028": [
+   "wrong-direction"
+  ],
+  "parenright U+0029": [
+   "wrong-direction"
+  ],
+  "semicolon U+003B": [
+   "wrong-direction"
+  ],
+  "ordfeminine U+00AA": [
+   "wrong-direction"
+  ],
+  "ordmasculine U+00BA": [
+   "wrong-direction"
+  ],
+  "questiondown U+00BF": [
+   "wrong-direction"
+  ],
+  "Agrave U+00C0": [
+   "wrong-direction"
+  ],
+  "Aacute U+00C1": [
+   "wrong-direction"
+  ],
+  "Acircumflex U+00C2": [
+   "wrong-direction"
+  ],
+  "Ccedilla U+00C7": [
+   "wrong-direction"
+  ],
+  "Egrave U+00C8": [
+   "wrong-direction"
+  ],
+  "Eacute U+00C9": [
+   "wrong-direction"
+  ],
+  "Ecircumflex U+00CA": [
+   "wrong-direction"
+  ],
+  "Igrave U+00CC": [
+   "wrong-direction"
+  ],
+  "Iacute U+00CD": [
+   "wrong-direction"
+  ],
+  "Icircumflex U+00CE": [
+   "wrong-direction"
+  ],
+  "Ntilde U+00D1": [
+   "wrong-direction"
+  ],
+  "Ograve U+00D2": [
+   "wrong-direction"
+  ],
+  "Oacute U+00D3": [
+   "wrong-direction"
+  ],
+  "Ocircumflex U+00D4": [
+   "wrong-direction"
+  ],
+  "Ugrave U+00D9": [
+   "wrong-direction"
+  ],
+  "Uacute U+00DA": [
+   "wrong-direction"
+  ],
+  "Ucircumflex U+00DB": [
+   "wrong-direction"
+  ],
+  "germandbls U+00DF": [
+   "wrong-direction"
+  ],
+  "agrave U+00E0": [
+   "wrong-direction"
+  ],
+  "aacute U+00E1": [
+   "wrong-direction"
+  ],
+  "acircumflex U+00E2": [
+   "wrong-direction"
+  ],
+  "ccedilla U+00E7": [
+   "wrong-direction"
+  ],
+  "egrave U+00E8": [
+   "wrong-direction"
+  ],
+  "eacute U+00E9": [
+   "wrong-direction"
+  ],
+  "ecircumflex U+00EA": [
+   "wrong-direction"
+  ],
+  "edieresis U+00EB": [
+   "wrong-direction"
+  ],
+  "igrave U+00EC": [
+   "wrong-direction"
+  ],
+  "iacute U+00ED": [
+   "wrong-direction"
+  ],
+  "icircumflex U+00EE": [
+   "wrong-direction"
+  ],
+  "ntilde U+00F1": [
+   "wrong-direction"
+  ],
+  "ograve U+00F2": [
+   "wrong-direction"
+  ],
+  "oacute U+00F3": [
+   "wrong-direction"
+  ],
+  "ocircumflex U+00F4": [
+   "wrong-direction"
+  ],
+  "ugrave U+00F9": [
+   "wrong-direction"
+  ],
+  "uacute U+00FA": [
+   "wrong-direction"
+  ],
+  "ucircumflex U+00FB": [
+   "wrong-direction"
+  ],
+  "OE U+0152": [
+   "wrong-direction"
+  ],
+  "oe U+0153": [
+   "wrong-direction"
+  ],
+  "ext.super_er U+E02C": [
+   "wrong-direction"
+  ],
+  "ext.lv U+E034": [
+   "wrong-direction"
+  ],
+  "ext.pk U+E053": [
+   "wrong-direction"
+  ],
+  "uniE054 U+E054": [
+   "wrong-direction"
+  ],
+  "uniE056 U+E056": [
+   "wrong-direction"
+  ],
+  "uniE057 U+E057": [
+   "wrong-direction"
+  ],
+  "uniE058 U+E058": [
+   "wrong-direction"
+  ],
+  "uniE059 U+E059": [
+   "wrong-direction"
+  ],
+  "ext.super_e U+E084": [
+   "wrong-direction"
+  ],
+  "glyph70 U+003C": [
+   "wrong-direction"
+  ],
+  "glyph71 U+003E": [
+   "wrong-direction"
+  ],
+  "ext.super_re U+E0A0": [
+   "wrong-direction"
+  ],
+  "glyph73 U+0030": [
+   "wrong-direction"
+  ],
+  "glyph75 U+0032": [
+   "wrong-direction"
+  ],
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ],
+  "glyph77 U+0034": [
+   "wrong-direction"
+  ],
+  "glyph78 U+0035": [
+   "wrong-direction"
+  ],
+  "glyph79 U+0036": [
+   "wrong-direction"
+  ],
+  "glyph80 U+0037": [
+   "wrong-direction"
+  ],
+  "glyph81 U+0038": [
+   "wrong-direction"
+  ],
+  "glyph82 U+0039": [
+   "wrong-direction"
+  ],
+  "glyph84 U+003F": [
+   "wrong-direction"
+  ],
+  "glyph89 U+201C": [
+   "wrong-direction"
+  ],
+  "glyph90 U+201D": [
+   "wrong-direction"
+  ],
+  "glyph91 U+2018": [
+   "wrong-direction"
+  ],
+  "glyph92 U+0027": [
+   "wrong-direction"
+  ],
+  "glyph93 U+2642": [
+   "wrong-direction"
+  ],
+  "glyph94 U+2640": [
+   "wrong-direction"
+  ],
+  "glyph95 U+00A5": [
+   "wrong-direction"
+  ],
+  "glyph96 U+002C": [
+   "wrong-direction"
+  ],
+  "glyph97 U+00D7": [
+   "wrong-direction"
+  ],
+  "glyph98 U+002F": [
+   "wrong-direction"
+  ],
+  "glyph99 U+0041": [
+   "wrong-direction"
+  ],
+  "glyph100 U+0042": [
+   "wrong-direction"
+  ],
+  "glyph101 U+0043": [
+   "wrong-direction"
+  ],
+  "glyph102 U+0044": [
+   "wrong-direction"
+  ],
+  "glyph105 U+0047": [
+   "wrong-direction"
+  ],
+  "glyph108 U+004A": [
+   "wrong-direction"
+  ],
+  "glyph109 U+004B": [
+   "wrong-direction"
+  ],
+  "glyph111 U+004D": [
+   "wrong-direction"
+  ],
+  "glyph112 U+004E": [
+   "wrong-direction"
+  ],
+  "glyph113 U+004F": [
+   "wrong-direction"
+  ],
+  "glyph114 U+0050": [
+   "wrong-direction"
+  ],
+  "glyph115 U+0051": [
+   "wrong-direction"
+  ],
+  "glyph116 U+0052": [
+   "wrong-direction"
+  ],
+  "glyph117 U+0053": [
+   "wrong-direction"
+  ],
+  "glyph119 U+0055": [
+   "wrong-direction"
+  ],
+  "glyph120 U+0056": [
+   "wrong-direction"
+  ],
+  "glyph121 U+0057": [
+   "wrong-direction"
+  ],
+  "glyph122 U+0058": [
+   "wrong-direction"
+  ],
+  "glyph123 U+0059": [
+   "wrong-direction"
+  ],
+  "glyph124 U+005A": [
+   "wrong-direction"
+  ],
+  "glyph125 U+0061": [
+   "wrong-direction"
+  ],
+  "glyph126 U+0062": [
+   "wrong-direction"
+  ],
+  "glyph127 U+0063": [
+   "wrong-direction"
+  ],
+  "glyph128 U+0064": [
+   "wrong-direction"
+  ],
+  "glyph129 U+0065": [
+   "wrong-direction"
+  ],
+  "glyph130 U+0066": [
+   "wrong-direction"
+  ],
+  "glyph131 U+0067": [
+   "wrong-direction"
+  ],
+  "glyph132 U+0068": [
+   "wrong-direction"
+  ],
+  "glyph134 U+006A": [
+   "wrong-direction"
+  ],
+  "glyph135 U+006B": [
+   "wrong-direction"
+  ],
+  "glyph137 U+006D": [
+   "wrong-direction"
+  ],
+  "glyph138 U+006E": [
+   "wrong-direction"
+  ],
+  "glyph139 U+006F": [
+   "wrong-direction"
+  ],
+  "glyph140 U+0070": [
+   "wrong-direction"
+  ],
+  "glyph141 U+0071": [
+   "wrong-direction"
+  ],
+  "glyph142 U+0072": [
+   "wrong-direction"
+  ],
+  "glyph143 U+0073": [
+   "wrong-direction"
+  ],
+  "glyph145 U+0075": [
+   "wrong-direction"
+  ],
+  "glyph146 U+0076": [
+   "wrong-direction"
+  ],
+  "glyph147 U+0077": [
+   "wrong-direction"
+  ],
+  "glyph148 U+0078": [
+   "wrong-direction"
+  ],
+  "glyph149 U+0079": [
+   "wrong-direction"
+  ],
+  "glyph150 U+007A": [
+   "wrong-direction"
+  ],
+  "glyph153 U+00C4": [
+   "wrong-direction"
+  ],
+  "glyph154 U+00D6": [
+   "wrong-direction"
+  ],
+  "glyph155 U+00DC": [
+   "wrong-direction"
+  ],
+  "glyph156 U+00E4": [
+   "wrong-direction"
+  ],
+  "glyph157 U+00F6": [
+   "wrong-direction"
+  ],
+  "glyph158 U+00FC": [
+   "wrong-direction"
+  ],
+  "ext.lv_2 U+E105": [
+   "wrong-direction"
+  ],
+  "ext.pp U+E106": [
+   "wrong-direction"
+  ],
+  "ext.id U+E107": [
+   "wrong-direction"
+  ],
+  "ext.no U+2116": [
+   "wrong-direction"
+  ],
+  "ext.circle_1 U+2460": [
+   "wrong-direction"
+  ],
+  "ext.circle_2 U+2461": [
+   "wrong-direction"
+  ],
+  "ext.circle_3 U+2462": [
+   "wrong-direction"
+  ],
+  "ext.circle_4 U+2463": [
+   "wrong-direction"
+  ],
+  "ext.circle_5 U+2464": [
+   "wrong-direction"
+  ],
+  "ext.circle_6 U+2465": [
+   "wrong-direction"
+  ],
+  "ext.circle_7 U+2466": [
+   "wrong-direction"
+  ],
+  "ext.circle_8 U+2467": [
+   "wrong-direction"
+  ],
+  "ext.circle_9 U+2468": [
+   "wrong-direction"
+  ],
+  "ext.round_left_paren U+E113": [
+   "wrong-direction"
+  ],
+  "ext.round_right_paren U+E114": [
+   "wrong-direction"
+  ],
+  "ext.circle_dot U+E115": [
+   "wrong-direction"
+  ],
+  "ext.triangle U+E116": [
+   "wrong-direction"
+  ],
+  "ext.big_mult_x U+E117": [
+   "wrong-direction"
+  ],
+  "ext.emoji_greater_than U+E1D7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_eye U+E1D8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_eye U+E1D9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_at U+E1DA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_semicolon U+E1DB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_spiral U+E1DF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tongue U+E1E0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_triangle_outline U+E1E1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_acute U+E1E2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_grave U+E1E3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_moon U+E1E8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_ball U+E1EA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_leaf U+E1EC": [
+   "wrong-direction"
+  ],
+  "ext.emoji_fire U+E1ED": [
+   "wrong-direction"
+  ],
+  "ext.emoji_water U+E1EE": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_fist U+E1EF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_fist U+E1F0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigwheel U+E1F1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_smallwheel U+E1F2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_sphere U+E1F3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_mischievous U+E1F5": [
+   "wrong-direction"
+  ],
+  "ext.emoji_happy U+E1F6": [
+   "wrong-direction"
+  ],
+  "ext.emoji_angry U+E1F7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_surprised U+E1F8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigsmile U+E1F9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_evil U+E1FA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tired U+E1FB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_shocked U+E1FD": [
+   "wrong-direction"
+  ],
+  "ext.emoji_biganger U+E1FE": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldPixelVectorSmall-Regular.ttf": {
+  "percent U+0025": [
+   "wrong-direction"
+  ],
+  "ampersand U+0026": [
+   "wrong-direction"
+  ],
+  "parenleft U+0028": [
+   "wrong-direction"
+  ],
+  "parenright U+0029": [
+   "wrong-direction"
+  ],
+  "ordfeminine U+00AA": [
+   "wrong-direction"
+  ],
+  "ordmasculine U+00BA": [
+   "wrong-direction"
+  ],
+  "questiondown U+00BF": [
+   "wrong-direction"
+  ],
+  "Agrave U+00C0": [
+   "wrong-direction"
+  ],
+  "Aacute U+00C1": [
+   "wrong-direction"
+  ],
+  "Acircumflex U+00C2": [
+   "wrong-direction"
+  ],
+  "Ccedilla U+00C7": [
+   "wrong-direction"
+  ],
+  "Egrave U+00C8": [
+   "wrong-direction"
+  ],
+  "Eacute U+00C9": [
+   "wrong-direction"
+  ],
+  "Ecircumflex U+00CA": [
+   "wrong-direction"
+  ],
+  "Igrave U+00CC": [
+   "wrong-direction"
+  ],
+  "Iacute U+00CD": [
+   "wrong-direction"
+  ],
+  "Icircumflex U+00CE": [
+   "wrong-direction"
+  ],
+  "Ntilde U+00D1": [
+   "wrong-direction"
+  ],
+  "Ograve U+00D2": [
+   "wrong-direction"
+  ],
+  "Oacute U+00D3": [
+   "wrong-direction"
+  ],
+  "Ocircumflex U+00D4": [
+   "wrong-direction"
+  ],
+  "Ugrave U+00D9": [
+   "wrong-direction"
+  ],
+  "Uacute U+00DA": [
+   "wrong-direction"
+  ],
+  "Ucircumflex U+00DB": [
+   "wrong-direction"
+  ],
+  "germandbls U+00DF": [
+   "wrong-direction"
+  ],
+  "agrave U+00E0": [
+   "wrong-direction"
+  ],
+  "aacute U+00E1": [
+   "wrong-direction"
+  ],
+  "acircumflex U+00E2": [
+   "wrong-direction"
+  ],
+  "ccedilla U+00E7": [
+   "wrong-direction"
+  ],
+  "egrave U+00E8": [
+   "wrong-direction"
+  ],
+  "eacute U+00E9": [
+   "wrong-direction"
+  ],
+  "ecircumflex U+00EA": [
+   "wrong-direction"
+  ],
+  "edieresis U+00EB": [
+   "wrong-direction"
+  ],
+  "igrave U+00EC": [
+   "wrong-direction"
+  ],
+  "iacute U+00ED": [
+   "wrong-direction"
+  ],
+  "icircumflex U+00EE": [
+   "wrong-direction"
+  ],
+  "ntilde U+00F1": [
+   "wrong-direction"
+  ],
+  "ograve U+00F2": [
+   "wrong-direction"
+  ],
+  "oacute U+00F3": [
+   "wrong-direction"
+  ],
+  "ocircumflex U+00F4": [
+   "wrong-direction"
+  ],
+  "ugrave U+00F9": [
+   "wrong-direction"
+  ],
+  "uacute U+00FA": [
+   "wrong-direction"
+  ],
+  "ucircumflex U+00FB": [
+   "wrong-direction"
+  ],
+  "OE U+0152": [
+   "wrong-direction"
+  ],
+  "oe U+0153": [
+   "wrong-direction"
+  ],
+  "ext.super_er U+E02C": [
+   "wrong-direction"
+  ],
+  "ext.lv U+E034": [
+   "wrong-direction"
+  ],
+  "ext.pk U+E053": [
+   "wrong-direction"
+  ],
+  "uniE054 U+E054": [
+   "wrong-direction"
+  ],
+  "uniE055 U+E055": [
+   "wrong-direction"
+  ],
+  "uniE056 U+E056": [
+   "wrong-direction"
+  ],
+  "uniE057 U+E057": [
+   "wrong-direction"
+  ],
+  "uniE058 U+E058": [
+   "wrong-direction"
+  ],
+  "uniE059 U+E059": [
+   "wrong-direction"
+  ],
+  "ext.super_e U+E084": [
+   "wrong-direction"
+  ],
+  "glyph70 U+003C": [
+   "wrong-direction"
+  ],
+  "glyph71 U+003E": [
+   "wrong-direction"
+  ],
+  "ext.super_re U+E0A0": [
+   "wrong-direction"
+  ],
+  "glyph73 U+0030": [
+   "wrong-direction"
+  ],
+  "glyph75 U+0032": [
+   "wrong-direction"
+  ],
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ],
+  "glyph77 U+0034": [
+   "wrong-direction"
+  ],
+  "glyph78 U+0035": [
+   "wrong-direction"
+  ],
+  "glyph79 U+0036": [
+   "wrong-direction"
+  ],
+  "glyph80 U+0037": [
+   "wrong-direction"
+  ],
+  "glyph81 U+0038": [
+   "wrong-direction"
+  ],
+  "glyph82 U+0039": [
+   "wrong-direction"
+  ],
+  "glyph84 U+003F": [
+   "wrong-direction"
+  ],
+  "glyph89 U+201C": [
+   "wrong-direction"
+  ],
+  "glyph90 U+201D": [
+   "wrong-direction"
+  ],
+  "glyph91 U+2018": [
+   "wrong-direction"
+  ],
+  "glyph92 U+0027": [
+   "wrong-direction"
+  ],
+  "glyph93 U+2642": [
+   "wrong-direction"
+  ],
+  "glyph94 U+2640": [
+   "wrong-direction"
+  ],
+  "glyph95 U+00A5": [
+   "wrong-direction"
+  ],
+  "glyph97 U+00D7": [
+   "wrong-direction"
+  ],
+  "glyph98 U+002F": [
+   "wrong-direction"
+  ],
+  "glyph99 U+0041": [
+   "wrong-direction"
+  ],
+  "glyph100 U+0042": [
+   "wrong-direction"
+  ],
+  "glyph101 U+0043": [
+   "wrong-direction"
+  ],
+  "glyph102 U+0044": [
+   "wrong-direction"
+  ],
+  "glyph105 U+0047": [
+   "wrong-direction"
+  ],
+  "glyph108 U+004A": [
+   "wrong-direction"
+  ],
+  "glyph109 U+004B": [
+   "wrong-direction"
+  ],
+  "glyph112 U+004E": [
+   "wrong-direction"
+  ],
+  "glyph113 U+004F": [
+   "wrong-direction"
+  ],
+  "glyph114 U+0050": [
+   "wrong-direction"
+  ],
+  "glyph115 U+0051": [
+   "wrong-direction"
+  ],
+  "glyph116 U+0052": [
+   "wrong-direction"
+  ],
+  "glyph117 U+0053": [
+   "wrong-direction"
+  ],
+  "glyph119 U+0055": [
+   "wrong-direction"
+  ],
+  "glyph120 U+0056": [
+   "wrong-direction"
+  ],
+  "glyph122 U+0058": [
+   "wrong-direction"
+  ],
+  "glyph123 U+0059": [
+   "wrong-direction"
+  ],
+  "glyph124 U+005A": [
+   "wrong-direction"
+  ],
+  "glyph125 U+0061": [
+   "wrong-direction"
+  ],
+  "glyph126 U+0062": [
+   "wrong-direction"
+  ],
+  "glyph127 U+0063": [
+   "wrong-direction"
+  ],
+  "glyph128 U+0064": [
+   "wrong-direction"
+  ],
+  "glyph129 U+0065": [
+   "wrong-direction"
+  ],
+  "glyph130 U+0066": [
+   "wrong-direction"
+  ],
+  "glyph131 U+0067": [
+   "wrong-direction"
+  ],
+  "glyph132 U+0068": [
+   "wrong-direction"
+  ],
+  "glyph134 U+006A": [
+   "wrong-direction"
+  ],
+  "glyph135 U+006B": [
+   "wrong-direction"
+  ],
+  "glyph137 U+006D": [
+   "wrong-direction"
+  ],
+  "glyph138 U+006E": [
+   "wrong-direction"
+  ],
+  "glyph139 U+006F": [
+   "wrong-direction"
+  ],
+  "glyph140 U+0070": [
+   "wrong-direction"
+  ],
+  "glyph141 U+0071": [
+   "wrong-direction"
+  ],
+  "glyph142 U+0072": [
+   "wrong-direction"
+  ],
+  "glyph143 U+0073": [
+   "wrong-direction"
+  ],
+  "glyph144 U+0074": [
+   "wrong-direction"
+  ],
+  "glyph145 U+0075": [
+   "wrong-direction"
+  ],
+  "glyph146 U+0076": [
+   "wrong-direction"
+  ],
+  "glyph148 U+0078": [
+   "wrong-direction"
+  ],
+  "glyph149 U+0079": [
+   "wrong-direction"
+  ],
+  "glyph150 U+007A": [
+   "wrong-direction"
+  ],
+  "glyph153 U+00C4": [
+   "wrong-direction"
+  ],
+  "glyph154 U+00D6": [
+   "wrong-direction"
+  ],
+  "glyph155 U+00DC": [
+   "wrong-direction"
+  ],
+  "glyph156 U+00E4": [
+   "wrong-direction"
+  ],
+  "glyph157 U+00F6": [
+   "wrong-direction"
+  ],
+  "glyph158 U+00FC": [
+   "wrong-direction"
+  ],
+  "ext.lv_2 U+E105": [
+   "wrong-direction"
+  ],
+  "ext.pp U+E106": [
+   "wrong-direction"
+  ],
+  "ext.id U+E107": [
+   "wrong-direction"
+  ],
+  "ext.no U+2116": [
+   "wrong-direction"
+  ],
+  "ext.circle_1 U+2460": [
+   "wrong-direction"
+  ],
+  "ext.circle_2 U+2461": [
+   "wrong-direction"
+  ],
+  "ext.circle_3 U+2462": [
+   "wrong-direction"
+  ],
+  "ext.circle_4 U+2463": [
+   "wrong-direction"
+  ],
+  "ext.circle_5 U+2464": [
+   "wrong-direction"
+  ],
+  "ext.circle_6 U+2465": [
+   "wrong-direction"
+  ],
+  "ext.circle_7 U+2466": [
+   "wrong-direction"
+  ],
+  "ext.circle_8 U+2467": [
+   "wrong-direction"
+  ],
+  "ext.circle_9 U+2468": [
+   "wrong-direction"
+  ],
+  "ext.circle_dot U+E115": [
+   "wrong-direction"
+  ],
+  "ext.triangle U+E116": [
+   "wrong-direction"
+  ],
+  "ext.big_mult_x U+E117": [
+   "wrong-direction"
+  ],
+  "ext.emoji_greater_than U+E1D7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_eye U+E1D8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_eye U+E1D9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_at U+E1DA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_semicolon U+E1DB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_spiral U+E1DF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tongue U+E1E0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_triangle_outline U+E1E1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_acute U+E1E2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_grave U+E1E3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_moon U+E1E8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_ball U+E1EA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_leaf U+E1EC": [
+   "wrong-direction"
+  ],
+  "ext.emoji_fire U+E1ED": [
+   "wrong-direction"
+  ],
+  "ext.emoji_water U+E1EE": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_fist U+E1EF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_fist U+E1F0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigwheel U+E1F1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_smallwheel U+E1F2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_sphere U+E1F3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_mischievous U+E1F5": [
+   "wrong-direction"
+  ],
+  "ext.emoji_happy U+E1F6": [
+   "wrong-direction"
+  ],
+  "ext.emoji_angry U+E1F7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_surprised U+E1F8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigsmile U+E1F9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_evil U+E1FA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tired U+E1FB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_shocked U+E1FD": [
+   "wrong-direction"
+  ],
+  "ext.emoji_biganger U+E1FE": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldPixelVectorSmallNarrow-Regular.ttf": {
+  "percent U+0025": [
+   "wrong-direction"
+  ],
+  "ampersand U+0026": [
+   "wrong-direction"
+  ],
+  "parenleft U+0028": [
+   "wrong-direction"
+  ],
+  "parenright U+0029": [
+   "wrong-direction"
+  ],
+  "ordfeminine U+00AA": [
+   "wrong-direction"
+  ],
+  "ordmasculine U+00BA": [
+   "wrong-direction"
+  ],
+  "questiondown U+00BF": [
+   "wrong-direction"
+  ],
+  "Agrave U+00C0": [
+   "wrong-direction"
+  ],
+  "Aacute U+00C1": [
+   "wrong-direction"
+  ],
+  "Acircumflex U+00C2": [
+   "wrong-direction"
+  ],
+  "Ccedilla U+00C7": [
+   "wrong-direction"
+  ],
+  "Egrave U+00C8": [
+   "wrong-direction"
+  ],
+  "Eacute U+00C9": [
+   "wrong-direction"
+  ],
+  "Ecircumflex U+00CA": [
+   "wrong-direction"
+  ],
+  "Igrave U+00CC": [
+   "wrong-direction"
+  ],
+  "Iacute U+00CD": [
+   "wrong-direction"
+  ],
+  "Icircumflex U+00CE": [
+   "wrong-direction"
+  ],
+  "Ntilde U+00D1": [
+   "wrong-direction"
+  ],
+  "Ograve U+00D2": [
+   "wrong-direction"
+  ],
+  "Oacute U+00D3": [
+   "wrong-direction"
+  ],
+  "Ocircumflex U+00D4": [
+   "wrong-direction"
+  ],
+  "Ugrave U+00D9": [
+   "wrong-direction"
+  ],
+  "Uacute U+00DA": [
+   "wrong-direction"
+  ],
+  "Ucircumflex U+00DB": [
+   "wrong-direction"
+  ],
+  "germandbls U+00DF": [
+   "wrong-direction"
+  ],
+  "agrave U+00E0": [
+   "wrong-direction"
+  ],
+  "aacute U+00E1": [
+   "wrong-direction"
+  ],
+  "acircumflex U+00E2": [
+   "wrong-direction"
+  ],
+  "ccedilla U+00E7": [
+   "wrong-direction"
+  ],
+  "egrave U+00E8": [
+   "wrong-direction"
+  ],
+  "eacute U+00E9": [
+   "wrong-direction"
+  ],
+  "ecircumflex U+00EA": [
+   "wrong-direction"
+  ],
+  "edieresis U+00EB": [
+   "wrong-direction"
+  ],
+  "igrave U+00EC": [
+   "wrong-direction"
+  ],
+  "iacute U+00ED": [
+   "wrong-direction"
+  ],
+  "icircumflex U+00EE": [
+   "wrong-direction"
+  ],
+  "ntilde U+00F1": [
+   "wrong-direction"
+  ],
+  "ograve U+00F2": [
+   "wrong-direction"
+  ],
+  "oacute U+00F3": [
+   "wrong-direction"
+  ],
+  "ocircumflex U+00F4": [
+   "wrong-direction"
+  ],
+  "ugrave U+00F9": [
+   "wrong-direction"
+  ],
+  "uacute U+00FA": [
+   "wrong-direction"
+  ],
+  "ucircumflex U+00FB": [
+   "wrong-direction"
+  ],
+  "OE U+0152": [
+   "wrong-direction"
+  ],
+  "oe U+0153": [
+   "wrong-direction"
+  ],
+  "ext.super_er U+E02C": [
+   "wrong-direction"
+  ],
+  "ext.lv U+E034": [
+   "wrong-direction"
+  ],
+  "ext.pk U+E053": [
+   "wrong-direction"
+  ],
+  "uniE054 U+E054": [
+   "wrong-direction"
+  ],
+  "uniE055 U+E055": [
+   "wrong-direction"
+  ],
+  "uniE056 U+E056": [
+   "wrong-direction"
+  ],
+  "uniE057 U+E057": [
+   "wrong-direction"
+  ],
+  "uniE058 U+E058": [
+   "wrong-direction"
+  ],
+  "uniE059 U+E059": [
+   "wrong-direction"
+  ],
+  "ext.super_e U+E084": [
+   "wrong-direction"
+  ],
+  "glyph70 U+003C": [
+   "wrong-direction"
+  ],
+  "glyph71 U+003E": [
+   "wrong-direction"
+  ],
+  "ext.super_re U+E0A0": [
+   "wrong-direction"
+  ],
+  "glyph73 U+0030": [
+   "wrong-direction"
+  ],
+  "glyph75 U+0032": [
+   "wrong-direction"
+  ],
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ],
+  "glyph77 U+0034": [
+   "wrong-direction"
+  ],
+  "glyph78 U+0035": [
+   "wrong-direction"
+  ],
+  "glyph79 U+0036": [
+   "wrong-direction"
+  ],
+  "glyph80 U+0037": [
+   "wrong-direction"
+  ],
+  "glyph81 U+0038": [
+   "wrong-direction"
+  ],
+  "glyph82 U+0039": [
+   "wrong-direction"
+  ],
+  "glyph84 U+003F": [
+   "wrong-direction"
+  ],
+  "glyph89 U+201C": [
+   "wrong-direction"
+  ],
+  "glyph90 U+201D": [
+   "wrong-direction"
+  ],
+  "glyph91 U+2018": [
+   "wrong-direction"
+  ],
+  "glyph92 U+0027": [
+   "wrong-direction"
+  ],
+  "glyph93 U+2642": [
+   "wrong-direction"
+  ],
+  "glyph94 U+2640": [
+   "wrong-direction"
+  ],
+  "glyph95 U+00A5": [
+   "wrong-direction"
+  ],
+  "glyph97 U+00D7": [
+   "wrong-direction"
+  ],
+  "glyph98 U+002F": [
+   "wrong-direction"
+  ],
+  "glyph99 U+0041": [
+   "wrong-direction"
+  ],
+  "glyph100 U+0042": [
+   "wrong-direction"
+  ],
+  "glyph101 U+0043": [
+   "wrong-direction"
+  ],
+  "glyph102 U+0044": [
+   "wrong-direction"
+  ],
+  "glyph105 U+0047": [
+   "wrong-direction"
+  ],
+  "glyph108 U+004A": [
+   "wrong-direction"
+  ],
+  "glyph109 U+004B": [
+   "wrong-direction"
+  ],
+  "glyph112 U+004E": [
+   "wrong-direction"
+  ],
+  "glyph113 U+004F": [
+   "wrong-direction"
+  ],
+  "glyph114 U+0050": [
+   "wrong-direction"
+  ],
+  "glyph115 U+0051": [
+   "wrong-direction"
+  ],
+  "glyph116 U+0052": [
+   "wrong-direction"
+  ],
+  "glyph117 U+0053": [
+   "wrong-direction"
+  ],
+  "glyph119 U+0055": [
+   "wrong-direction"
+  ],
+  "glyph120 U+0056": [
+   "wrong-direction"
+  ],
+  "glyph122 U+0058": [
+   "wrong-direction"
+  ],
+  "glyph123 U+0059": [
+   "wrong-direction"
+  ],
+  "glyph124 U+005A": [
+   "wrong-direction"
+  ],
+  "glyph125 U+0061": [
+   "wrong-direction"
+  ],
+  "glyph126 U+0062": [
+   "wrong-direction"
+  ],
+  "glyph127 U+0063": [
+   "wrong-direction"
+  ],
+  "glyph128 U+0064": [
+   "wrong-direction"
+  ],
+  "glyph129 U+0065": [
+   "wrong-direction"
+  ],
+  "glyph130 U+0066": [
+   "wrong-direction"
+  ],
+  "glyph131 U+0067": [
+   "wrong-direction"
+  ],
+  "glyph132 U+0068": [
+   "wrong-direction"
+  ],
+  "glyph134 U+006A": [
+   "wrong-direction"
+  ],
+  "glyph135 U+006B": [
+   "wrong-direction"
+  ],
+  "glyph137 U+006D": [
+   "wrong-direction"
+  ],
+  "glyph138 U+006E": [
+   "wrong-direction"
+  ],
+  "glyph139 U+006F": [
+   "wrong-direction"
+  ],
+  "glyph140 U+0070": [
+   "wrong-direction"
+  ],
+  "glyph141 U+0071": [
+   "wrong-direction"
+  ],
+  "glyph142 U+0072": [
+   "wrong-direction"
+  ],
+  "glyph143 U+0073": [
+   "wrong-direction"
+  ],
+  "glyph144 U+0074": [
+   "wrong-direction"
+  ],
+  "glyph145 U+0075": [
+   "wrong-direction"
+  ],
+  "glyph146 U+0076": [
+   "wrong-direction"
+  ],
+  "glyph148 U+0078": [
+   "wrong-direction"
+  ],
+  "glyph149 U+0079": [
+   "wrong-direction"
+  ],
+  "glyph150 U+007A": [
+   "wrong-direction"
+  ],
+  "glyph153 U+00C4": [
+   "wrong-direction"
+  ],
+  "glyph154 U+00D6": [
+   "wrong-direction"
+  ],
+  "glyph155 U+00DC": [
+   "wrong-direction"
+  ],
+  "glyph156 U+00E4": [
+   "wrong-direction"
+  ],
+  "glyph157 U+00F6": [
+   "wrong-direction"
+  ],
+  "glyph158 U+00FC": [
+   "wrong-direction"
+  ],
+  "ext.lv_2 U+E105": [
+   "wrong-direction"
+  ],
+  "ext.pp U+E106": [
+   "wrong-direction"
+  ],
+  "ext.id U+E107": [
+   "wrong-direction"
+  ],
+  "ext.no U+2116": [
+   "wrong-direction"
+  ],
+  "ext.circle_1 U+2460": [
+   "wrong-direction"
+  ],
+  "ext.circle_2 U+2461": [
+   "wrong-direction"
+  ],
+  "ext.circle_3 U+2462": [
+   "wrong-direction"
+  ],
+  "ext.circle_4 U+2463": [
+   "wrong-direction"
+  ],
+  "ext.circle_5 U+2464": [
+   "wrong-direction"
+  ],
+  "ext.circle_6 U+2465": [
+   "wrong-direction"
+  ],
+  "ext.circle_7 U+2466": [
+   "wrong-direction"
+  ],
+  "ext.circle_8 U+2467": [
+   "wrong-direction"
+  ],
+  "ext.circle_9 U+2468": [
+   "wrong-direction"
+  ],
+  "ext.circle_dot U+E115": [
+   "wrong-direction"
+  ],
+  "ext.triangle U+E116": [
+   "wrong-direction"
+  ],
+  "ext.big_mult_x U+E117": [
+   "wrong-direction"
+  ],
+  "ext.emoji_greater_than U+E1D7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_eye U+E1D8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_eye U+E1D9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_at U+E1DA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_semicolon U+E1DB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_spiral U+E1DF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tongue U+E1E0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_triangle_outline U+E1E1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_acute U+E1E2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_grave U+E1E3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_moon U+E1E8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_ball U+E1EA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_leaf U+E1EC": [
+   "wrong-direction"
+  ],
+  "ext.emoji_fire U+E1ED": [
+   "wrong-direction"
+  ],
+  "ext.emoji_water U+E1EE": [
+   "wrong-direction"
+  ],
+  "ext.emoji_left_fist U+E1EF": [
+   "wrong-direction"
+  ],
+  "ext.emoji_right_fist U+E1F0": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigwheel U+E1F1": [
+   "wrong-direction"
+  ],
+  "ext.emoji_smallwheel U+E1F2": [
+   "wrong-direction"
+  ],
+  "ext.emoji_sphere U+E1F3": [
+   "wrong-direction"
+  ],
+  "ext.emoji_mischievous U+E1F5": [
+   "wrong-direction"
+  ],
+  "ext.emoji_happy U+E1F6": [
+   "wrong-direction"
+  ],
+  "ext.emoji_angry U+E1F7": [
+   "wrong-direction"
+  ],
+  "ext.emoji_surprised U+E1F8": [
+   "wrong-direction"
+  ],
+  "ext.emoji_bigsmile U+E1F9": [
+   "wrong-direction"
+  ],
+  "ext.emoji_evil U+E1FA": [
+   "wrong-direction"
+  ],
+  "ext.emoji_tired U+E1FB": [
+   "wrong-direction"
+  ],
+  "ext.emoji_shocked U+E1FD": [
+   "wrong-direction"
+  ],
+  "ext.emoji_biganger U+E1FE": [
+   "wrong-direction"
+  ]
+ },
  "EmeraldRounded-Regular.ttf": {},
- "EmeraldRoundedGame-Regular.ttf": {}
+ "EmeraldRoundedGame-Regular.ttf": {},
+ "EmeraldRoundedNarrowGame-Regular.ttf": {
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldRoundedShortGame-Regular.ttf": {
+  "uniE054 U+E054": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldRoundedSmallGame-Regular.ttf": {
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ]
+ },
+ "EmeraldRoundedSmallNarrowGame-Regular.ttf": {
+  "glyph76 U+0033": [
+   "wrong-direction"
+  ]
+ }
 }

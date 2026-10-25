@@ -1,0 +1,62 @@
+{
+ "char": "X",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "join": "miter",
+ "clip_y": [
+  3,
+  12
+ ],
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     2
+    ],
+    [
+     0.5,
+     6
+    ],
+    [
+     3.5,
+     9
+    ],
+    [
+     3.5,
+     13
+    ]
+   ],
+   "sharp": true
+  },
+  {
+   "points": [
+    [
+     3.5,
+     2
+    ],
+    [
+     3.5,
+     6.5
+    ],
+    [
+     0.5,
+     8.5
+    ],
+    [
+     0.5,
+     13
+    ]
+   ],
+   "sharp": true
+  }
+ ],
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+}

@@ -1,0 +1,36 @@
+{
+ "char": "/",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     4,
+     3
+    ],
+    [
+     0,
+     11
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "round",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "clip_y": [
+  3,
+  11
+ ],
+ "clip_x": [
+  0,
+  4
+ ],
+ "_ported": "identical from small"
+}

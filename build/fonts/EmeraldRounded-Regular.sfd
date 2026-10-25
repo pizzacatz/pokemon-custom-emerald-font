@@ -4,7 +4,7 @@ FullName: Emerald Rounded Regular
 FamilyName: Emerald Rounded
 Weight: Regular
 Copyright: Outlines derived from the Latin "normal" bitmap font of Pokémon Emerald as decompiled by the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.
-UComments: "2026-10-22: Created with FontForge (http://fontforge.org)"
+UComments: "2026-10-25: Created with FontForge (http://fontforge.org)"
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -160
@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 714 -1272891916 15424020]
+XUID: [1021 310 629814146 6748896]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1792644963
-ModificationTime: 1792644964
+CreationTime: 1792939073
+ModificationTime: 1792939074
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -3424,29 +3424,8 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-250 900 m 1
- 250 600 l 1
- 329 600 l 2
- 353 600 396 616 415 635 c 0
- 434 654 450 697 450 721 c 2
- 450 779 l 2
- 450 803 434 846 415 865 c 0
- 396 884 353 900 329 900 c 2
- 250 900 l 1
-50 100 m 1
- 50 200 l 1
- 150 200 l 1
- 150 300 l 1
- 50 300 l 1
- 50 400 l 1
- 150 400 l 1
- 150 1000 l 1
- 329 1000 l 2
- 384 1000 449 971 485 935 c 0
- 521 899 550 834 550 779 c 2
- 550 721 l 2
- 550 666 521 601 485 565 c 0
- 449 529 384 500 329 500 c 2
+550 645 m 1
+ 537 570 480 513 405 500 c 1
  250 500 l 1
  250 400 l 1
  450 400 l 1
@@ -3460,6 +3439,23 @@ SplineSet
  150 0 l 1
  150 100 l 1
  50 100 l 1
+ 50 200 l 1
+ 150 200 l 1
+ 150 300 l 1
+ 50 300 l 1
+ 50 400 l 1
+ 150 400 l 1
+ 150 1000 l 1
+ 405 1000 l 1
+ 480 987 537 930 550 855 c 1
+ 550 645 l 1
+250 900 m 1
+ 250 600 l 1
+ 394 600 l 1
+ 421 607 443 629 450 656 c 1
+ 450 844 l 1
+ 443 871 421 893 394 900 c 1
+ 250 900 l 1
 EndSplineSet
 EndChar
 
@@ -3812,9 +3808,9 @@ SplineSet
  407 0 403 0 400 0 c 2
  200 0 l 2
  167 0 71 38 51 140 c 0
- 50 143 50 147 50 150 c 2
- 50 250 l 1
- 150 250 l 1
+ 50 143 50 147 50 150 c 0
+ 50 166 50 184 50 200 c 1
+ 150 200 l 1
  150 156 l 1
  157 129 179 107 206 100 c 1
  394 100 l 1

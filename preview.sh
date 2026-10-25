@@ -1,5 +1,6 @@
 #!/bin/sh
 # Re-run the smoothing on the override files, rebuild Emerald Rounded Game, render previews.
+# For another game font set EMERALD_VARIANT (narrow, small, short, small_narrow): EMERALD_VARIANT=small ./preview.sh "a"
 # Exits non-zero (and prints the error) if any override file is broken or the build fails.
 cd "$(dirname "$0")"
 export PYTHONPATH="$PWD/pylib${PYTHONPATH:+:$PYTHONPATH}"

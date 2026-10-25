@@ -1,0 +1,21 @@
+{
+ "char": ".",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [],
+ "dots": [
+  {
+   "x": 2.0,
+   "y": 10.0,
+   "r": 1
+  }
+ ],
+ "join": "round",
+ "dot_shape": "square",
+ "dot_corner": 0.45,
+ "_ported": "transfer from normal (0 row/column edits)"
+}

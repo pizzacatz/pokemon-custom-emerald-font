@@ -49,7 +49,7 @@ def main():
         if gid == 0x00:
             out[str(gid)] = {'codepoints': [0x20], 'name': 'space', 'source': 'charmap'}
             continue
-        if gid == 0xFF:   # '$' maps here in charmap.txt but latin_normal.png has no glyph at 0xFF
+        if gid == 0xFF:   # '$' maps here in charmap.txt but no Latin sheet has a glyph at 0xFF
             continue
         cps = list(e['unicode'])
         src = 'charmap' if cps else 'pua'

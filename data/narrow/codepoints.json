@@ -1,0 +1,1625 @@
+{
+ "0": {
+  "codepoints": [
+   32
+  ],
+  "name": "space",
+  "source": "charmap"
+ },
+ "1": {
+  "codepoints": [
+   192
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "2": {
+  "codepoints": [
+   193
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "3": {
+  "codepoints": [
+   194
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "4": {
+  "codepoints": [
+   199
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "5": {
+  "codepoints": [
+   200
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "6": {
+  "codepoints": [
+   201
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "7": {
+  "codepoints": [
+   202
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "8": {
+  "codepoints": [
+   203
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "9": {
+  "codepoints": [
+   204
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "11": {
+  "codepoints": [
+   206
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "12": {
+  "codepoints": [
+   207
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "13": {
+  "codepoints": [
+   210
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "14": {
+  "codepoints": [
+   211
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "15": {
+  "codepoints": [
+   212
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "16": {
+  "codepoints": [
+   338
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "17": {
+  "codepoints": [
+   217
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "18": {
+  "codepoints": [
+   218
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "19": {
+  "codepoints": [
+   219
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "20": {
+  "codepoints": [
+   209
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "21": {
+  "codepoints": [
+   223
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "22": {
+  "codepoints": [
+   224
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "23": {
+  "codepoints": [
+   225
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "25": {
+  "codepoints": [
+   231
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "26": {
+  "codepoints": [
+   232
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "27": {
+  "codepoints": [
+   233
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "28": {
+  "codepoints": [
+   234
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "29": {
+  "codepoints": [
+   235
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "30": {
+  "codepoints": [
+   236
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "32": {
+  "codepoints": [
+   238
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "33": {
+  "codepoints": [
+   239
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "34": {
+  "codepoints": [
+   242
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "35": {
+  "codepoints": [
+   243
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "36": {
+  "codepoints": [
+   244
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "37": {
+  "codepoints": [
+   339
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "38": {
+  "codepoints": [
+   249
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "39": {
+  "codepoints": [
+   250
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "40": {
+  "codepoints": [
+   251
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "41": {
+  "codepoints": [
+   241
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "42": {
+  "codepoints": [
+   186
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "43": {
+  "codepoints": [
+   170
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "44": {
+  "codepoints": [
+   57388
+  ],
+  "name": "ext.super_er",
+  "source": "pua"
+ },
+ "45": {
+  "codepoints": [
+   38
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "46": {
+  "codepoints": [
+   43
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "52": {
+  "codepoints": [
+   57396
+  ],
+  "name": "ext.lv",
+  "source": "pua"
+ },
+ "53": {
+  "codepoints": [
+   61
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "54": {
+  "codepoints": [
+   59
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "80": {
+  "codepoints": [
+   57424
+  ],
+  "name": "ext.box_0x50",
+  "source": "pua"
+ },
+ "81": {
+  "codepoints": [
+   191
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "82": {
+  "codepoints": [
+   161
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "83": {
+  "codepoints": [
+   57427
+  ],
+  "name": "ext.pk",
+  "source": "pua"
+ },
+ "84": {
+  "codepoints": [
+   57428
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "85": {
+  "codepoints": [
+   57429
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "86": {
+  "codepoints": [
+   57430
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "87": {
+  "codepoints": [
+   57431
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "88": {
+  "codepoints": [
+   57432
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "89": {
+  "codepoints": [
+   57433
+  ],
+  "name": null,
+  "source": "pua"
+ },
+ "90": {
+  "codepoints": [
+   205
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "91": {
+  "codepoints": [
+   37
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "92": {
+  "codepoints": [
+   40
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "93": {
+  "codepoints": [
+   41
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "104": {
+  "codepoints": [
+   226
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "111": {
+  "codepoints": [
+   237
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "119": {
+  "codepoints": [
+   57463
+  ],
+  "name": "ext.spacer",
+  "source": "pua"
+ },
+ "121": {
+  "codepoints": [
+   57465,
+   8593
+  ],
+  "name": "ext.up_arrow",
+  "source": "pua+unicode-equivalent"
+ },
+ "122": {
+  "codepoints": [
+   57466,
+   8595
+  ],
+  "name": "ext.down_arrow",
+  "source": "pua+unicode-equivalent"
+ },
+ "123": {
+  "codepoints": [
+   57467,
+   8592
+  ],
+  "name": "ext.left_arrow",
+  "source": "pua+unicode-equivalent"
+ },
+ "124": {
+  "codepoints": [
+   57468,
+   8594
+  ],
+  "name": "ext.right_arrow",
+  "source": "pua+unicode-equivalent"
+ },
+ "132": {
+  "codepoints": [
+   57476
+  ],
+  "name": "ext.super_e",
+  "source": "pua"
+ },
+ "133": {
+  "codepoints": [
+   60
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "134": {
+  "codepoints": [
+   62
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "160": {
+  "codepoints": [
+   57504
+  ],
+  "name": "ext.super_re",
+  "source": "pua"
+ },
+ "161": {
+  "codepoints": [
+   48
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "162": {
+  "codepoints": [
+   49
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "163": {
+  "codepoints": [
+   50
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "164": {
+  "codepoints": [
+   51
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "165": {
+  "codepoints": [
+   52
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "166": {
+  "codepoints": [
+   53
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "167": {
+  "codepoints": [
+   54
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "168": {
+  "codepoints": [
+   55
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "169": {
+  "codepoints": [
+   56
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "170": {
+  "codepoints": [
+   57
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "171": {
+  "codepoints": [
+   33
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "172": {
+  "codepoints": [
+   63
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "173": {
+  "codepoints": [
+   46
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "174": {
+  "codepoints": [
+   45
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "175": {
+  "codepoints": [
+   183
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "176": {
+  "codepoints": [
+   8230
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "177": {
+  "codepoints": [
+   8220
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "178": {
+  "codepoints": [
+   8221
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "179": {
+  "codepoints": [
+   8216
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "180": {
+  "codepoints": [
+   8217,
+   39
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "181": {
+  "codepoints": [
+   9794
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "182": {
+  "codepoints": [
+   9792
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "183": {
+  "codepoints": [
+   165
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "184": {
+  "codepoints": [
+   44
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "185": {
+  "codepoints": [
+   215
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "186": {
+  "codepoints": [
+   47
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "187": {
+  "codepoints": [
+   65
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "188": {
+  "codepoints": [
+   66
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "189": {
+  "codepoints": [
+   67
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "190": {
+  "codepoints": [
+   68
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "191": {
+  "codepoints": [
+   69
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "192": {
+  "codepoints": [
+   70
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "193": {
+  "codepoints": [
+   71
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "194": {
+  "codepoints": [
+   72
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "195": {
+  "codepoints": [
+   73
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "196": {
+  "codepoints": [
+   74
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "197": {
+  "codepoints": [
+   75
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "198": {
+  "codepoints": [
+   76
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "199": {
+  "codepoints": [
+   77
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "200": {
+  "codepoints": [
+   78
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "201": {
+  "codepoints": [
+   79
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "202": {
+  "codepoints": [
+   80
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "203": {
+  "codepoints": [
+   81
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "204": {
+  "codepoints": [
+   82
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "205": {
+  "codepoints": [
+   83
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "206": {
+  "codepoints": [
+   84
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "207": {
+  "codepoints": [
+   85
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "208": {
+  "codepoints": [
+   86
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "209": {
+  "codepoints": [
+   87
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "210": {
+  "codepoints": [
+   88
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "211": {
+  "codepoints": [
+   89
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "212": {
+  "codepoints": [
+   90
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "213": {
+  "codepoints": [
+   97
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "214": {
+  "codepoints": [
+   98
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "215": {
+  "codepoints": [
+   99
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "216": {
+  "codepoints": [
+   100
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "217": {
+  "codepoints": [
+   101
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "218": {
+  "codepoints": [
+   102
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "219": {
+  "codepoints": [
+   103
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "220": {
+  "codepoints": [
+   104
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "221": {
+  "codepoints": [
+   105
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "222": {
+  "codepoints": [
+   106
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "223": {
+  "codepoints": [
+   107
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "224": {
+  "codepoints": [
+   108
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "225": {
+  "codepoints": [
+   109
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "226": {
+  "codepoints": [
+   110
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "227": {
+  "codepoints": [
+   111
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "228": {
+  "codepoints": [
+   112
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "229": {
+  "codepoints": [
+   113
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "230": {
+  "codepoints": [
+   114
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "231": {
+  "codepoints": [
+   115
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "232": {
+  "codepoints": [
+   116
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "233": {
+  "codepoints": [
+   117
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "234": {
+  "codepoints": [
+   118
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "235": {
+  "codepoints": [
+   119
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "236": {
+  "codepoints": [
+   120
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "237": {
+  "codepoints": [
+   121
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "238": {
+  "codepoints": [
+   122
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "239": {
+  "codepoints": [
+   9654
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "240": {
+  "codepoints": [
+   58
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "241": {
+  "codepoints": [
+   196
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "242": {
+  "codepoints": [
+   214
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "243": {
+  "codepoints": [
+   220
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "244": {
+  "codepoints": [
+   228
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "245": {
+  "codepoints": [
+   246
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "246": {
+  "codepoints": [
+   252
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "256": {
+  "codepoints": [
+   57600,
+   11014
+  ],
+  "name": "ext.up_arrow_2",
+  "source": "pua+unicode-equivalent"
+ },
+ "257": {
+  "codepoints": [
+   57601,
+   11015
+  ],
+  "name": "ext.down_arrow_2",
+  "source": "pua+unicode-equivalent"
+ },
+ "258": {
+  "codepoints": [
+   57602,
+   11013
+  ],
+  "name": "ext.left_arrow_2",
+  "source": "pua+unicode-equivalent"
+ },
+ "259": {
+  "codepoints": [
+   57603,
+   11157
+  ],
+  "name": "ext.right_arrow_2",
+  "source": "pua+unicode-equivalent"
+ },
+ "260": {
+  "codepoints": [
+   57604
+  ],
+  "name": "ext.plus",
+  "source": "pua"
+ },
+ "261": {
+  "codepoints": [
+   57605
+  ],
+  "name": "ext.lv_2",
+  "source": "pua"
+ },
+ "262": {
+  "codepoints": [
+   57606
+  ],
+  "name": "ext.pp",
+  "source": "pua"
+ },
+ "263": {
+  "codepoints": [
+   57607
+  ],
+  "name": "ext.id",
+  "source": "pua"
+ },
+ "264": {
+  "codepoints": [
+   57608,
+   8470
+  ],
+  "name": "ext.no",
+  "source": "pua+unicode-equivalent"
+ },
+ "265": {
+  "codepoints": [
+   57609
+  ],
+  "name": "ext.underscore",
+  "source": "pua"
+ },
+ "266": {
+  "codepoints": [
+   57610,
+   9312
+  ],
+  "name": "ext.circle_1",
+  "source": "pua+unicode-equivalent"
+ },
+ "267": {
+  "codepoints": [
+   57611,
+   9313
+  ],
+  "name": "ext.circle_2",
+  "source": "pua+unicode-equivalent"
+ },
+ "268": {
+  "codepoints": [
+   57612,
+   9314
+  ],
+  "name": "ext.circle_3",
+  "source": "pua+unicode-equivalent"
+ },
+ "269": {
+  "codepoints": [
+   57613,
+   9315
+  ],
+  "name": "ext.circle_4",
+  "source": "pua+unicode-equivalent"
+ },
+ "270": {
+  "codepoints": [
+   57614,
+   9316
+  ],
+  "name": "ext.circle_5",
+  "source": "pua+unicode-equivalent"
+ },
+ "271": {
+  "codepoints": [
+   57615,
+   9317
+  ],
+  "name": "ext.circle_6",
+  "source": "pua+unicode-equivalent"
+ },
+ "272": {
+  "codepoints": [
+   57616,
+   9318
+  ],
+  "name": "ext.circle_7",
+  "source": "pua+unicode-equivalent"
+ },
+ "273": {
+  "codepoints": [
+   57617,
+   9319
+  ],
+  "name": "ext.circle_8",
+  "source": "pua+unicode-equivalent"
+ },
+ "274": {
+  "codepoints": [
+   57618,
+   9320
+  ],
+  "name": "ext.circle_9",
+  "source": "pua+unicode-equivalent"
+ },
+ "275": {
+  "codepoints": [
+   57619
+  ],
+  "name": "ext.round_left_paren",
+  "source": "pua"
+ },
+ "276": {
+  "codepoints": [
+   57620
+  ],
+  "name": "ext.round_right_paren",
+  "source": "pua"
+ },
+ "277": {
+  "codepoints": [
+   57621
+  ],
+  "name": "ext.circle_dot",
+  "source": "pua"
+ },
+ "278": {
+  "codepoints": [
+   57622
+  ],
+  "name": "ext.triangle",
+  "source": "pua"
+ },
+ "279": {
+  "codepoints": [
+   57623
+  ],
+  "name": "ext.big_mult_x",
+  "source": "pua"
+ },
+ "464": {
+  "codepoints": [
+   57808
+  ],
+  "name": "ext.emoji_underscore",
+  "source": "pua"
+ },
+ "465": {
+  "codepoints": [
+   57809
+  ],
+  "name": "ext.emoji_pipe",
+  "source": "pua"
+ },
+ "466": {
+  "codepoints": [
+   57810
+  ],
+  "name": "ext.emoji_highbar",
+  "source": "pua"
+ },
+ "467": {
+  "codepoints": [
+   57811
+  ],
+  "name": "ext.emoji_tilde",
+  "source": "pua"
+ },
+ "468": {
+  "codepoints": [
+   57812
+  ],
+  "name": "ext.emoji_left_paren",
+  "source": "pua"
+ },
+ "469": {
+  "codepoints": [
+   57813
+  ],
+  "name": "ext.emoji_right_paren",
+  "source": "pua"
+ },
+ "470": {
+  "codepoints": [
+   57814,
+   8834
+  ],
+  "name": "ext.emoji_union",
+  "source": "pua+unicode-equivalent"
+ },
+ "471": {
+  "codepoints": [
+   57815
+  ],
+  "name": "ext.emoji_greater_than",
+  "source": "pua"
+ },
+ "472": {
+  "codepoints": [
+   57816
+  ],
+  "name": "ext.emoji_left_eye",
+  "source": "pua"
+ },
+ "473": {
+  "codepoints": [
+   57817
+  ],
+  "name": "ext.emoji_right_eye",
+  "source": "pua"
+ },
+ "474": {
+  "codepoints": [
+   57818
+  ],
+  "name": "ext.emoji_at",
+  "source": "pua"
+ },
+ "475": {
+  "codepoints": [
+   57819
+  ],
+  "name": "ext.emoji_semicolon",
+  "source": "pua"
+ },
+ "476": {
+  "codepoints": [
+   57820
+  ],
+  "name": "ext.emoji_plus",
+  "source": "pua"
+ },
+ "477": {
+  "codepoints": [
+   57821
+  ],
+  "name": "ext.emoji_minus",
+  "source": "pua"
+ },
+ "478": {
+  "codepoints": [
+   57822
+  ],
+  "name": "ext.emoji_equals",
+  "source": "pua"
+ },
+ "479": {
+  "codepoints": [
+   57823
+  ],
+  "name": "ext.emoji_spiral",
+  "source": "pua"
+ },
+ "480": {
+  "codepoints": [
+   57824
+  ],
+  "name": "ext.emoji_tongue",
+  "source": "pua"
+ },
+ "481": {
+  "codepoints": [
+   57825
+  ],
+  "name": "ext.emoji_triangle_outline",
+  "source": "pua"
+ },
+ "482": {
+  "codepoints": [
+   57826
+  ],
+  "name": "ext.emoji_acute",
+  "source": "pua"
+ },
+ "483": {
+  "codepoints": [
+   57827
+  ],
+  "name": "ext.emoji_grave",
+  "source": "pua"
+ },
+ "484": {
+  "codepoints": [
+   57828
+  ],
+  "name": "ext.emoji_circle",
+  "source": "pua"
+ },
+ "485": {
+  "codepoints": [
+   57829
+  ],
+  "name": "ext.emoji_triangle",
+  "source": "pua"
+ },
+ "486": {
+  "codepoints": [
+   57830
+  ],
+  "name": "ext.emoji_square",
+  "source": "pua"
+ },
+ "487": {
+  "codepoints": [
+   57831
+  ],
+  "name": "ext.emoji_heart",
+  "source": "pua"
+ },
+ "488": {
+  "codepoints": [
+   57832
+  ],
+  "name": "ext.emoji_moon",
+  "source": "pua"
+ },
+ "489": {
+  "codepoints": [
+   57833
+  ],
+  "name": "ext.emoji_note",
+  "source": "pua"
+ },
+ "490": {
+  "codepoints": [
+   57834
+  ],
+  "name": "ext.emoji_ball",
+  "source": "pua"
+ },
+ "491": {
+  "codepoints": [
+   57835
+  ],
+  "name": "ext.emoji_bolt",
+  "source": "pua"
+ },
+ "492": {
+  "codepoints": [
+   57836
+  ],
+  "name": "ext.emoji_leaf",
+  "source": "pua"
+ },
+ "493": {
+  "codepoints": [
+   57837
+  ],
+  "name": "ext.emoji_fire",
+  "source": "pua"
+ },
+ "494": {
+  "codepoints": [
+   57838
+  ],
+  "name": "ext.emoji_water",
+  "source": "pua"
+ },
+ "495": {
+  "codepoints": [
+   57839
+  ],
+  "name": "ext.emoji_left_fist",
+  "source": "pua"
+ },
+ "496": {
+  "codepoints": [
+   57840
+  ],
+  "name": "ext.emoji_right_fist",
+  "source": "pua"
+ },
+ "497": {
+  "codepoints": [
+   57841
+  ],
+  "name": "ext.emoji_bigwheel",
+  "source": "pua"
+ },
+ "498": {
+  "codepoints": [
+   57842
+  ],
+  "name": "ext.emoji_smallwheel",
+  "source": "pua"
+ },
+ "499": {
+  "codepoints": [
+   57843
+  ],
+  "name": "ext.emoji_sphere",
+  "source": "pua"
+ },
+ "500": {
+  "codepoints": [
+   57844
+  ],
+  "name": "ext.emoji_irritated",
+  "source": "pua"
+ },
+ "501": {
+  "codepoints": [
+   57845
+  ],
+  "name": "ext.emoji_mischievous",
+  "source": "pua"
+ },
+ "502": {
+  "codepoints": [
+   57846
+  ],
+  "name": "ext.emoji_happy",
+  "source": "pua"
+ },
+ "503": {
+  "codepoints": [
+   57847
+  ],
+  "name": "ext.emoji_angry",
+  "source": "pua"
+ },
+ "504": {
+  "codepoints": [
+   57848
+  ],
+  "name": "ext.emoji_surprised",
+  "source": "pua"
+ },
+ "505": {
+  "codepoints": [
+   57849
+  ],
+  "name": "ext.emoji_bigsmile",
+  "source": "pua"
+ },
+ "506": {
+  "codepoints": [
+   57850
+  ],
+  "name": "ext.emoji_evil",
+  "source": "pua"
+ },
+ "507": {
+  "codepoints": [
+   57851
+  ],
+  "name": "ext.emoji_tired",
+  "source": "pua"
+ },
+ "508": {
+  "codepoints": [
+   57852
+  ],
+  "name": "ext.emoji_neutral",
+  "source": "pua"
+ },
+ "509": {
+  "codepoints": [
+   57853
+  ],
+  "name": "ext.emoji_shocked",
+  "source": "pua"
+ },
+ "510": {
+  "codepoints": [
+   57854
+  ],
+  "name": "ext.emoji_biganger",
+  "source": "pua"
+ }
+}

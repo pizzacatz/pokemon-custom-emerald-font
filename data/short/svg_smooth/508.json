@@ -1,0 +1,1 @@
+{"id": 508, "fallback_rounded_outline": false, "stroke_width": 1.0, "dot_r": 0.5, "strokes": [{"closed": false, "beziers": [[[1.0, 9.5], [2.0, 9.5], [4.0, 9.5], [5.0, 9.5]]]}], "dots": [{"x": 5.5, "y": 5.5, "r": 0.5, "shape": "circle", "corner": 0.25}, {"x": 0.5, "y": 5.5, "r": 0.5, "shape": "circle", "corner": 0.25}], "cuts": []}

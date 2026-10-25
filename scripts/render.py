@@ -11,6 +11,11 @@ FONTS = {
     'smooth': 'EmeraldRounded-Regular.ttf',
     'smoothgame': 'EmeraldRoundedGame-Regular.ttf',
 }
+if VARIANT != 'normal':   # the other game fonts are built as a pixel reference + Rounded Game only
+    _n = VINFO['name'].replace(' ', '')
+    FONTS = {'exact': f'EmeraldPixelVector{_n}-Regular.ttf', 'smoothgame': f'EmeraldRounded{_n}Game-Regular.ttf'}
+# file name prefix for specimens and comparison images of the non-Normal fonts
+OUT_PREFIX = '' if VARIANT == 'normal' else VARIANT + '_'
 
 def font_path(key):
     return os.path.join(BUILD, 'fonts', FONTS.get(key, key))

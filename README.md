@@ -3,7 +3,9 @@
 Pokémon Emerald's dialogue font, rebuilt as installable TrueType fonts. The pixel art of the Latin
 "normal" font from the [pret/pokeemerald](https://github.com/pret/pokeemerald) decompilation is
 traced two ways: once exactly, pixel for pixel, and once as a smooth reconstruction whose glyphs are
-hand-tuned stroke models (polylines, arcs, dots) expanded into outlines by FontForge.
+hand-tuned stroke models (polylines, arcs, dots) expanded into outlines by FontForge. The game's other
+four Latin fonts (Narrow, Small, Short, Small Narrow) get the same treatment, with the hand-tuned
+glyph models ported over from Normal (see [Other game fonts](#other-game-fonts)).
 
 ![Smooth alphabet](build/comparisons/smooth_alphabet_72.png)
 
@@ -15,6 +17,8 @@ hand-tuned stroke models (polylines, arcs, dots) expanded into outlines by FontF
 | **Emerald Rounded** | `build/fonts/EmeraldRounded-Regular.ttf` | Smooth reconstruction: stepped diagonals become clean lines, bowls become Bézier curves, spacing opened by 1 px for text. |
 | **Emerald Rounded Game** | `build/fonts/EmeraldRoundedGame-Regular.ttf` | Same smooth outlines, but advances, side bearings and space width identical to the game. |
 | Emerald Pixel Soft (reference) | `build/fonts/EmeraldPixelSoft-Regular.ttf` | Pixel outline with every corner softened. Kept for comparison only. |
+| **Emerald Rounded Narrow Game** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldRounded{Narrow,Small,Short,SmallNarrow}Game-Regular.ttf` | The game's other Latin fonts as smooth outlines, game spacing and line pitch. |
+| **Emerald Pixel Vector Narrow** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldPixelVector{Narrow,Small,Short,SmallNarrow}-Regular.ttf` | Exact pixel outlines of those fonts (the reference the smooth ones are tuned against). |
 
 Each font also ships as `.otf` and as an editable FontForge `.sfd` next to the TTF. The ready-made
 fonts are committed, so you can download them from `build/fonts/` without building anything.
@@ -28,6 +32,7 @@ used to tune the smooth fonts.
 ```sh
 mkdir -p ~/.local/share/fonts
 cp build/fonts/EmeraldPixelVector-Regular.ttf build/fonts/EmeraldRounded-Regular.ttf build/fonts/EmeraldRoundedGame-Regular.ttf ~/.local/share/fonts/
+cp build/fonts/EmeraldRounded*Game-Regular.ttf ~/.local/share/fonts/      # optional: the Narrow, Small, Short, Small Narrow fonts
 fc-cache -f
 ```
 
@@ -35,9 +40,10 @@ On Windows or macOS, double-click a TTF and choose Install.
 
 ## Source
 
-- Sheet: `https://raw.githubusercontent.com/pret/pokeemerald/refs/heads/master/graphics/fonts/latin_normal.png`
-- Mapping/width/render code: `charmap.txt`, `src/fonts.c` (`gFontNormalLatinGlyphWidths`), `src/text.c`
-  (`DecompressGlyph_Normal`, `CHAR_EXTRA_SYMBOL`), `include/constants/characters.h`
+- Sheets: `https://raw.githubusercontent.com/pret/pokeemerald/refs/heads/master/graphics/fonts/latin_normal.png`,
+  and `latin_narrow.png`, `latin_small.png`, `latin_short.png`, `latin_small_narrow.png` beside it
+- Mapping/width/render code: `charmap.txt`, `src/fonts.c` (`gFont{Normal,Narrow,Small,Short,SmallNarrow}LatinGlyphWidths`),
+  `src/text.c` (`DecompressGlyph_*`, `CHAR_EXTRA_SYMBOL`), `include/constants/characters.h`
 - Repository: https://github.com/pret/pokeemerald, revision `731ad5bfd6e6f265508d0efcca0ba42f9dcf5881`
   (master, 2026-10-01). Local copies of the files used are in `source/pokeemerald/`.
 - Licensing: pokeemerald's own LICENSE file covers the decompiled *code*; the glyph artwork is
@@ -54,12 +60,15 @@ data/masks/              foreground/shadow masks per glyph (JSON) and sheet_fg.p
 data/svg_exact/          exact pixel outlines (SVG + contour JSON)
 data/svg_rounded/        treatment 2 outlines
 data/svg_smooth/         treatment 3: *.json stroke model, *.centerline.svg, u*.outline.svg (final outlines)
+data/glyph_overrides/    the hand-tuned glyph models (see Hand-editing glyphs)
+data/<variant>/          the same layout for narrow, small, short, small_narrow, plus port_report.json
 scripts/                 extract.py, smooth.py, assign_codepoints.py, build_font.py (FontForge),
-                         render.py, make_comparison.py, verify.py, check_geometry.py, ff.sh
+                         render.py, make_comparison.py, verify.py, check_geometry.py, ff.sh,
+                         port_overrides.py, raster.py, review_sheet.py (porting the models to the other fonts)
 build/fonts/             TTF / OTF / SFD
 build/comparisons/       treatment comparisons, source sheet, zooms
-build/specimens/         text specimens at 16/24/32/64 px for each font
-build/verification.json, build/geometry_check.json
+build/specimens/         text specimens at 16/24/32/64 px for each font (other fonts prefixed narrow_ etc.)
+build/verification.json, build/<variant>_verification.json, build/geometry_check.json
 REPORT.md                coverage, design choices, defects, verification results
 ```
 
@@ -92,16 +101,21 @@ depends on it (it is still handy for opening the SVGs in `data/`).
 ## Rebuild
 
 ```sh
-./build.sh
+./build.sh                 # all five game fonts
+./build.sh small short     # just these
 ```
 
-runs: extract → smooth → assign code points → FontForge builds (4 fonts) → geometry check →
-comparison images → specimens and automated checks. Everything is deterministic.
+runs, per game font: extract → smooth → assign code points → FontForge builds (Normal: 4 fonts, the
+others: Pixel Vector + Rounded Game) → comparison images → specimens and automated checks; then the
+geometry check over every TTF. Everything is deterministic. The scripts work on one font at a time,
+chosen with `EMERALD_VARIANT` (`normal` if unset), e.g. `EMERALD_VARIANT=narrow python3 scripts/smooth.py`.
 
 ## Using the fonts
 
 Use `Emerald Pixel Vector` at multiples of 16 px (16, 32, 48 …) with hinting/antialiasing off for
 pixel-perfect output. `Emerald Rounded` is intended for ordinary antialiased use at any size.
+All fonts share the same scale (16 px text = the game's pixels 1:1); their line heights are the game's
+line pitch: 16 px for Normal and Narrow, 14 px for Short, 12 px for Small and Small Narrow.
 
 ## Code points
 
@@ -173,10 +187,45 @@ loupe and overlay give the same comparison interactively.
 
 The GUI for all of this is the glyph editor in [font-compare](https://github.com/pizzacatz/font-compare)
 (`./serve.sh` there, then `/editor.html`): it draws on the pixel grid, edits every field above with
-sliders and numbers, saves the JSON here, and rebuilds Emerald Rounded Game with one click.
+sliders and numbers, saves the JSON here, and rebuilds Emerald Rounded Game with one click. Its *Font*
+menu switches between the five game fonts (`/editor.html?font=small&ch=a` opens one directly), and the
+selected stroke can also be edited as raw JSON, every field of it, under its properties.
 
 Free-form edits are also possible in the FontForge GUI (`tools/squashfs-root/AppRun build/fonts/X.sfd`),
 but those live only in the `.sfd` and are overwritten by the next `./build.sh`.
+
+## Other game fonts
+
+Emerald has five Latin fonts: Normal (dialogue), Narrow, Small, Short and Small Narrow. They share the
+character map and the 16×16 cell layout but are drawn separately: Narrow keeps Normal's height with most
+glyphs a pixel narrower; Short keeps the width but is a row shorter (baseline y = 11); Small is narrower
+with a 7 px cap height (rows 4–10, baseline y = 11); Small Narrow is Small with a few narrower glyphs. Each has its own override folder, `data/<variant>/glyph_overrides/`, with the same JSON
+format and coordinate system (only the baseline row and the guides differ).
+
+Those folders were seeded once from Normal's hand-tuned models by `scripts/port_overrides.py`, in the
+convention the Normal models use: straight strokes through pixel centres, a 67.5° arc (bulge 0.3033)
+wherever a stroke turns through a single diagonal pixel step, sharp joints, cut boxes trimming terminals
+flush. Per glyph, the first that applies:
+
+- **identical / transfer**: the target bitmap equals the source, or is it with whole pixel rows/columns
+  deleted or doubled (Narrow "O" is Normal "O" minus its middle column). The model is remapped so every
+  stroke, arc, cut and clip carries over unchanged. Most glyphs port this way.
+- **fuzzy**: the closest such mapping, used when it scores better than a fresh trace.
+- **traced**: a fresh model of the target pixels in the same convention.
+- **hand**: modelled by hand where the result was not good enough (Narrow S X x ♂; Short W % S a e é s 2 y;
+  Small & X x a e é s u ♂ , ; №), and anything saved from the glyph editor.
+
+Small and Narrow serve as sources too (Small Narrow mostly copies Small). Each ported file has a
+`_ported` note, and `data/<variant>/port_report.json` lists method and score per glyph (score = summed
+difference between the model's ink and the pixels over the cell; the hand-tuned Normal glyphs have a
+median of 2.5). The overrides are now the source of truth; the porting is not part of `./build.sh`.
+
+```sh
+python3 scripts/port_overrides.py small --force "a"   # re-port one glyph (keeps glyphs marked "hand")
+python3 scripts/port_overrides.py small --replace "a" # ... even if marked "hand" (the editor's Re-port button)
+python3 scripts/review_sheet.py small [--all]          # build/comparisons/small_overrides_review.png
+EMERALD_VARIANT=small ./preview.sh "a"                 # rebuild Emerald Rounded Small Game, preview "a"
+```
 
 ## Licence
 

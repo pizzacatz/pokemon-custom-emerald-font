@@ -4,7 +4,7 @@ FullName: Emerald Pixel Vector Regular
 FamilyName: Emerald Pixel Vector
 Weight: Regular
 Copyright: Outlines derived from the Latin "normal" bitmap font of Pokémon Emerald as decompiled by the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.
-UComments: "2026-10-22: Created with FontForge (http://fontforge.org)"
+UComments: "2026-10-25: Created with FontForge (http://fontforge.org)"
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -160
@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 792 577958977 5420356]
+XUID: [1021 554 -1868273548 9679745]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1792644962
-ModificationTime: 1792644962
+CreationTime: 1792939070
+ModificationTime: 1792939071
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5

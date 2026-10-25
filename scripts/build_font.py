@@ -19,6 +19,12 @@ META = {
     'smoothgame': dict(family='Emerald Rounded Game', style='Regular', file='EmeraldRoundedGame-Regular',
                     tracking=0, lsb=0, space=3),     # smooth outlines, spacing identical to the game
 }[TREATMENT]
+if VARIANT != 'normal':
+    # e.g. "Emerald Pixel Vector Narrow" / "Emerald Rounded Narrow Game"
+    fam = META['family'].split(' ')
+    fam.insert(3 if TREATMENT == 'exact' else 2, VINFO['name'])
+    META['family'] = ' '.join(fam)
+    META['file'] = META['family'].replace(' ', '') + '-' + META['style']
 OUTLINES = 'smooth' if TREATMENT.startswith('smooth') else TREATMENT
 VERSION = '1.0'
 
@@ -98,6 +104,133 @@ def dot_contour(d):
     c.closed = True
     return c
 
+def layer_area(lay):
+    """Net area of a layer from its point polygons (control points included: exact enough to compare
+    a layer before and after a boolean operation)."""
+    tot = 0.0
+    for c in lay:
+        pts = [(p.x, p.y) for p in c]
+        tot += sum(x0*y1 - x1*y0 for (x0, y0), (x1, y1) in zip(pts, pts[1:] + pts[:1])) / 2
+    return abs(tot)
+
+def clipped_area(poly, box):
+    """Area of polygon `poly` inside the rectangle box = (x0, y0, x1, y1) (Sutherland-Hodgman)."""
+    x0, y0, x1, y1 = box
+    for inside, cross in ((lambda p: p[0] >= x0, lambda a, b: (x0, a[1] + (b[1]-a[1])*(x0-a[0])/(b[0]-a[0]))),
+                          (lambda p: p[0] <= x1, lambda a, b: (x1, a[1] + (b[1]-a[1])*(x1-a[0])/(b[0]-a[0]))),
+                          (lambda p: p[1] >= y0, lambda a, b: (a[0] + (b[0]-a[0])*(y0-a[1])/(b[1]-a[1]), y0)),
+                          (lambda p: p[1] <= y1, lambda a, b: (a[0] + (b[0]-a[0])*(y1-a[1])/(b[1]-a[1]), y1))):
+        out = []
+        for a, b in zip(poly, poly[1:] + poly[:1]):
+            if inside(b):
+                if not inside(a):
+                    out.append(cross(a, b))
+                out.append(b)
+            elif inside(a):
+                out.append(cross(a, b))
+        poly = out
+        if not poly:
+            return 0.0
+    return abs(sum(xa*yb - xb*ya for (xa, ya), (xb, yb) in zip(poly, poly[1:] + poly[:1]))) / 2
+
+# FontForge's boolean ops misbehave when a cut edge lies exactly on an outline edge (a clip at x=0 along a
+# stem's left side, a clip at the baseline under a box, a terminal trim whose box matches the stroke end):
+# whole contours vanish, the cut half-inverts, or it silently does nothing. Each cut is checked and, if
+# needed, retried grown outward by a fraction of a font unit, which moves its edges off the outline's
+# without leaving slivers; g.round() absorbs the difference.
+CUT_GROW = [0, 0.5, 1.0, 1.5, 2.5]
+
+def grow(poly, d):
+    """Move every vertex d units away from the polygon's centre along both axes."""
+    cx = sum(x for x, _ in poly) / len(poly); cy = sum(y for _, y in poly) / len(poly)
+    sg = lambda v: (v > 1e-9) - (v < -1e-9)
+    return [(x + d*sg(x - cx), y + d*sg(y - cy)) for x, y in poly]
+
+def _polys(lay):
+    """Contours flattened to polygons (cubic and quadratic segments sampled at 8 steps)."""
+    out = []
+    for c in lay:
+        pts = [(p.x, p.y, p.on_curve) for p in c]
+        if not pts:
+            continue
+        k = next((i for i, p in enumerate(pts) if p[2]), 0)
+        pts = pts[k:] + pts[:k]
+        poly, i, n = [], 0, len(pts)
+        while i < n:
+            x0, y0, _ = pts[i]; poly.append((x0, y0))
+            offs, j = [], i + 1
+            while j < i + n and not pts[j % n][2]:
+                offs.append(pts[j % n][:2]); j += 1
+            end = pts[j % n][:2]
+            ctrl = [(x0, y0)] + offs + [end]
+            if len(ctrl) in (3, 4):
+                for s in range(1, 8):
+                    t = s / 8
+                    q = ctrl[:]
+                    while len(q) > 1:       # de Casteljau
+                        q = [((1-t)*a[0] + t*b[0], (1-t)*a[1] + t*b[1]) for a, b in zip(q, q[1:])]
+                    poly.append(q[0])
+            i = j
+        out.append(poly)
+    return out
+
+def _inside(polys, x, y):
+    """Nonzero winding of (x, y) over contour point polygons (control points included)."""
+    w = 0
+    for pts in polys:
+        for (x0, y0), (x1, y1) in zip(pts, pts[1:] + pts[:1]):
+            if (y0 <= y < y1 or y1 <= y < y0) and x < x0 + (y - y0)*(x1 - x0)/(y1 - y0):
+                w += 1 if y1 > y0 else -1
+    return w != 0
+
+def cut_is_clean(before, after, poly):
+    """Sample a 1/4 px grid around the cut: ink inside the cut must be gone, ink outside it must remain.
+    Catches an exclude that half-inverts the cut (ink appears in it while a notch vanishes beside it)."""
+    xs = [x for x, _ in poly]; ys = [y for _, y in poly]
+    bx0, by0, bx1, by1 = before.boundingBox()
+    x0, x1 = max(min(xs), bx0) - 100, min(max(xs), bx1) + 100
+    y0, y1 = max(min(ys), by0) - 100, min(max(ys), by1) + 100
+    pb, pa, pc = _polys(before), _polys(after), [list(poly)]
+    bad = 0
+    y = y0 + 12.5
+    while y < y1:
+        x = x0 + 12.5
+        while x < x1:
+            in_cut = _inside(pc, x, y)
+            bad += (in_cut and _inside(pa, x, y)) or (not in_cut and _inside(pb, x, y) and not _inside(pa, x, y))
+            x += 25
+        y += 25
+    return bad <= 3              # a few samples may straddle curves approximated by their control points
+
+def apply_cut(g, poly):
+    """g.foreground minus the polygon poly (font units)."""
+    if clipped_area(poly, (-1e9, -1e9, 1e9, 1e9)) < 1:
+        return                     # degenerate polygon (zero area): FontForge's exclude would wipe the glyph
+    shape = g.foreground
+    before = layer_area(shape)
+    removable = clipped_area(poly, shape.boundingBox())
+    for d in CUT_GROW:
+        gp = grow(poly, d)
+        cut = fontforge.layer()
+        c = fontforge.contour(); c.moveTo(*gp[0])
+        for x, y in gp[1:]:
+            c.lineTo(x, y)
+        c.closed = True; cut += c
+        cut.removeOverlap(); cut.correctDirection()
+        # FontForge's layer.exclude() argument order is the reverse of its docstring: cut.exclude(shape) == shape - cut
+        g.foreground = cut.exclude(shape)
+        # exclude() hands back contours with scrambled directions (an untouched outer box can come back
+        # counter-clockwise). removeOverlap on that merges counters away, so fix directions FIRST.
+        g.correctDirection()
+        g.removeOverlap()
+        g.correctDirection()
+        if layer_area(g.foreground) >= before - removable - 0.02*before - 50 and \
+                cut_is_clean(shape, g.foreground, gp):
+            return
+        print(f'cut retried for {g.glyphname}: exclude went wrong with the cut grown by {d} units', file=sys.stderr)
+    g.foreground = shape
+    print(f'WARNING: cut on {g.glyphname} still wrong after {len(CUT_GROW)} tries; left uncut', file=sys.stderr)
+
 def smooth_glyph(g, gid):
     rec = json.load(open(os.path.join(DATA, 'svg_smooth', f'{gid:03d}.json')))
     if rec['fallback_rounded_outline']:
@@ -130,19 +263,7 @@ def smooth_glyph(g, gid):
     # they overlap each other (clip_x + clip_y corners, a cut over a clip band): overlapping cut regions
     # cancel out and the mask inverts; a cut crossing a counter could also fill the counter.
     for poly in rec.get('cuts', []):
-        cut = fontforge.layer()
-        c = fontforge.contour(); c.moveTo(*pt(*poly[0]))
-        for p in poly[1:]:
-            c.lineTo(*pt(*p))
-        c.closed = True; cut += c
-        cut.removeOverlap(); cut.correctDirection()
-        # FontForge's layer.exclude() argument order is the reverse of its docstring: cut.exclude(shape) == shape - cut
-        g.foreground = cut.exclude(g.foreground)
-        # exclude() hands back contours with scrambled directions (an untouched outer box can come back
-        # counter-clockwise). removeOverlap on that merges counters away, so fix directions FIRST.
-        g.correctDirection()
-        g.removeOverlap()
-        g.correctDirection()
+        apply_cut(g, [pt(*p) for p in poly])
     g.simplify(1.0, ('mergelines', 'setstarttoextremum'), 0.2)
     g.round()
     g.correctDirection()
@@ -151,10 +272,10 @@ def main():
     cps = load_json('codepoints.json')
     mp = load_json('mapping.json')
     f = fontforge.font()
-    f.em = UPM; f.ascent = 12*PX; f.descent = 4*PX
+    f.em = UPM
     f.familyname = META['family']; f.fontname = META['file']; f.fullname = f"{META['family']} {META['style']}"
     f.weight = 'Regular'; f.version = VERSION
-    f.copyright = ('Outlines derived from the Latin "normal" bitmap font of Pokémon Emerald as decompiled by '
+    f.copyright = (f'Outlines derived from the Latin "{VARIANT.replace("_", " ")}" bitmap font of Pokémon Emerald as decompiled by '
                    'the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; '
                    'no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.')
     f.appendSFNTName('English (US)', 'Family', META['family'])
@@ -163,12 +284,17 @@ def main():
     f.appendSFNTName('English (US)', 'Fullname', f.fullname)
     f.appendSFNTName('English (US)', 'Version', f'Version {VERSION}')
     f.appendSFNTName('English (US)', 'PostScriptName', META['file'])
-    # vertical metrics: 16 px line == 1 em, baseline 12 px from top (matches the game's 16 px line pitch)
-    f.hhea_ascent = 12*PX; f.hhea_descent = -4*PX; f.hhea_linegap = 0
-    f.os2_typoascent = 12*PX; f.os2_typodescent = -4*PX; f.os2_typolinegap = 0
-    f.os2_winascent = 12*PX; f.os2_windescent = 4*PX
+    # vertical metrics: 1 em == the 16 px cell, so 16 px text reproduces the game pixels 1:1. The line height is the
+    # game's line pitch for this font (16 px for Normal), split at the baseline row (12 px from the top for Normal).
+    asc, desc = BASELINE_ROW*PX, (VINFO['line'] - BASELINE_ROW)*PX
+    f.ascent = asc; f.descent = UPM - asc
+    f.hhea_ascent = asc; f.hhea_descent = -desc; f.hhea_linegap = 0
+    f.os2_typoascent = asc; f.os2_typodescent = -desc; f.os2_typolinegap = 0
+    f.os2_winascent = asc; f.os2_windescent = desc
     f.os2_use_typo_metrics = True
-    f.os2_capheight = 9*PX; f.os2_xheight = 6*PX
+    def top_of(ch):
+        return next((e['ink_ymin'] for e in mp.values() if ord(ch) in e['unicode'] and e['ink']), None)
+    f.os2_capheight = (BASELINE_ROW - top_of('H'))*PX; f.os2_xheight = (BASELINE_ROW - top_of('x'))*PX
     f.hhea_ascent_add = f.hhea_descent_add = f.os2_typoascent_add = f.os2_typodescent_add = 0
     f.os2_winascent_add = f.os2_windescent_add = 0
     f.encoding = 'UnicodeFull'

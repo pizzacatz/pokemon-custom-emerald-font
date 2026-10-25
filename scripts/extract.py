@@ -1,5 +1,6 @@
-"""Extract foreground masks, mapping and exact pixel SVG outlines from latin_normal.png.
-Outputs: data/mapping.json, data/masks/*.json, data/masks/sheet_fg.png, data/svg_exact/*.svg
+"""Extract foreground masks, mapping and exact pixel SVG outlines from the variant's font sheet
+(latin_normal.png unless EMERALD_VARIANT says otherwise).
+Outputs: <data>/mapping.json, <data>/masks/*.json, <data>/masks/sheet_fg.png, <data>/svg_exact/*.svg
 """
 import re, os, sys
 from PIL import Image
@@ -33,14 +34,17 @@ def parse_charmap(path):
 
 def parse_widths(path):
     src = open(path).read()
-    m = re.search(r'gFontNormalLatinGlyphWidths\[\] = \{(.*?)\};', src, re.S)
+    m = re.search(VINFO['widths'] + r'\[\] = \{(.*?)\};', src, re.S)
     w = [int(x) for x in re.findall(r'\d+', m.group(1))]
     assert len(w) == 512, len(w)
     return w
 
-def cell_mask(px, gid, value):
+def cell_mask(px, gid, value, width=CELL):
+    """The game only draws the right-hand 8x16 half of a cell for glyphs wider than 8 px
+    (DecompressGlyph_* in text.c); the Narrow sheet has stray pixels there in one narrow cell."""
     r, c = divmod(gid, 16)
-    return [[1 if px[c*CELL+x, r*CELL+y] == value else 0 for x in range(CELL)] for y in range(CELL)]
+    cols = CELL if width > 8 else 8
+    return [[1 if x < cols and px[c*CELL+x, r*CELL+y] == value else 0 for x in range(CELL)] for y in range(CELL)]
 
 # ---------- exact outline tracing ----------
 def trace_mask(mask):
@@ -125,7 +129,7 @@ def svg_for(contours, w=CELL, h=CELL):
             f'<path d="{d}" fill="#000" fill-rule="nonzero"/>\n</svg>\n')
 
 def main():
-    im = Image.open(os.path.join(SRC, 'graphics/fonts/latin_normal.png'))
+    im = Image.open(os.path.join(SRC, 'graphics/fonts', VINFO['sheet']))
     assert im.size == (256, 512) and im.mode == 'P', (im.size, im.mode)
     px = im.load()
     widths = parse_widths(os.path.join(SRC, 'src/fonts.c'))
@@ -136,8 +140,8 @@ def main():
     mapping = {}
     mismatches = []
     for gid in range(512):
-        fg = cell_mask(px, gid, FG)
-        sh = cell_mask(px, gid, SHADOW)
+        fg = cell_mask(px, gid, FG, widths[gid])
+        sh = cell_mask(px, gid, SHADOW, widths[gid])
         ink = sum(map(sum, fg))
         ink_cols = [x for x in range(CELL) if any(fg[y][x] for y in range(CELL))]
         ink_rows = [y for y in range(CELL) if fg[y][x] for x in range(CELL) if fg[y][x]] if False else [y for y in range(CELL) if any(fg[y])]

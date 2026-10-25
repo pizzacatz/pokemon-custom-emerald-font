@@ -1,15 +1,37 @@
-"""Shared constants and helpers for the Emerald font project."""
+"""Shared constants and helpers for the Emerald font project.
+
+The game has five Latin fonts. Which one a script works on is chosen with the environment variable
+EMERALD_VARIANT (default "normal"). Normal keeps its data at data/; every other variant has the same
+layout under data/<variant>/ (mapping.json, masks/, svg_*/, glyph_overrides/ ...)."""
 import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'pokeemerald')
-DATA = os.path.join(ROOT, 'data')
 BUILD = os.path.join(ROOT, 'build')
+
+# sheet, width table in src/fonts.c, baseline row, game line pitch (FontInfo.maxLetterHeight; Small Narrow's
+# 8 is too tight for its own descenders, so it uses Small's 12), and the name fragment used in font names.
+VARIANTS = {
+    'normal':       dict(sheet='latin_normal.png',       widths='gFontNormalLatinGlyphWidths',      baseline=12, line=16, name=''),
+    'narrow':       dict(sheet='latin_narrow.png',       widths='gFontNarrowLatinGlyphWidths',      baseline=12, line=16, name='Narrow'),
+    'small':        dict(sheet='latin_small.png',        widths='gFontSmallLatinGlyphWidths',       baseline=11, line=12, name='Small'),
+    'short':        dict(sheet='latin_short.png',        widths='gFontShortLatinGlyphWidths',       baseline=11, line=14, name='Short'),
+    'small_narrow': dict(sheet='latin_small_narrow.png', widths='gFontSmallNarrowLatinGlyphWidths', baseline=11, line=12, name='Small Narrow'),
+}
+VARIANT = os.environ.get('EMERALD_VARIANT', 'normal')
+if VARIANT not in VARIANTS:
+    raise SystemExit(f'EMERALD_VARIANT={VARIANT!r}: expected one of {", ".join(VARIANTS)}')
+VINFO = VARIANTS[VARIANT]
+
+def data_dir(variant):
+    return os.path.join(ROOT, 'data') if variant == 'normal' else os.path.join(ROOT, 'data', variant)
+
+DATA = data_dir(VARIANT)
 CELL = 16          # sheet cell size in px
 GLYPH_H = 15       # rows actually used by the game (row 15 is padding)
-BASELINE_ROW = 12  # pixel row index of the first row *below* the baseline
+BASELINE_ROW = VINFO['baseline']  # pixel row index of the first row *below* the baseline
 PX = 100           # font units per source pixel
 UPM = 1600         # 16 px cell == 1 em
-FG, SHADOW = 1, 2  # palette indices in latin_normal.png (0 and 3 are background)
+FG, SHADOW = 1, 2  # palette indices in the font sheets (0 and 3 are background)
 
 def load_json(name):
     with open(os.path.join(DATA, name)) as f:

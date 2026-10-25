@@ -4,7 +4,7 @@ FullName: Emerald Rounded Game Regular
 FamilyName: Emerald Rounded Game
 Weight: Regular
 Copyright: Outlines derived from the Latin "normal" bitmap font of Pokémon Emerald as decompiled by the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.
-UComments: "2026-10-22: Created with FontForge (http://fontforge.org)"
+UComments: "2026-10-25: Created with FontForge (http://fontforge.org)"
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -160
@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 545 -1145574355 5937269]
+XUID: [1021 127 393177335 9384312]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1792645191
-ModificationTime: 1792645192
+CreationTime: 1792939075
+ModificationTime: 1792939077
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -3808,9 +3808,9 @@ SplineSet
  357 0 353 0 350 -0 c 2
  150 0 l 2
  117 0 21 38 1 140 c 0
- 0 143 0 147 -0 150 c 2
- 0 250 l 1
- 100 250 l 1
+ 0 143 0 147 -0 150 c 0
+ 0 166 0 184 -0 200 c 1
+ 100 200 l 1
  100 156 l 1
  107 129 129 107 156 100 c 1
  344 100 l 1

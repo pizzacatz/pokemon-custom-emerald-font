@@ -1,0 +1,61 @@
+{
+ "char": "O",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     2.5,
+     4.5,
+     null,
+     -0.3033
+    ],
+    [
+     3.5,
+     5.5
+    ],
+    [
+     3.5,
+     9.5,
+     null,
+     -0.3033
+    ],
+    [
+     2.5,
+     10.5
+    ],
+    [
+     1.5,
+     10.5,
+     null,
+     -0.3033
+    ],
+    [
+     0.5,
+     9.5
+    ],
+    [
+     0.5,
+     5.5,
+     null,
+     -0.3033
+    ],
+    [
+     1.5,
+     4.5
+    ]
+   ],
+   "closed": true
+  }
+ ],
+ "dots": [],
+ "join": "round",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "transfer from narrow (2 row/column edits)"
+}

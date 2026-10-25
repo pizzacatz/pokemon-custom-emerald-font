@@ -28,13 +28,13 @@ def specimens(report):
             rows, missing = [], set()
             for t in LINES:
                 im, miss = render_line(t, key, px); rows.append(im); missing |= set(miss)
-            stack(rows).save(os.path.join(BUILD, 'specimens', f'{key}_{px}px.png'))
+            stack(rows).save(os.path.join(BUILD, 'specimens', f'{OUT_PREFIX}{key}_{px}px.png'))
             report.setdefault('missing_in_specimen', {})[key] = sorted(f'U+{ord(c):04X}' for c in missing)
     # enlarged glyph comparisons across fonts
     for name, text in [('glyphs_upper', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), ('glyphs_lower', 'abcdefghijklmnopqrstuvwxyz'),
                        ('glyphs_digits_punct', '0123456789!?.,;:“”‘’&%×♂♀')]:
         rows = [label(render_line(text, k, 64)[0], k, 70) for k in FONTS]
-        stack(rows).save(os.path.join(BUILD, 'comparisons', f'{name}_64.png'))
+        stack(rows).save(os.path.join(BUILD, 'comparisons', f'{OUT_PREFIX}{name}_64.png'))
     # line-height / baseline check: two lines of text stacked using the font's line height
     for key in FONTS:
         face = freetype.Face(font_path(key)); face.set_char_size(32*64)
@@ -43,7 +43,7 @@ def specimens(report):
         out = Image.new('RGB', (max(i.width for i in ims), lh*2), (255, 255, 255))
         for i, im in enumerate(ims):
             out.paste(im, (0, i*lh))
-        out.save(os.path.join(BUILD, 'specimens', f'{key}_linepitch_32px.png'))
+        out.save(os.path.join(BUILD, 'specimens', f'{OUT_PREFIX}{key}_linepitch_32px.png'))
         report.setdefault('line_height_px_at_32', {})[key] = lh
 
 def font_checks(report):
@@ -87,7 +87,8 @@ def font_checks(report):
 
 def bitmap_roundtrip(report):
     """Render every mapped glyph of the exact font at 16 px (1 source px == 1 output px), monochrome,
-    unhinted, and compare with the source foreground mask. This is the definitive check that the exact
+    unhinted, and compare with the source foreground mask (rows counted from the cell top, baseline at
+    BASELINE_ROW). This is the definitive check that the exact
     outlines (including hole directions) survived the TTF round trip."""
     cps = load_json('codepoints.json'); mp = load_json('mapping.json')
     face = freetype.Face(font_path('exact')); face.set_char_size(16*64)
@@ -101,7 +102,7 @@ def bitmap_roundtrip(report):
         face.glyph.render(freetype.FT_RENDER_MODE_MONO)
         bm = face.glyph.bitmap
         got = [[0]*16 for _ in range(16)]
-        top = 12 - face.glyph.bitmap_top; left = face.glyph.bitmap_left
+        top = BASELINE_ROW - face.glyph.bitmap_top; left = face.glyph.bitmap_left
         for y in range(bm.rows):
             for x in range(bm.width):
                 if (bm.buffer[y*bm.pitch + x//8] >> (7 - x % 8)) & 1:
@@ -123,7 +124,7 @@ def main():
     font_checks(report)
     bitmap_roundtrip(report)
     specimens(report)
-    with open(os.path.join(BUILD, 'verification.json'), 'w') as f:
+    with open(os.path.join(BUILD, f'{OUT_PREFIX}verification.json'), 'w') as f:
         json.dump(report, f, indent=1)
     for k, r in report['fonts'].items():
         print(k, {x: r[x] for x in ('num_glyphs', 'cmap_entries', 'missing_required', 'missing_useful', 'missing_intended',

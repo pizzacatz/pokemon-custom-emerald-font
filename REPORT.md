@@ -82,6 +82,42 @@ Python 3.12, fonttools 4.67, freetype-py 2.5.
   at 32–128 px). Observations: strokes are uniform, bowls are smooth, holes stay open at 16 px,
   baseline and descenders align across fonts.
 
+## Other game fonts (Narrow, Small, Short, Small Narrow)
+
+Added 2026-10-25. Sheets `latin_narrow.png`, `latin_small.png`, `latin_short.png`, `latin_small_narrow.png`
+and their width tables from the same pokeemerald revision; same character map, code points and PUA
+layout as Normal. Each builds as Emerald Pixel Vector <Name> (exact) and Emerald Rounded <Name> Game.
+
+| Font | Baseline row | Line pitch | Cap / x-height | Overrides: identical, transfer, fuzzy, traced, hand |
+|---|---|---|---|---|
+| Narrow | 12 | 16 px | 9 / 6 px | 23, 43, 4, 8, 6 |
+| Short | 11 | 14 px | 8 / 5 px | 0, 60, 1, 13, 10 |
+| Small | 11 | 12 px | 7 / 5 px | 0, 55, 4, 12, 13 |
+| Small Narrow | 11 | 12 px (the game's 8 is too tight for its descenders) | 7 / 5 px | 68 (from Small), 0, 4, 12, 0 |
+
+Source quirks, kept as in the game:
+- Glyphs up to 8 px wide only draw the left half of their 16×16 cell (`DecompressGlyph_*`); the Narrow
+  sheet has stray pixels in the unused right half of cell 0xCD ("S"), so extraction ignores that half.
+- Small Narrow's width table gives `=` a width of 0 and makes `:` `;` `×` narrower than their ink, so
+  they overlap the next character exactly as in the game (reported by `verify.py` as ink outside the
+  advance in both Small Narrow fonts).
+
+Verification: the exact fonts round-trip to the game bitmaps at 16 px with zero mismatches; no
+missing or empty glyphs; every ported model covers every pixel of its glyph (no "missing" pixels
+in `port_report.json`), with scores in the same range as the hand-tuned Normal models (median about
+2.1–2.4; the largest are `&` at 7.4 in Narrow and Short, the same as Normal's, and Small's `“` at 6.0). Remaining FontForge validator notes: "wrong direction"
+on `3` (Narrow, Small, Small Narrow) and U+E054 (Short), which render correctly; the 0.2 px cap
+overshoots of accents, `Ç` `ç` `Q` in Small, as with Normal's circumflexes.
+
+## Cut masks and FontForge's boolean bug
+
+FontForge's `exclude` misbehaves when a cut edge lies exactly on an outline edge, which clip boxes and
+terminal trims do by design: it can drop whole contours, half-invert the cut, or silently do nothing.
+`build_font.py` now checks every cut (area lost, and a 1/4 px sample grid around the cut) and retries
+it grown outward by up to 2.5 font units, which `g.round()` absorbs. This changed two Normal glyphs:
+the trim at the left terminal of `J` had never been applied (the editor showed it, the font did not),
+and Emerald Rounded's `¥` had been left from before its last override edit (Rounded Game was current).
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

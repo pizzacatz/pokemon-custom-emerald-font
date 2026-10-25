@@ -1,4 +1,5 @@
-"""Rebuild Emerald Rounded Game and render the given characters over Emerald Pixel Vector.
+"""Rebuild Emerald Rounded Game (or the EMERALD_VARIANT version of it) and render the given characters over
+the matching Emerald Pixel Vector.
 
 usage:  ./preview.sh "NMK"            (characters to preview; default: the overridden ones)
         ./preview.sh --no-build "a"   (skip rebuild, just render)
@@ -22,7 +23,7 @@ if text is None:
                  for spec in [json.load(open(os.path.join(DATA, 'glyph_overrides', fn)))]
                  for c in ([spec['char']] if isinstance(spec['char'], str) else spec['char']) if len(c) == 1})
     text = ''.join(ov)
-out = os.path.join(BUILD, 'preview'); os.makedirs(out, exist_ok=True)
+out = os.path.join(BUILD, 'preview', '' if VARIANT == 'normal' else VARIANT); os.makedirs(out, exist_ok=True)
 
 def glyph_img(ch, key, px):
     """Render one glyph at px size, unhinted, return an 'L' alpha image aligned to the 16x16 cell."""
@@ -30,7 +31,7 @@ def glyph_img(ch, key, px):
     face.load_char(ord(ch), freetype.FT_LOAD_NO_HINTING); face.glyph.render(freetype.FT_RENDER_MODE_NORMAL)
     bm = face.glyph.bitmap
     cell = Image.new('L', (px, px), 0)
-    top = round(px*12/16) - face.glyph.bitmap_top; left = face.glyph.bitmap_left
+    top = round(px*BASELINE_ROW/16) - face.glyph.bitmap_top; left = face.glyph.bitmap_left
     g = Image.frombytes('L', (bm.width, bm.rows), bytes(bm.buffer)) if bm.width else None
     if g is not None:
         cell.paste(g, (left, top))
@@ -42,7 +43,7 @@ for ch in text:
     S = 16*PXSIZE
     im = Image.new('RGB', (S, S), (255, 255, 255)); d = ImageDraw.Draw(im)
     for i in range(17):
-        c = (200, 200, 200) if i not in (3, 6, 12) else (120, 120, 120)
+        c = (200, 200, 200) if i not in (3, 6, BASELINE_ROW) else (120, 120, 120)
         d.line([(i*PXSIZE, 0), (i*PXSIZE, S)], fill=(225, 225, 225)); d.line([(0, i*PXSIZE), (S, i*PXSIZE)], fill=c)
     for key in ('exact', 'smoothgame'):
         a, adv = glyph_img(ch, key, S)
