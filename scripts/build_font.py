@@ -11,13 +11,13 @@ from common import *
 TREATMENT = sys.argv[1]
 META = {
     'exact':   dict(family='Emerald Pixel Vector', style='Regular', file='EmeraldPixelVector-Regular',
-                    tracking=0, lsb=0, space=3),
+                    tracking=0, lsb=0),
     'rounded': dict(family='Emerald Pixel Soft', style='Regular', file='EmeraldPixelSoft-Regular',
-                    tracking=0, lsb=0, space=3),
+                    tracking=0, lsb=0),
     'smooth':  dict(family='Emerald Rounded', style='Regular', file='EmeraldRounded-Regular',
-                    tracking=1, lsb=0.5, space=4),   # extra px of advance and half-px shift for smooth text
+                    tracking=1, lsb=0.5),   # extra px of advance and half-px shift for smooth text
     'smoothgame': dict(family='Emerald Rounded Game', style='Regular', file='EmeraldRoundedGame-Regular',
-                    tracking=0, lsb=0, space=3),     # smooth outlines, spacing identical to the game
+                    tracking=0, lsb=0),     # smooth outlines, spacing identical to the game
 }[TREATMENT]
 if VARIANT != 'normal':
     # e.g. "Emerald Pixel Vector Narrow" / "Emerald Rounded Narrow Game"
@@ -323,10 +323,8 @@ def main():
             if lsb:
                 g.transform(psMat.translate(lsb*PX, 0))
         # advance: in-game width already includes the 1 px shadow column (acts as the right side bearing)
-        if gid == 0 or rec['name'] == 'space':
-            g.width = META['space']*PX
-        else:
-            g.width = (e['width'] + tracking)*PX
+        # (the space too: 3 px in every table except Short Narrower's, which gives it 1)
+        g.width = (e['width'] + tracking)*PX
     f.selection.all()
     f.addExtrema() if OUTLINES != 'exact' else None
     os.makedirs(os.path.join(BUILD, 'fonts'), exist_ok=True)
