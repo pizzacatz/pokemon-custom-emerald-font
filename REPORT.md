@@ -209,6 +209,11 @@ pixel centres, a 67.5-degree arc wherever a stroke turns through a single diagon
 joints. The older plain trace is kept for a glyph only where the convention trace misses a pixel or
 scores more than 1 worse (brackets built from two-pixel steps, solid blocks).
 
+Accented letters now use their base letter's hand model (`scripts/share_base_models.py`) wherever the
+letter part matches pixel for pixel: À Á Â Ä Ñ Ò Ó Ô Ö Ù Ú Û Ü and their lowercase in most fonts. Only the
+accent is traced, and it is drawn after the model's cuts, so clips can't trim it. The dots of i and j are
+squares (one pixel exactly) in every font.
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

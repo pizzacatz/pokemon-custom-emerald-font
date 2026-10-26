@@ -24,10 +24,11 @@
   {
    "x": 1.5,
    "y": 3.5,
-   "r": 0.65
+   "r": 0.5,
+   "shape": "square"
   }
  ],
  "join": "round",
- "dot_shape": "circle",
- "dot_corner": 0.25
+ "dot_shape": "square",
+ "dot_corner": 0
 }

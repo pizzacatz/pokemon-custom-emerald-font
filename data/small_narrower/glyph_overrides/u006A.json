@@ -58,18 +58,14 @@
  ],
  "dots": [
   {
-   "x": 1.5375,
-   "y": 4.425,
-   "r": 0.5375
-  },
-  {
    "x": 1.5,
    "y": 4.5,
-   "r": 0.5
+   "r": 0.5,
+   "shape": "square"
   }
  ],
  "join": "miter",
- "dot_shape": "circle",
- "dot_corner": 0.25,
+ "dot_shape": "square",
+ "dot_corner": 0,
  "_ported": "transfer from small_narrow (1 row/column edits)"
 }

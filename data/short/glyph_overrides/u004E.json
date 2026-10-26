@@ -1,8 +1,11 @@
 {
- "char": "N",
+ "char": [
+  "N",
+  "Ñ"
+ ],
  "rows": [
-  0,
-  16
+  3,
+  11
  ],
  "width": 1,
  "joint_radius": 1,

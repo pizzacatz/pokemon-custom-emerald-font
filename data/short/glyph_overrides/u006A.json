@@ -48,11 +48,12 @@
   {
    "x": 3.5,
    "y": 3.5,
-   "r": 0.5
+   "r": 0.5,
+   "shape": "square"
   }
  ],
  "join": "miter",
- "dot_shape": "circle",
- "dot_corner": 0.25,
+ "dot_shape": "square",
+ "dot_corner": 0,
  "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
 }

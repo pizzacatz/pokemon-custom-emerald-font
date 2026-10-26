@@ -1,7 +1,7 @@
 """Quick numpy rasteriser for the smooth stroke models, used to score a glyph model against its pixel mask
 without a FontForge build. Strokes get butt ends (smooth.extend_caps already adds the square caps) and
 their join (miter by default, cut to a bevel past 4 stroke widths as in build_font.py; bevel; round); dots
-and cut masks as in build_font.py. Accurate to a few hundredths of a pixel, which is
+and cut masks as in build_font.py (strokes and dots marked "uncut" are added after the cuts). Accurate to a few hundredths of a pixel, which is
 plenty for ranking candidate models and for review sheets.
 
 coverage(strokes, dots, cuts) -> 16x16 float array (0..1 ink coverage per source pixel)
@@ -77,16 +77,24 @@ def _poly_mask(poly):
     return inside
 
 def coverage(strokes, dots, cuts, default_w=1.0):
-    ink = np.zeros(GX.shape, bool)
+    ink = np.zeros(GX.shape, bool); uncut = np.zeros(GX.shape, bool)
     for s in strokes:
-        ink |= _stroke_mask(s, default_w)
+        if s.get('uncut'):
+            uncut |= _stroke_mask(s, default_w)
+        else:
+            ink |= _stroke_mask(s, default_w)
     for d in dots:
         if d['shape'] == 'circle':
-            ink |= (GX-d['x'])**2 + (GY-d['y'])**2 <= d['r']**2
+            m = (GX-d['x'])**2 + (GY-d['y'])**2 <= d['r']**2
         else:
-            ink |= (abs(GX-d['x']) <= d['r']) & (abs(GY-d['y']) <= d['r'])
+            m = (abs(GX-d['x']) <= d['r']) & (abs(GY-d['y']) <= d['r'])
+        if d.get('uncut'):
+            uncut |= m
+        else:
+            ink |= m
     for poly in cuts:
         ink &= ~_poly_mask(poly)
+    ink |= uncut                          # an accent traced beside a letter's model is not cut
     return ink.reshape(16, SS, 16, SS).mean(axis=(1, 3))
 
 def score(cov, mask):

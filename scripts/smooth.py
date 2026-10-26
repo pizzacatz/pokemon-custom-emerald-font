@@ -429,8 +429,13 @@ def smooth_glyph(mask, char=None, plain=False):
         for y in range(rows[0], rows[1]):
             mask[y] = [0]*len(mask[y])
         strokes.extend(override_strokes(jov)); cuts.extend(override_cuts(jov))
-        for d in jov.get('dots', []):
-            big_dots.append(norm_dot(d, jov.get('dot_shape', 'circle'), jov.get('dot_corner', 0.25)))
+        mdots = [norm_dot(d, jov.get('dot_shape', 'circle'), jov.get('dot_corner', 0.25)) for d in jov.get('dots', [])]
+        # ink outside `rows` (the accent of a letter sharing its base letter's model) is traced on its own
+        # and marked "uncut": the model's cuts and clips trim the model only, never the accent
+        if any(map(any, mask)):
+            rs, rd, _ = smooth_glyph(mask)
+            strokes += [dict(t, uncut=True) for t in rs]; mdots += [dict(d, uncut=True) for d in rd]
+        return strokes, mdots, cuts
     elif ov:
         for y in range(ov['rows'][0], ov['rows'][1]):
             mask[y] = [0]*len(mask[y])

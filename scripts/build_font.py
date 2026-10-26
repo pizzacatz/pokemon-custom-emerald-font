@@ -132,10 +132,11 @@ def smooth_glyph(g, gid):
     # FontForge strokes each centreline; the union and the cuts are done with skia-pathops. FontForge's own
     # boolean ops break where edges coincide, which clip boxes, terminal trims and strokes meeting end to
     # end do by design: contours vanish, cuts half-invert, or the space between stems fills in.
-    pieces = []
+    pieces, uncut = [], []      # "uncut" pieces (an accent traced beside a letter's model) skip the cuts
     for s in rec['strokes']:
+        into = uncut if s.get('uncut') else pieces
         if 'fill' in s:
-            pieces.append(pathops.simplify(poly_path([pt(*q) for q in s['fill']]), fix_winding=True))
+            into.append(pathops.simplify(poly_path([pt(*q) for q in s['fill']]), fix_winding=True))
             continue
         lay = fontforge.layer()
         c = fontforge.contour()
@@ -147,16 +148,18 @@ def smooth_glyph(g, gid):
         lay += c
         # caps are pre-extended in smooth.py. A miter longer than MITER_LIMIT stroke widths (an acute joint, or
         # a stroke doubling back on itself) is cut square instead of running out into a spike.
-        pieces.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'miter'),
+        into.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'miter'),
                                          joinlimit=MITER_LIMIT)))
     for d in rec['dots']:
         lay = fontforge.layer(); lay += dot_contour(d)
-        pieces.append(to_path(lay))
+        (uncut if d.get('uncut') else pieces).append(to_path(lay))
     ink = pathops.Path()
     for p in pieces:
         ink = pathops.op(ink, p, pathops.PathOp.UNION)
     for poly in rec.get('cuts', []):
         ink = pathops.op(ink, poly_path([pt(*q) for q in poly]), pathops.PathOp.DIFFERENCE)
+    for p in uncut:
+        ink = pathops.op(ink, p, pathops.PathOp.UNION)
     g.clear()
     ink.draw(g.glyphPen())
     g.correctDirection()
