@@ -89,6 +89,6 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "_ported": "transfer from short (1 row/column edits)"
 }

@@ -132,6 +132,6 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "_ported": "transfer from narrow (1 row/column edits)"
 }

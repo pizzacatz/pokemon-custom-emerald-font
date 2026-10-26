@@ -27,7 +27,7 @@
    "r": 0.65
   }
  ],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "_ported": "transfer from short_narrow (0 row/column edits)"

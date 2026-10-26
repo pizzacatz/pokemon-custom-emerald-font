@@ -33,7 +33,7 @@
    ]
   }
  ],
- "join": "round",
+ "join": "miter",
  "dot_corner": 0.25,
  "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
 }

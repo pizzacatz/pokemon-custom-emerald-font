@@ -169,6 +169,7 @@ and are not changed by overrides.
   "dots": [[2.5,1.5,0.5], [4.5,1.5,0.5,"square"], [6.5,1.5,0.5,"rounded",0.2]], // x, y, half-size, shape, corner radius
   "dot_shape": "circle",       // default dot shape: circle | square | rounded; "dot_corner" = default corner radius
   "join": "round",             // corner style where a stroke bends: round | miter (sharp) | bevel (flat); also per stroke
+                               // (miters longer than 4 stroke widths are cut square; the fonts other than Normal use miter)
   "clip_y": [3, 12]            // keep only this band of rows (and/or "clip_x"); trims round joins flush with cap/baseline
 }
 ```

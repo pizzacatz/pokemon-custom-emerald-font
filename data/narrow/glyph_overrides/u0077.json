@@ -39,13 +39,17 @@
    "points": [
     [
      0.5,
-     10.5,
+     11.75,
+     0
+    ],
+    [
+     2,
+     10.25,
      0
     ],
     [
      3.5,
-     10.5,
-     0
+     11.75
     ]
    ]
   },
@@ -79,8 +83,16 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention",
+ "clip_y": [
+  0,
+  12
+ ],
+ "clip_x": [
+  0,
+  4
+ ]
 }

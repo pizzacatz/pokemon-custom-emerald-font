@@ -34,30 +34,6 @@
    "width": 1
   },
   {
-   "cut": [
-    [
-     1.5,
-     3
-    ],
-    [
-     -2,
-     3
-    ],
-    [
-     -1,
-     1.5
-    ],
-    [
-     1.0,
-     1.5
-    ],
-    [
-     1.5,
-     3
-    ]
-   ]
-  },
-  {
    "points": [
     [
      3.5,
@@ -65,7 +41,7 @@
     ],
     [
      3.5,
-     10.0
+     10
     ]
    ],
    "sharp": true
@@ -85,53 +61,35 @@
   {
    "cut": [
     [
-     3.0,
+     1.75,
+     8
+    ],
+    [
+     3.25,
      12
     ],
     [
-     4.5,
+     1.75,
      12
     ],
     [
-     4.5,
-     13.5
-    ],
-    [
-     3.0,
-     13.5
-    ],
-    [
-     3.0,
-     12
-    ]
-   ]
-  },
-  {
-   "cut": [
-    [
-     4,
-     11.0
-    ],
-    [
-     4,
-     12
-    ],
-    [
-     5,
-     12
-    ],
-    [
-     5,
-     11.0
-    ],
-    [
-     4,
-     11.0
+     1.75,
+     11.25
     ]
    ]
   }
  ],
  "dots": [],
- "join": "round",
- "_ported": "transfer from normal (1 row/column edits); diagonal endpoints refitted by hand"
+ "join": "miter",
+ "_ported": "transfer from normal (1 row/column edits); diagonal endpoints refitted by hand",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "clip_y": [
+  3,
+  12
+ ],
+ "clip_x": [
+  0,
+  4
+ ]
 }

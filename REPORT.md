@@ -154,6 +154,14 @@ path booleans, as used by fontmake), which handles coincident edges. Every other
 Rounded fonts renders exactly as before. Points that rounding to whole font units puts on top of
 each other are removed, so the FontForge validator reports nothing for any Rounded font.
 
+## Mitred joints in the other fonts
+
+The eight fonts other than Normal draw their sharp joints (joint radius 0) with miter joins instead of
+round ones, so a sharp corner keeps its point; Normal's hand-made models are unchanged, and bevels stay
+bevels. A miter longer than 4 stroke widths (SVG's default limit: joints sharper than about 29°, or a
+stroke doubling back on itself) is cut square, which stops spikes on `N`, `3`, `&`, `j` and `y`. Newly
+ported glyphs get miter joins too. About 45 glyphs per font change, by a fraction of a pixel at each corner.
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

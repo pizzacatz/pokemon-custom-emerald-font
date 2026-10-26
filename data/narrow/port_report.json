@@ -19,9 +19,9 @@
  },
  "W": {
   "char": "W",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 0.531,
   "missing": 0,
   "extra": 0
@@ -299,8 +299,8 @@
  "u004E": {
   "char": "N",
   "method": "hand",
-  "from": "normal",
-  "note": "1 row/column edits; diagonal refitted",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 4.719,
   "missing": 0,
   "extra": 3
@@ -577,18 +577,18 @@
  },
  "u0076": {
   "char": "v",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 1.719,
   "missing": 0,
   "extra": 0
  },
  "u0077": {
   "char": "w",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 0.531,
   "missing": 0,
   "extra": 0

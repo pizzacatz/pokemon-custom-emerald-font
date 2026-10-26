@@ -97,7 +97,7 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "_ported": "identical from small"

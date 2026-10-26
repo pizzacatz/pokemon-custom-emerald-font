@@ -63,7 +63,7 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "_ported": "fuzzy from normal (1 row/column edits, 1 px differ)"

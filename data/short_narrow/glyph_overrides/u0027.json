@@ -37,7 +37,7 @@
    "r": 1
   }
  ],
- "join": "round",
+ "join": "miter",
  "dot_shape": "square",
  "dot_corner": 0.25,
  "_ported": "identical from short"

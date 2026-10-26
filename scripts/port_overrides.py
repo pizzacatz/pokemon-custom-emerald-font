@@ -360,7 +360,7 @@ def trace(mask, ch):
                 strokes.append({'points': pts, **({'closed': True} if rclosed else {})})
                 strokes += [{'cut': c} for c in cuts]
     return {'char': ch, 'rows': [0, 16], 'width': 1, 'joint_radius': 1, 'strokes': strokes, 'dots': dots,
-            'join': 'round', 'dot_shape': 'circle', 'dot_corner': 0.25}
+            'join': 'miter', 'dot_shape': 'circle', 'dot_corner': 0.25}
 
 # ---------------------------------------------------------------- scoring + main
 def model_score(spec, mask, ch):
@@ -433,6 +433,12 @@ def main():
                     choice = f
         _, method, sv, spec, sc, note = choice
         spec['char'] = nspec['char']
+        # the ported fonts' sharp joints are mitred, not rounded like most of Normal's (bevels are kept)
+        if spec.get('join', 'round') == 'round':
+            spec['join'] = 'miter'
+        for st in spec['strokes']:
+            if st.get('join') == 'round':
+                st['join'] = 'miter'
         spec['_ported'] = f'{method} from {sv}' + (f' ({note})' if note else '') if sv else \
                           'traced from the pixels in the 67.5 degree corner-arc convention'
         with open(os.path.join(tdir, name + '.json'), 'w', encoding='utf-8') as f:

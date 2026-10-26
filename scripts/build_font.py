@@ -107,6 +107,7 @@ def dot_contour(d):
     return c
 
 _scratch = fontforge.font()
+MITER_LIMIT = 4    # as SVG's default stroke-miterlimit: joints sharper than about 29 degrees are cut
 
 def to_path(lay):
     """A FontForge layer as a skia-pathops path, with outer contours and counters oriented consistently."""
@@ -141,8 +142,10 @@ def smooth_glyph(g, gid):
             c.cubicTo(pt(*c1), pt(*c2), pt(*p3))
         c.closed = bool(s['closed'])
         lay += c
-        # caps are pre-extended in smooth.py
-        pieces.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'round'))))
+        # caps are pre-extended in smooth.py. A miter longer than MITER_LIMIT stroke widths (an acute joint, or
+        # a stroke doubling back on itself) is cut square instead of running out into a spike.
+        pieces.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'round'),
+                                         joinlimit=MITER_LIMIT)))
     for d in rec['dots']:
         lay = fontforge.layer(); lay += dot_contour(d)
         pieces.append(to_path(lay))

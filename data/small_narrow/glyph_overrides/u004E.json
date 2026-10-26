@@ -132,6 +132,6 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "_ported": "identical from small"
 }

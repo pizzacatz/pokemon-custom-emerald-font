@@ -75,7 +75,7 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "_ported": "transfer from small_narrow (1 row/column edits)"
