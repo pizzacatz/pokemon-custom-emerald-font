@@ -1,1 +1,1 @@
-{"id": 174, "fallback_rounded_outline": false, "stroke_width": 1.0, "dot_r": 0.5, "strokes": [{"closed": false, "beziers": [[[0.0, 7.5], [1.3333333333333333, 7.5], [3.6666666666666665, 7.5], [5.0, 7.5]]]}], "dots": [], "cuts": []}
+{"id": 174, "fallback_rounded_outline": false, "stroke_width": 1.0, "dot_r": 0.5, "strokes": [{"closed": false, "beziers": [[[0.0, 7.5], [1.3333333333333333, 7.5], [3.6666666666666665, 7.5], [5.0, 7.5]]], "width": 1, "join": "miter"}], "dots": [], "cuts": []}

@@ -112,7 +112,6 @@
    },
    "empty_mapped_glyphs": [],
    "vertical_overflow": [
-    "U+00BA",
     "U+00C0",
     "U+00C1",
     "U+00C2",
@@ -127,7 +126,6 @@
     "U+00D9",
     "U+00DA",
     "U+00DB",
-    "U+E02C",
     "U+E0A0"
    ],
    "zero_advance": [],

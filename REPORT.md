@@ -203,6 +203,12 @@ that way, and the rasteriser that scores models draws each stroke's own join. Ev
 its join and radius, so only automatically traced glyphs change. The Y of the fonts other than Normal and
 Short now has sharp joints where its arms meet the stem.
 
+Glyphs without a model (accented letters, Œ, ß, ¿, ª, º, ç and some pictograms) are now drawn by the
+same convention trace that ports models between fonts (`port_overrides.trace`): straight strokes through
+pixel centres, a 67.5-degree arc wherever a stroke turns through a single diagonal pixel step, and sharp
+joints. The older plain trace is kept for a glyph only where the convention trace misses a pixel or
+scores more than 1 worse (brackets built from two-pixel steps, solid blocks).
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

@@ -5,7 +5,8 @@ Treatment 3 (data/svg_smooth): reconstructed centerline strokes. Each glyph is m
 graph of pixel centres; chains are split at true corners (>= 90 deg turns), stepped diagonals
 are replaced by straight lines, remaining joints are kept sharp (mitred when stroked), and the result
 is written as centreline paths (stroked to outlines in build_font.py) plus round dots. A joint is rounded
-only where a model asks for it (a joint radius above 0, or join "round").
+only where a model asks for it (a joint radius above 0, or join "round"). Glyphs without a model normally
+take the convention trace of port_overrides.trace instead, with 67.5 degree arcs (see smooth_glyph).
 """
 import os, sys, json, math
 sys.path.insert(0, os.path.dirname(__file__))
@@ -395,11 +396,33 @@ def line_strokes(polylines, sharp=False):
             out.append({'closed': False, 'beziers': rounded_path(pl, False)})
     return out
 
-def smooth_glyph(mask, char=None):
+AUTO_SLACK = 1.0      # the convention trace may score up to this much worse than the plain trace and still win
+
+def smooth_glyph(mask, char=None, plain=False):
+    """Strokes, dots and cuts of one glyph: its override if it has one, else the convention trace of
+    port_overrides.trace (straight strokes, 67.5 degree arcs at single diagonal steps, sharp joints), unless
+    that misses a pixel the plain trace below covers or scores more than AUTO_SLACK worse (zigzags of
+    two-pixel steps, solid blocks). plain=True gives the plain trace."""
+    jov = JSON_OVERRIDES.get(char)
+    if not jov and not OVERRIDES.get(char) and not plain:
+        import raster
+        from port_overrides import trace
+        base = smooth_glyph(mask, char, plain=True)
+        try:
+            spec = trace(mask, char)
+            conv = (override_strokes(spec), [norm_dot(d, spec['dot_shape'], spec['dot_corner']) for d in spec['dots']],
+                    override_cuts(spec))
+        except Exception:
+            return base
+        def score(r):
+            st = [dict(s, beziers=list(s['beziers'])) for s in r[0]]
+            extend_caps(st)
+            return raster.score(raster.coverage(st, r[1], r[2]), mask)
+        a, b = score(base), score(conv)
+        return conv if b['missing'] <= a['missing'] and b['err'] <= a['err'] + AUTO_SLACK else base
     mask = [row[:] for row in mask]
     strokes, big_dots = [], []
     cuts = []
-    jov = JSON_OVERRIDES.get(char)
     ov = OVERRIDES.get(char)
     if jov:
         rows = jov.get('rows', [0, 16])
