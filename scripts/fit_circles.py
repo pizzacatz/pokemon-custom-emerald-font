@@ -61,7 +61,7 @@ def main():
                 digit = trace(inner, chars[0])
                 spec = {'char': chars if len(chars) > 1 else chars[0], 'rows': [0, 16], 'width': 1, 'joint_radius': 0,
                         'strokes': [{'circle': circle}] + digit['strokes'], 'dots': digit['dots'], 'join': 'miter',
-                        'dot_shape': 'circle', 'dot_corner': 0.25,
+                        'dot_shape': 'square', 'dot_corner': 0.25,
                         '_ported': 'circle and traced digit fitted to the pixels by fit_circles.py'}
                 if cp in DRAWN:
                     dy = circle['center'][1] - 7

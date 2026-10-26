@@ -4,7 +4,7 @@ Treatment 2 (data/svg_rounded): exact outline with every corner softened by a sm
 Treatment 3 (data/svg_smooth): reconstructed centerline strokes. Each glyph is modelled as a
 graph of pixel centres; chains are split at true corners (>= 90 deg turns), stepped diagonals
 are replaced by straight lines, remaining joints are kept sharp (mitred when stroked), and the result
-is written as centreline paths (stroked to outlines in build_font.py) plus round dots. A joint is rounded
+is written as centreline paths (stroked to outlines in build_font.py) plus dots (square by default). A joint is rounded
 only where a model asks for it (a joint radius above 0, or join "round"). Glyphs without a model normally
 take the convention trace of port_overrides.trace instead, with 67.5 degree arcs (see smooth_glyph).
 """
@@ -364,7 +364,7 @@ def override_cuts(spec):
         x0, x1 = spec['clip_x']; cuts += [[[-2, -2], [x0, -2], [x0, 18], [-2, 18]], [[x1, -2], [18, -2], [18, 18], [x1, 18]]]
     return cuts
 
-def norm_dot(d, shape='circle', corner=0.25):
+def norm_dot(d, shape='square', corner=0.25):
     """Dot spec -> {x, y, r, shape, corner}. Accepts [x,y], [x,y,r], [x,y,r,shape], [x,y,r,shape,corner] or a dict.
     r is the half-size (circle radius / half the square side); corner is the rounded-square corner radius in px."""
     if isinstance(d, dict):
@@ -429,7 +429,7 @@ def smooth_glyph(mask, char=None, plain=False):
         for y in range(rows[0], rows[1]):
             mask[y] = [0]*len(mask[y])
         strokes.extend(override_strokes(jov)); cuts.extend(override_cuts(jov))
-        mdots = [norm_dot(d, jov.get('dot_shape', 'circle'), jov.get('dot_corner', 0.25)) for d in jov.get('dots', [])]
+        mdots = [norm_dot(d, jov.get('dot_shape', 'square'), jov.get('dot_corner', 0.25)) for d in jov.get('dots', [])]
         # ink outside `rows` (the accent of a letter sharing its base letter's model) is traced on its own
         # and marked "uncut": the model's cuts and clips trim the model only, never the accent
         if any(map(any, mask)):
@@ -464,7 +464,7 @@ def smooth_glyph(mask, char=None, plain=False):
             if segs:
                 strokes.append({'closed': rclosed, 'beziers': segs})
     dots = [norm_dot((x+0.5, y+0.5, DOT_R)) for x, y in dots if isinstance(x, int)] + \
-           [t if isinstance(t, dict) else norm_dot((t[0], t[1], BIG_DOT_R) if len(t) == 2 else t) for t in big_dots]
+           [t if isinstance(t, dict) else norm_dot((t[0], t[1], BIG_DOT_R) if len(t) == 2 else t, 'circle') for t in big_dots]   # 2x2 blocks: round joins of strokes, not dots
     return strokes, dots, cuts
 
 def strokes_to_svg_d(strokes):

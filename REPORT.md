@@ -37,7 +37,7 @@ Python 3.12, fonttools 4.67, freetype-py 2.5.
   corners), alternating-turn staircases are replaced by straight lines (N, Z, 7, V, K legs…), the
   remaining 45° joints are rounded with Bézier arcs (radius ≤ 1 px), and the centrelines are stroked
   1 px wide with square caps/round joins in FontForge, then overlap-removed and simplified.
-  Single pixels become round dots (r 0.5 px), 2×2 blocks become round dots (r 1 px) that connect to
+  Single pixels become square dots (r 0.5 px), 2×2 blocks become round dots (r 1 px) that connect to
   any tail (comma, quotes, semicolon). N, M, K, W, Ñ and × have 2 px-thick pixel diagonals that the
   centreline model cannot infer, so their skeletons are hand-defined (`OVERRIDES` in `smooth.py`).
   Pictograms with filled areas (arrows, ▶, most emoji) fall back to the softened pixel outline.
@@ -211,8 +211,11 @@ scores more than 1 worse (brackets built from two-pixel steps, solid blocks).
 
 Accented letters now use their base letter's hand model (`scripts/share_base_models.py`) wherever the
 letter part matches pixel for pixel: À Á Â Ä Ñ Ò Ó Ô Ö Ù Ú Û Ü and their lowercase in most fonts. Only the
-accent is traced, and it is drawn after the model's cuts, so clips can't trim it. The dots of i and j are
-squares (one pixel exactly) in every font.
+accent is traced, and it is drawn after the model's cuts, so clips can't trim it.
+
+Dots are square by default: a model that names no dot shape, and every traced dot (the umlauts, ï, the
+other single pixels), is a one-pixel square. The dots of i, j, % and the Small Narrower semicolon were
+round and are now square too. The centre of the Small fonts' CIRCLE_DOT (E115) stays round.
 
 ## Known limitations / remaining defects
 

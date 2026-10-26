@@ -184,7 +184,7 @@ def remap_spec(spec, kx, ky):
     dots = []
     for d in out.get('dots', []):
         # map the dot's box, not just its centre: a dot over a deleted column or row shrinks with it
-        n = smooth.norm_dot(d, out.get('dot_shape', 'circle'), out.get('dot_corner', 0.25))
+        n = smooth.norm_dot(d, out.get('dot_shape', 'square'), out.get('dot_corner', 0.25))
         x0, x1 = fx(n['x'] - n['r']), fx(n['x'] + n['r'])
         y0, y1 = fy(n['y'] - n['r']), fy(n['y'] + n['r'])
         r = round(max(min(n['r'], 0.5), min(x1 - x0, y1 - y0) / 2), 4)   # never below one pixel
@@ -367,7 +367,7 @@ def trace(mask, ch):
                 strokes.append({'points': pts, **({'closed': True} if rclosed else {})})
                 strokes += [{'cut': c} for c in cuts]
     return {'char': ch, 'rows': [0, 16], 'width': 1, 'joint_radius': 0, 'strokes': strokes, 'dots': dots,
-            'join': 'miter', 'dot_shape': 'circle', 'dot_corner': 0.25}
+            'join': 'miter', 'dot_shape': 'square', 'dot_corner': 0.25}
 
 # ---------------------------------------------------------------- scoring + main
 def model_score(spec, mask, ch):
