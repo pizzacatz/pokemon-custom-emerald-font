@@ -18,6 +18,8 @@ def _bez_points(b, n=8):
     return (1-t)**3*p0 + 3*(1-t)**2*t*c1 + 3*(1-t)*t**2*c2 + t**3*p3
 
 def _stroke_mask(s, default_w=1.0):
+    if 'fill' in s:
+        return _poly_mask(s['fill'])
     w = s.get('width', default_w); h2 = (w/2)**2
     pts = [_bez_points(b) for b in s['beziers']]
     if not pts:

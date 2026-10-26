@@ -165,6 +165,8 @@ def remap_spec(spec, kx, ky):
     for st in out.get('strokes', []):
         if 'points' in st:
             st['points'] = [[fx(p[0]), fy(p[1])] + list(p[2:]) for p in st['points']]
+        if 'fill' in st:
+            st['fill'] = [[fx(p[0]), fy(p[1])] for p in st['fill']]
         if 'cut' in st:
             st['cut'] = [[fx(p[0]), fy(p[1])] for p in st['cut']]
             if area(st['cut']) < 0.01:          # squashed flat by a deleted row/column: nothing left to cut
@@ -395,6 +397,8 @@ def main():
         chs = chars_of(nspec)
         if only and not set(chs) & set(only):
             continue
+        if name in existing and report.get(name, {}).get('method') == 'fitted':
+            continue                      # solid shapes fitted to this font's own pixels by fit_fills.py
         if name in existing and (not force or (report.get(name, {}).get('method') == 'hand' and not replace)):
             continue                      # --force re-ports, but only --replace replaces a hand-modelled glyph
         ch = chs[0]
@@ -447,7 +451,7 @@ def main():
     json.dump(report, open(rpath, 'w'), indent=1, ensure_ascii=False)
     from collections import Counter
     print(variant, dict(Counter(v['method'] for v in report.values())))
-    review = sorted((v['err'], n) for n, v in report.items() if v['method'] not in ('identical', 'transfer', 'hand'))
+    review = sorted((v['err'], n) for n, v in report.items() if v['method'] not in ('identical', 'transfer', 'hand', 'fitted'))
     print('to review:', ' '.join(f"{report[n]['char'] if isinstance(report[n]['char'], str) else report[n]['char'][0]}:{report[n]['method'][0]}{e:g}" for e, n in review))
 
 if __name__ == '__main__':

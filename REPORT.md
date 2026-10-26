@@ -162,6 +162,23 @@ bevels. A miter longer than 4 stroke widths (SVG's default limit: joints sharper
 stroke doubling back on itself) is cut square, which stops spikes on `N`, `3`, `&`, `j` and `y`. Newly
 ported glyphs get miter joins too. About 45 glyphs per font change, by a fraction of a pixel at each corner.
 
+## Pictograms
+
+The symbols the game shows next to text are modelled in all nine Rounded Game fonts instead of being
+softened pixel art or plain traces:
+
+- Lv (E034) has its own model, a copy of Lv2's (E105), which draws the same pixels in seven of the
+  fonts; Small Narrower and Short Narrower draw Lv differently and have their own ports.
+- PLUS (E104), the POKéBLOCK pieces (E055, E056; PK and MN were already modelled), and the move
+  menu's effectiveness marks: CIRCLE_DOT (E115) and CIRCLE_HOLLOW (E118, also U+25CB) as circles,
+  TRIANGLE (E116) with rounded corners, BIG_MULT_X (E117) clipped flat like `X`. Small, Small Narrow
+  and Small Narrower draw smaller marks (a 6-pixel ring with a solid centre) and have their own models.
+- The arrows are solid, so they are polygons rather than strokes (the new `fill` entry):
+  E100-E103, the text arrows ↑ ↓ ← → (E079-E07C), the up-down arrow (E038) and ▶ (U+25B6), fitted to
+  each font's own pixels by `scripts/fit_fills.py`. The 45-degree slopes run through the pixel centres.
+
+No advance or code point changed.
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel
@@ -171,7 +188,8 @@ ported glyphs get miter joins too. About 45 glyphs per font change, by a fractio
   box (reported by `verify.py` as vertical_overflow). Renderers do not clip outlines, so it is harmless.
 - Very short strokes near joints (e.g. the spur of `a`, `t` crossbar ends) can show a slightly
   bulbous square cap at 64 px+. Cosmetic.
-- Emoji / arrows / ▶ in the rounded font are only corner-softened pixel art, not reconstructed.
+- The emoji (E1D0 onward) and the extended underscore (E009) are still corner-softened pixel art; every
+  symbol the game shows beside text is modelled (see "Pictograms").
 - No kerning; "AVATAR To Wa" shows the expected loose pairs.
 - Hinting: none. The pixel font is only pixel-exact at multiples of 16 px with hinting disabled.
 - `data/` looks large (`du` ≈ 230 MB) only because the exFAT drive has 128 KB clusters; actual

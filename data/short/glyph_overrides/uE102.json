@@ -1,0 +1,57 @@
+{
+ "char": [
+  "",
+  "⬅"
+ ],
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "fill": [
+    [
+     4.5,
+     2
+    ],
+    [
+     0,
+     6.5
+    ],
+    [
+     4.5,
+     11
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     5,
+     9
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     8,
+     4
+    ],
+    [
+     5,
+     4
+    ],
+    [
+     5,
+     2
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "_ported": "filled polygon fitted to the pixels by fit_fills.py"
+}

@@ -1,0 +1,34 @@
+{
+ "char": "",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "circle": {
+    "center": [
+     4.5,
+     6.5
+    ],
+    "radius": 3
+   }
+  },
+  {
+   "circle": {
+    "center": [
+     4.5,
+     6.5
+    ],
+    "radius": 1
+   }
+  }
+ ],
+ "join": "miter",
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "identical from short"
+}

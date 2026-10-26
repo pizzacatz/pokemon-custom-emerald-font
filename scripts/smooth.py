@@ -327,6 +327,13 @@ def override_strokes(spec):
     for st in spec['strokes']:
         if 'cut' in st and not any(k in st for k in ('points', 'arc', 'circle')):
             continue   # pure cut-mask entries are collected separately (a stroke may also carry its own cut)
+        if 'fill' in st:
+            # a solid polygon (the arrows' heads and shafts), drawn as is: no stroke width, no caps
+            P = [tuple(p[:2]) for p in st['fill']]
+            if len(P) >= 3:
+                out.append({'closed': True, 'fill': [list(p) for p in P], 'width': 0,
+                            'beziers': [(a, a, b, b) for a, b in zip(P, P[1:] + P[:1])]})
+            continue
         sw = st.get('width', w); sj = st.get('join', jdef)
         if 'arc' in st:
             a = st['arc']

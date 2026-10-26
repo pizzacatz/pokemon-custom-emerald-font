@@ -182,6 +182,12 @@ A stroke entry may carry both `points` and its own `cut`.
 A stroke entry `{"cut": [[x,y], ...]}` is a polygon subtracted from the finished outline, for any
 trimming the join styles cannot express.
 
+A stroke entry `{"fill": [[x,y], ...]}` is a solid polygon added to the glyph as is, with no stroke width
+or caps: the arrows (E100-E103, ↑ ↓ ← →, the up-down arrow E038 and ▶) are drawn this way.
+`scripts/fit_fills.py [font ...]` regenerates them from each font's pixels: a one-pixel step from row to
+row becomes a straight edge through the pixel centres, larger jumps stay steps. In the ported fonts they are
+recorded as method "fitted", which `port_overrides.py` leaves alone, like a hand edit.
+
 `data/glyph_overrides/_TEMPLATE.json` has every construct with notes; `N.json`, `M.json`, `K.json`,
 `W.json`, `multiply.json` are working examples. Stroke ends get square caps (extended by half the
 width), joints between strokes are unioned, so you can build a glyph from overlapping pieces.

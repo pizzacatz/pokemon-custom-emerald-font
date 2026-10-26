@@ -1,0 +1,39 @@
+{
+ "char": "",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     3.5,
+     5.5
+    ],
+    [
+     3.5,
+     9.5
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     1.5,
+     7.5
+    ],
+    [
+     5.5,
+     7.5
+    ]
+   ]
+  }
+ ],
+ "join": "miter",
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25
+}

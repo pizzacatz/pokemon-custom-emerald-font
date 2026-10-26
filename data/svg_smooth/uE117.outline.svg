@@ -2,5 +2,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-10 0 1110 1600">
    <path fill="currentColor"
-d="M129 450l71 -71l300 300l300 -300l71 71l-300 300l300 300l-71 71l-300 -300l-300 300l-71 -71l300 -300z" />
+d="M779 400h142l-350 350l350 350h-142l-279 -279l-279 279h-142l350 -350l-350 -350h142l279 279z" />
 </svg>

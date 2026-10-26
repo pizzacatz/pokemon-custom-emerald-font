@@ -134,6 +134,9 @@ def smooth_glyph(g, gid):
     # end do by design: contours vanish, cuts half-invert, or the space between stems fills in.
     pieces = []
     for s in rec['strokes']:
+        if 'fill' in s:
+            pieces.append(pathops.simplify(poly_path([pt(*q) for q in s['fill']]), fix_winding=True))
+            continue
         lay = fontforge.layer()
         c = fontforge.contour()
         b = s['beziers']

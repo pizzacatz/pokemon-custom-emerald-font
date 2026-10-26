@@ -24,7 +24,7 @@ for name, spec in overrides_of(variant).items():
     r = rep.get(name, {'method': 'hand'})
     if only and ch not in only:
         continue
-    if not only and '--all' not in sys.argv and r['method'] in ('identical', 'transfer', 'hand'):
+    if not only and '--all' not in sys.argv and r['method'] in ('identical', 'transfer', 'hand', 'fitted'):
         continue
     gid = gid_for(variant, ch); m = mask_of(variant, gid)
     smooth.JSON_OVERRIDES = {ch: spec}
@@ -53,7 +53,7 @@ for name, spec in overrides_of(variant).items():
             d.line([(x*Z, y*Z) for x, y in pts], fill=(20, 20, 20), width=1)
     for poly in cuts:
         d.polygon([(x*Z, y*Z) for x, y in poly], outline=(220, 40, 40))
-    tag = {'identical': '=', 'transfer': 'T', 'fuzzy': 'F', 'traced': 'R', 'hand': 'H'}.get(r['method'], '?')
+    tag = {'identical': '=', 'transfer': 'T', 'fuzzy': 'F', 'traced': 'R', 'hand': 'H', 'fitted': 'P'}.get(r['method'], '?')
     d.text((4, 16*Z + 3), f"{ch} {tag} {sc['err']:.1f} m{sc['missing']} x{sc['extra']}", fill=(0, 0, 0))
     cells.append(im)
 if not cells:

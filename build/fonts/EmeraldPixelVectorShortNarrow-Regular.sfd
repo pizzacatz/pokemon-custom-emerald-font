@@ -4,7 +4,7 @@ FullName: Emerald Pixel Vector Short Narrow Regular
 FamilyName: Emerald Pixel Vector Short Narrow
 Weight: Regular
 Copyright: Outlines derived from the Latin "short narrow" bitmap font of Pokémon Emerald as decompiled by the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.
-UComments: "2026-10-25: Created with FontForge (http://fontforge.org)"
+UComments: "2026-10-26: Created with FontForge (http://fontforge.org)"
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -160
@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 669 1669330734 2715453]
+XUID: [1021 50 -111362498 15579520]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1792986549
-ModificationTime: 1792986550
+CreationTime: 1792990003
+ModificationTime: 1792990003
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 3

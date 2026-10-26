@@ -754,5 +754,164 @@
   "err": 3.094,
   "missing": 0,
   "extra": 0
+ },
+ "uE100": {
+  "char": [
+   "",
+   "⬆"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE101": {
+  "char": [
+   "",
+   "⬇"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE102": {
+  "char": [
+   "",
+   "⬅"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE103": {
+  "char": [
+   "",
+   "⮕"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE034": {
+  "char": "",
+  "method": "identical",
+  "from": "small",
+  "note": "",
+  "err": 1.781,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE055": {
+  "char": "",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 3.906,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE056": {
+  "char": "",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 4.906,
+  "missing": 0,
+  "extra": 1
+ },
+ "uE104": {
+  "char": "",
+  "method": "identical",
+  "from": "small",
+  "note": "",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE115": {
+  "char": "",
+  "method": "transfer",
+  "from": "small",
+  "note": "0 row/column edits",
+  "err": 7.5,
+  "missing": 0,
+  "extra": 8
+ },
+ "uE116": {
+  "char": "",
+  "method": "transfer",
+  "from": "small",
+  "note": "0 row/column edits",
+  "err": 3.438,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE117": {
+  "char": "",
+  "method": "transfer",
+  "from": "small",
+  "note": "0 row/column edits",
+  "err": 5.312,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE118": {
+  "char": [
+   "",
+   "○"
+  ],
+  "method": "transfer",
+  "from": "small",
+  "note": "0 row/column edits",
+  "err": 6.75,
+  "missing": 0,
+  "extra": 8
+ },
+ "uE079": {
+  "char": [
+   "",
+   "↑"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07A": {
+  "char": [
+   "",
+   "↓"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07B": {
+  "char": [
+   "",
+   "←"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07C": {
+  "char": [
+   "",
+   "→"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE038": {
+  "char": "",
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "u25B6": {
+  "char": "▶",
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
  }
 }
