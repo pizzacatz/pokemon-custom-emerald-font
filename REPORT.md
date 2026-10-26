@@ -105,9 +105,9 @@ Source quirks, kept as in the game:
 Verification: the exact fonts round-trip to the game bitmaps at 16 px with zero mismatches; no
 missing or empty glyphs; every ported model covers every pixel of its glyph (no "missing" pixels
 in `port_report.json`), with scores in the same range as the hand-tuned Normal models (median about
-2.1–2.4; the largest are `&` at 7.4 in Narrow and Short, the same as Normal's, and Small's `“` at 6.0). Remaining FontForge validator notes: "wrong direction"
-on `3` (Narrow, Small, Small Narrow) and U+E054 (Short), which render correctly; the 0.2 px cap
-overshoots of accents, `Ç` `ç` `Q` in Small, as with Normal's circumflexes.
+2.1–2.4; the largest are `&` at 7.4 in Narrow and Short, the same as Normal's, and Small's `“` at 6.0). The FontForge validator finds nothing in any
+Rounded font (the "wrong direction" notes on `3` and U+E054 went with the skia-pathops change below).
+Remaining: the 0.2 px cap overshoots of accents, `Ç` `ç` `Q` in Small, as with Normal's circumflexes.
 
 ## Glyphs from pokeemerald-expansion
 
@@ -140,12 +140,19 @@ row too tall, and slightly reduced their i/j dots.
 
 ## Cut masks and FontForge's boolean bug
 
-FontForge's `exclude` misbehaves when a cut edge lies exactly on an outline edge, which clip boxes and
-terminal trims do by design: it can drop whole contours, half-invert the cut, or silently do nothing.
-`build_font.py` now checks every cut (area lost, and a 1/4 px sample grid around the cut) and retries
-it grown outward by up to 2.5 font units, which `g.round()` absorbs. This changed two Normal glyphs:
-the trim at the left terminal of `J` had never been applied (the editor showed it, the font did not),
-and Emerald Rounded's `¥` had been left from before its last override edit (Rounded Game was current).
+FontForge's boolean operations misbehave where edges coincide, which clip boxes, terminal trims and
+strokes meeting end to end do by design: they can drop whole contours, half-invert a cut, silently do
+nothing, or fill the space between stems. A first fix checked every cut and retried it grown by a
+fraction of a font unit. That fixed the trim at the left terminal of Normal `J`, which had never been
+applied, and refreshed Emerald Rounded's stale `¥`.
+
+That check missed Narrow `M` (its clip lines lie on its stems, and its right stem is two strokes
+meeting end to end): the union went wrong before any cut ran, filling the M between its stems and
+leaving its top unclipped. The same bug had filled the top of the M in the Short fonts' U+E054. Since
+then, FontForge only strokes the centrelines; the union and the cuts are done with skia-pathops (Skia's
+path booleans, as used by fontmake), which handles coincident edges. Every other glyph of the ten
+Rounded fonts renders exactly as before. Points that rounding to whole font units puts on top of
+each other are removed, so the FontForge validator reports nothing for any Rounded font.
 
 ## Known limitations / remaining defects
 

@@ -83,12 +83,15 @@ REPORT.md                coverage, design choices, defects, verification results
 ## Setup
 
 Only needed to rebuild or edit the fonts. Linux Mint 22 / Ubuntu 24.04 was used. Python 3.12 with Pillow is the only system requirement;
-numpy, fonttools and freetype-py are installed project-locally (the project lives on an exFAT drive,
+numpy, fonttools, freetype-py and skia-pathops are installed project-locally (the project lives on an exFAT drive,
 which cannot hold a venv's symlinks, so `pip --target` is used instead):
 
 ```sh
-pip3 install --target pylib numpy fonttools freetype-py
+pip3 install --target pylib numpy fonttools freetype-py skia-pathops
 ```
+
+skia-pathops does the outline unions and cuts of the Rounded fonts; its wheel is built for any Python
+from 3.10, so FontForge's own Python (3.10 in the AppImage) loads it from `pylib` too.
 
 FontForge (with Python bindings) is required to assemble the fonts. Either:
 

@@ -10,9 +10,9 @@
  },
  "M": {
   "char": "M",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 0.531,
   "missing": 0,
   "extra": 0

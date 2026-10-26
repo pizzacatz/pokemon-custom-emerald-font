@@ -16,20 +16,6 @@
     ],
     [
      0.5,
-     4.5,
-     0
-    ]
-   ]
-  },
-  {
-   "points": [
-    [
-     0.5,
-     4.5,
-     0
-    ],
-    [
-     0.5,
      11.5,
      0
     ]
@@ -39,15 +25,19 @@
    "points": [
     [
      0.5,
-     4.5,
+     3.25,
      0
     ],
     [
+     2,
+     4.5
+    ],
+    [
      3.5,
-     4.5,
-     0
+     3.25
     ]
-   ]
+   ],
+   "sharp": true
   },
   {
    "points": [
@@ -79,8 +69,16 @@
   }
  ],
  "dots": [],
- "join": "round",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention",
+ "clip_y": [
+  3,
+  12
+ ],
+ "clip_x": [
+  0,
+  4
+ ]
 }

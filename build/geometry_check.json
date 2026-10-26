@@ -4640,39 +4640,12 @@
  },
  "EmeraldRounded-Regular.ttf": {},
  "EmeraldRoundedGame-Regular.ttf": {},
- "EmeraldRoundedNarrowGame-Regular.ttf": {
-  "glyph77 U+0033": [
-   "wrong-direction"
-  ]
- },
+ "EmeraldRoundedNarrowGame-Regular.ttf": {},
  "EmeraldRoundedNarrowerGame-Regular.ttf": {},
- "EmeraldRoundedShortGame-Regular.ttf": {
-  "uniE054 U+E054": [
-   "wrong-direction"
-  ]
- },
- "EmeraldRoundedShortNarrowGame-Regular.ttf": {
-  "uniE054 U+E054": [
-   "wrong-direction"
-  ],
-  "glyph77 U+0033": [
-   "wrong-direction"
-  ]
- },
- "EmeraldRoundedShortNarrowerGame-Regular.ttf": {
-  "uniE054 U+E054": [
-   "wrong-direction"
-  ]
- },
- "EmeraldRoundedSmallGame-Regular.ttf": {
-  "glyph77 U+0033": [
-   "wrong-direction"
-  ]
- },
- "EmeraldRoundedSmallNarrowGame-Regular.ttf": {
-  "glyph77 U+0033": [
-   "wrong-direction"
-  ]
- },
+ "EmeraldRoundedShortGame-Regular.ttf": {},
+ "EmeraldRoundedShortNarrowGame-Regular.ttf": {},
+ "EmeraldRoundedShortNarrowerGame-Regular.ttf": {},
+ "EmeraldRoundedSmallGame-Regular.ttf": {},
+ "EmeraldRoundedSmallNarrowGame-Regular.ttf": {},
  "EmeraldRoundedSmallNarrowerGame-Regular.ttf": {}
 }
