@@ -1,0 +1,76 @@
+{
+ "char": "%",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "join": "miter",
+ "clip_y": [
+  3,
+  11
+ ],
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     3.5
+    ],
+    [
+     2.5,
+     3.5
+    ],
+    [
+     2.5,
+     6.5
+    ],
+    [
+     0.5,
+     6.5
+    ]
+   ],
+   "closed": true,
+   "sharp": true
+  },
+  {
+   "points": [
+    [
+     4.5,
+     9.0
+    ],
+    [
+     6.5,
+     9.0
+    ],
+    [
+     6.5,
+     10.5
+    ],
+    [
+     4.5,
+     10.5
+    ]
+   ],
+   "closed": true,
+   "sharp": true
+  },
+  {
+   "points": [
+    [
+     5.975,
+     2.5
+    ],
+    [
+     1.025,
+     11.5
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "transfer from badge (1 row/column edits)"
+}

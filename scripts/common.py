@@ -28,6 +28,8 @@ VARIANTS = {
     'header':         dict(sheet='latin_header.png', widths=None, baseline=11, line=14, name='Header', derived=True),
     # nor this: the type badges' condensed capitals (NORMAL, FIRE, ...), also made by make_lettering.py
     'badge':          dict(sheet='latin_badge.png', widths=None, baseline=11, line=14, name='Badge', derived=True),
+    # nor this: the status-condition pills' capitals (PSN, PAR, ...), also made by make_lettering.py
+    'status':         dict(sheet='latin_status.png', widths=None, baseline=11, line=14, name='Status', derived=True),
 }
 VARIANT = os.environ.get('EMERALD_VARIANT', 'normal')
 if VARIANT not in VARIANTS:

@@ -1,6 +1,6 @@
-"""Synthesize the sheets and width tables of two pieces of lettering baked into Emerald's graphics.
+"""Synthesize the sheets and width tables of three pieces of lettering baked into Emerald's graphics.
 
-usage: python3 scripts/make_lettering.py header|badge      (run after the Short font is extracted)
+usage: python3 scripts/make_lettering.py header|badge|status      (run after the Short font is extracted)
 
 header: the summary screen's section headers.
 The summary screen's headers (PROFILE, ABILITY, TRAINER MEMO, ITEM, RIBBON, STATS, EXP., MOVES,
@@ -19,6 +19,13 @@ badges COOL, BEAUTY, ...), white (palette index 15) with a shadow (14), 7 rows t
 32x16 badge. Letters are 4 px wide (I T Y 3), one pixel apart, so a glyph's advance is its width + 1.
 The badges show 21 letters and "?"; J Q V X Z are drawn here in the same style. Every other cell is the
 header font's, and lowercase cells again carry the capitals.
+
+status: the capitals of the status-condition pills (graphics/interface/status_icons.png: PSN, PAR, SLP,
+FRZ, BRN, PkRS, FNT, FRB; graphics/battle_interface/status.png has the same letters), white, no shadow,
+6 rows tall at rows 1..6 of the 8 px pill. Letters are 4 px wide (T 5), one pixel apart. The pills show
+P S N A R L F Z B T and PkRS's small k (the "k" cell; the other lowercase cells carry the capitals). The
+other capitals are the badge's with one row removed, every other cell the badge's with its band's 5th row
+removed.
 """
 import os, sys, json
 from PIL import Image
@@ -57,6 +64,46 @@ BADGE_EXTRA = {   # letters no badge shows, drawn in the badge style
     'X': ['#..#', '#..#', '.##.', '.##.', '.##.', '#..#', '#..#'],
     'Z': ['####', '...#', '..#.', '..#.', '.#..', '#...', '####'],
 }
+
+STATUS_ICONS = os.path.join(EXP_SRC, 'graphics/interface/status_icons.png')
+STATUS = ['PSN', 'PAR', 'SLP', 'FRZ', 'BRN', 'PkRS', 'FNT', 'FRB']   # the 8 px rows of status_icons.png
+STATUS_INK = 2
+STATUS_TOP = 5            # the status band is rows 5..10, baseline row 11
+STATUS_DROP = {'J': 1, 'K': 1, 'Q': 3, 'U': 3, 'V': 3, 'W': 3, 'X': 2, 'Y': 1}   # badge row removed (default 4)
+
+def status_runs(path, row, x0=0):
+    """The lettering of one 8 px pill row: [(x of the first column, [6 rows of 0/1])], split into letters."""
+    im = Image.open(path); px = im.load(); W = im.size[0]
+    ink = lambda x, y: 1 if px[x, y] == STATUS_INK else 0
+    y0 = 8*row + 1
+    # the pill's own white rim is outside the letters' columns: letters sit between x0 and the right cap
+    cols = [x for x in range(x0, W) if any(ink(x, y) for y in range(y0, y0 + 6)) and not ink(x, 8*row)]
+    runs = []
+    for x in cols:
+        if runs and x == runs[-1][-1] + 1:
+            runs[-1].append(x)
+        else:
+            runs.append([x])
+    return [(r[0], [[ink(x, y) for x in r] for y in range(y0, y0 + 6)]) for r in runs]
+
+def split_pk(runs):
+    """PkRS's P and k touch: cut the run after P's 4 columns (this P is a row short, raised over the k)."""
+    x, g = runs[0]
+    return [(x, [r[:4] for r in g]), (x + 4, [r[4:] for r in g])] + runs[1:]
+
+def status_letters():
+    out = {}
+    for row, text in enumerate(STATUS):
+        runs = status_runs(STATUS_ICONS, row)
+        if text == 'PkRS':
+            runs = split_pk(runs)
+        assert len(runs) == len(text), (text, len(runs))
+        for i, (ch, (_, g)) in enumerate(zip(text, runs)):
+            if text == 'PkRS' and i == 0:
+                continue                          # PkRS's short P: the pill's own lettering keeps it
+            assert out.get(ch, g) == g, f'status {ch} drawn two ways'
+            out[ch] = g
+    return out
 
 def badge_runs(name):
     """The badge's lettering: [(x of the letter's first column, [7 rows of 0/1])] in reading order."""
@@ -135,6 +182,32 @@ def badge_cells():
         put(ch, g, len(g[0]) + 1)
     widths[gid_of[ord(' ')]] = 3
     print('badge: art letters', ''.join(sorted(art)), '| drawn', ''.join(BADGE_EXTRA))
+    return cells, widths, gid_of
+
+def status_cells():
+    cells, widths, gid_of = badge_cells()
+    def drop(m, row):
+        return [[0]*CELL] + m[:row] + m[row+1:]
+    cells = {gid: drop(m, TOP + 4) for gid, m in cells.items()}   # below the hyphen's bar
+    def put(cp, rows):
+        m = [[0]*CELL for _ in range(CELL)]
+        for r, line in enumerate(rows):
+            for c, v in enumerate(line):
+                m[STATUS_TOP + r][c] = 1 if v in (1, '#') else 0
+        if cp in gid_of:
+            cells[gid_of[cp]] = m
+            widths[gid_of[cp]] = len(rows[0]) + 1
+    art = status_letters()
+    badge = dict(badge_letters(), **BADGE_EXTRA)
+    for ch in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        g = art.get(ch) or [r for i, r in enumerate(badge[ch]) if i != STATUS_DROP.get(ch, 4)]
+        put(ord(ch), g)
+        if ch.lower() not in art:
+            put(ord(ch.lower()), g)
+    for ch in art:
+        if ch.islower():
+            put(ord(ch), art[ch])
+    print('status: art letters', ''.join(sorted(art)), '| from the badge', ''.join(c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' if c not in art))
     return cells, widths
 
 def write_sheet(name, cells, widths):
@@ -156,8 +229,10 @@ def main():
     which = sys.argv[1] if len(sys.argv) > 1 else 'header'
     if which == 'header':
         cells, widths, _, _ = header_cells()
+    elif which == 'badge':
+        cells, widths, _ = badge_cells()
     else:
-        cells, widths = badge_cells()
+        cells, widths = status_cells()
     write_sheet(which, cells, widths)
 
 if __name__ == '__main__':

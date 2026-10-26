@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 8" width="256" height="64">
+<g shape-rendering="crispEdges">
+<rect x="7" y="0" width="1" height="1" fill="#c54a31"/>
+<rect x="8" y="0" width="16" height="1" fill="#b42020"/>
+<rect x="24" y="0" width="1" height="1" fill="#c54a31"/>
+<rect x="6" y="1" width="1" height="1" fill="#c54a31"/>
+<rect x="7" y="1" width="18" height="1" fill="#b42020"/>
+<rect x="25" y="1" width="1" height="1" fill="#c54a31"/>
+<rect x="6" y="2" width="20" height="1" fill="#b42020"/>
+<rect x="6" y="3" width="20" height="1" fill="#b42020"/>
+<rect x="6" y="4" width="20" height="1" fill="#b42020"/>
+<rect x="6" y="5" width="20" height="1" fill="#b42020"/>
+<rect x="6" y="6" width="1" height="1" fill="#c54a31"/>
+<rect x="7" y="6" width="18" height="1" fill="#b42020"/>
+<rect x="25" y="6" width="1" height="1" fill="#c54a31"/>
+<rect x="7" y="7" width="1" height="1" fill="#c54a31"/>
+<rect x="8" y="7" width="16" height="1" fill="#b42020"/>
+<rect x="24" y="7" width="1" height="1" fill="#c54a31"/>
+</g>
+<path fill="#ffffff" d="M9.0 7.0V1.0H13.0V2.0H10.0V4.0H12.0V5.0H10.0V7.0ZM14.0 1.0H15.0V1.29L17.0 3.29V1.0H18.0V7.0H17.0V4.71L15.0 2.71V7.0H14.0ZM19.0 2.0V1.0H24.0V2.0H22.0V7.0H21.0V2.0Z"/>
+</svg>

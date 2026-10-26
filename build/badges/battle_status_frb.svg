@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 8" width="192" height="64">
+<g shape-rendering="crispEdges">
+<rect x="0" y="0" width="1" height="1" fill="#ffffde"/>
+<rect x="1" y="0" width="1" height="1" fill="#ded6b5"/>
+<rect x="2" y="0" width="16" height="1" fill="#8bb4e6"/>
+<rect x="18" y="0" width="1" height="1" fill="#ded6b5"/>
+<rect x="19" y="0" width="5" height="1" fill="#ffffde"/>
+<rect x="0" y="1" width="1" height="1" fill="#ded6b5"/>
+<rect x="1" y="1" width="18" height="1" fill="#8bb4e6"/>
+<rect x="19" y="1" width="1" height="1" fill="#ded6b5"/>
+<rect x="20" y="1" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="2" width="20" height="1" fill="#8bb4e6"/>
+<rect x="20" y="2" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="3" width="20" height="1" fill="#8bb4e6"/>
+<rect x="20" y="3" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="4" width="20" height="1" fill="#8bb4e6"/>
+<rect x="20" y="4" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="5" width="20" height="1" fill="#8bb4e6"/>
+<rect x="20" y="5" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="6" width="1" height="1" fill="#ded6b5"/>
+<rect x="1" y="6" width="18" height="1" fill="#8bb4e6"/>
+<rect x="19" y="6" width="1" height="1" fill="#ded6b5"/>
+<rect x="20" y="6" width="4" height="1" fill="#ffffde"/>
+<rect x="0" y="7" width="1" height="1" fill="#ffffde"/>
+<rect x="1" y="7" width="1" height="1" fill="#ded6b5"/>
+<rect x="2" y="7" width="16" height="1" fill="#8bb4e6"/>
+<rect x="18" y="7" width="1" height="1" fill="#ded6b5"/>
+<rect x="19" y="7" width="5" height="1" fill="#ffffde"/>
+</g>
+<path fill="#ffffde" d="M3.0 7.0V1.0H7.0V2.0H4.0V4.0H6.0V5.0H4.0V7.0ZM9.0 4.0H9.29L9.5 3.79L9.71 4.0H10.44Q10.879999999999999 3.88 11.0 3.44V2.5599999999999996Q10.879999999999999 2.12 10.44 2.0H9.0ZM12.0 3.55Q11.97 3.71 11.905000000000001 3.875Q11.84 4.04 11.7 4.27Q11.56 4.5 11.295000000000002 4.6899999999999995Q11.030000000000001 4.88 10.68 4.97L12.0 6.29V7.0H11.29L9.29 5.0H9.0V7.0H8.0V1.0H10.55Q10.7 1.0300000000000002 10.844999999999999 1.08Q10.99 1.13 11.18 1.2399999999999998Q11.370000000000001 1.3499999999999996 11.52 1.4999999999999996Q11.67 1.6499999999999995 11.805 1.8949999999999996Q11.94 2.1399999999999997 12.0 2.45ZM14.0 3.0H15.44Q15.879999999999999 2.88 16.0 2.4399999999999995V2.1899999999999995Q15.74 1.9500000000000002 15.379999999999999 1.9500000000000002Q15.25 1.9500000000000002 15.07 2.0H14.0ZM14.0 4.0V6.0H15.44Q15.879999999999999 5.88 16.0 5.4399999999999995V4.5600000000000005Q15.879999999999999 4.12 15.44 4.0ZM17.0 5.55Q16.97 5.7 16.92 5.845000000000001Q16.87 5.99 16.759999999999998 6.18Q16.65 6.37 16.5 6.52Q16.35 6.67 16.105 6.805Q15.86 6.94 15.55 7.0H13.0V1.0H14.94Q15.17 0.9500000000000002 15.379999999999999 0.9500000000000002Q16.34 0.9500000000000002 17.0 1.83V2.55Q16.89 3.12 16.51 3.5Q16.89 3.88 17.0 4.449999999999999Z"/>
+</svg>

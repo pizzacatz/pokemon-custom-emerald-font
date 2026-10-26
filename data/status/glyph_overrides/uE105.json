@@ -1,0 +1,63 @@
+{
+ "char": "",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 0,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     6.5,
+     0
+    ],
+    [
+     0.5,
+     10.5,
+     0
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     0.5,
+     10.5,
+     0
+    ],
+    [
+     2.5,
+     10.5,
+     0
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     4.5,
+     8.5,
+     0
+    ],
+    [
+     6.5,
+     10.5,
+     0
+    ],
+    [
+     8.5,
+     8.5,
+     0
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "square",
+ "dot_corner": 0.25,
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+}

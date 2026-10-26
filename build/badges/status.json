@@ -1,0 +1,402 @@
+{
+ "font": "EmeraldRoundedStatusGame-Regular.ttf",
+ "units_per_pixel": 100,
+ "badges": {
+  "status_psn": {
+   "text": "PSN",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "P",
+     "x": 9
+    },
+    {
+     "char": "S",
+     "x": 14
+    },
+    {
+     "char": "N",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_psn.svg",
+   "blank": "status_psn_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_par": {
+   "text": "PAR",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "P",
+     "x": 9
+    },
+    {
+     "char": "A",
+     "x": 14
+    },
+    {
+     "char": "R",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_par.svg",
+   "blank": "status_par_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_slp": {
+   "text": "SLP",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "S",
+     "x": 9
+    },
+    {
+     "char": "L",
+     "x": 14
+    },
+    {
+     "char": "P",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_slp.svg",
+   "blank": "status_slp_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_frz": {
+   "text": "FRZ",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "F",
+     "x": 9
+    },
+    {
+     "char": "R",
+     "x": 14
+    },
+    {
+     "char": "Z",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_frz.svg",
+   "blank": "status_frz_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_brn": {
+   "text": "BRN",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "B",
+     "x": 9
+    },
+    {
+     "char": "R",
+     "x": 14
+    },
+    {
+     "char": "N",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_brn.svg",
+   "blank": "status_brn_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_pkrs": {
+   "text": "PkRS",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "P",
+     "x": 8
+    },
+    {
+     "char": "k",
+     "x": 12
+    },
+    {
+     "char": "R",
+     "x": 16
+    },
+    {
+     "char": "S",
+     "x": 21
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_pkrs.svg",
+   "blank": "status_pkrs_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_fnt": {
+   "text": "FNT",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "F",
+     "x": 9
+    },
+    {
+     "char": "N",
+     "x": 14
+    },
+    {
+     "char": "T",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_fnt.svg",
+   "blank": "status_fnt_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "status_frb": {
+   "text": "FRB",
+   "size": [
+    32,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "F",
+     "x": 9
+    },
+    {
+     "char": "R",
+     "x": 14
+    },
+    {
+     "char": "B",
+     "x": 19
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "status_frb.svg",
+   "blank": "status_frb_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_psn": {
+   "text": "PSN",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "P",
+     "x": 3
+    },
+    {
+     "char": "S",
+     "x": 8
+    },
+    {
+     "char": "N",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_psn.svg",
+   "blank": "battle_status_psn_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_par": {
+   "text": "PAR",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "P",
+     "x": 3
+    },
+    {
+     "char": "A",
+     "x": 8
+    },
+    {
+     "char": "R",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_par.svg",
+   "blank": "battle_status_par_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_slp": {
+   "text": "SLP",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "S",
+     "x": 3
+    },
+    {
+     "char": "L",
+     "x": 8
+    },
+    {
+     "char": "P",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_slp.svg",
+   "blank": "battle_status_slp_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_frz": {
+   "text": "FRZ",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "F",
+     "x": 3
+    },
+    {
+     "char": "R",
+     "x": 8
+    },
+    {
+     "char": "Z",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_frz.svg",
+   "blank": "battle_status_frz_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_brn": {
+   "text": "BRN",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "B",
+     "x": 3
+    },
+    {
+     "char": "R",
+     "x": 8
+    },
+    {
+     "char": "N",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_brn.svg",
+   "blank": "battle_status_brn_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  },
+  "battle_status_frb": {
+   "text": "FRB",
+   "size": [
+    24,
+    8
+   ],
+   "baseline": 7,
+   "letters": [
+    {
+     "char": "F",
+     "x": 3
+    },
+    {
+     "char": "R",
+     "x": 8
+    },
+    {
+     "char": "B",
+     "x": 13
+    }
+   ],
+   "ink": "#ffffde",
+   "shadow": null,
+   "shadow_offsets": [],
+   "svg": "battle_status_frb.svg",
+   "blank": "battle_status_frb_blank.png",
+   "font": "EmeraldRoundedStatusGame-Regular.ttf"
+  }
+ }
+}

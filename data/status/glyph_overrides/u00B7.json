@@ -1,0 +1,21 @@
+{
+ "char": "·",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [],
+ "dots": [
+  {
+   "x": 2,
+   "y": 8.5,
+   "r": 0.5
+  }
+ ],
+ "join": "miter",
+ "dot_shape": "square",
+ "dot_corner": 0.25,
+ "_ported": "transfer from badge (1 row/column edits)"
+}

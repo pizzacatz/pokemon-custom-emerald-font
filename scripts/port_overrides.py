@@ -38,8 +38,10 @@ SOURCES = {'narrow': ['normal'], 'short': ['normal'], 'small': ['normal', 'narro
            # the summary screen's header lettering: Short's capitals with a middle row removed
            'header': ['short', 'normal'],
            # the type badges' capitals: mostly the header's with a column removed
-           'badge': ['header', 'short', 'normal']}
-CAPS_ONLY = {'header', 'badge'}   # fonts whose lowercase cells hold the capitals: a capital's model serves both
+           'badge': ['header', 'short', 'normal'],
+           # the status pills' capitals: mostly the badge's with a row removed
+           'status': ['badge', 'header', 'short', 'normal']}
+CAPS_ONLY = {'header', 'badge', 'status'}   # fonts whose lowercase cells hold the capitals: a capital's model serves both
 PREFER_TRANSFER = 1.0  # a fuzzy transfer wins unless a fresh trace scores this much better
 
 def overrides_of(variant):
@@ -458,7 +460,8 @@ def main():
     if variant in CAPS_ONLY:
         for name, spec in overrides_of(variant).items():
             chs = chars_of(spec)
-            low = [c.lower() for c in chs if c.isupper() and c.isascii()]
+            low = [c.lower() for c in chs if c.isupper() and c.isascii()
+                   and mask_of(variant, gid_for(variant, c.lower())) == mask_of(variant, gid_for(variant, c))]   # not status's small k
             if low and not set(low) <= set(chs):
                 spec['char'] = list(dict.fromkeys(chs + low))
                 with open(os.path.join(tdir, name + '.json'), 'w', encoding='utf-8') as f:
