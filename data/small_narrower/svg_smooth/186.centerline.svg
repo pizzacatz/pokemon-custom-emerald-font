@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="160" height="160">
-<path d="M3.171 2.780 C2.171 5.530 1.000 8.750 0.000 11.500 " fill="none" stroke="#000" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M3.171 2.780 C2.171 5.530 1.000 8.750 0.000 11.500 " fill="none" stroke="#000" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
 </svg>

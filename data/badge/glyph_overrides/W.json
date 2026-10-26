@@ -9,19 +9,18 @@
  ],
  "width": 1,
  "joint_radius": 1,
- "dots": [],
- "dot_shape": "circle",
- "dot_corner": 0.25,
  "strokes": [
   {
    "points": [
     [
      0.5,
-     4.5
+     4.5,
+     0
     ],
     [
      0.5,
-     10.5
+     10.5,
+     0
     ]
    ]
   },
@@ -29,11 +28,13 @@
    "points": [
     [
      3.5,
-     4.5
+     4.5,
+     0
     ],
     [
      3.5,
-     10.5
+     10.5,
+     0
     ]
    ]
   },
@@ -41,14 +42,32 @@
    "points": [
     [
      0.5,
-     9.5
+     10.75,
+     0
+    ],
+    [
+     2.0,
+     9.5,
+     0
     ],
     [
      3.5,
-     9.5
+     10.75
     ]
    ]
   }
  ],
- "join": "miter"
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "clip_y": [
+  4,
+  11
+ ],
+ "clip_x": [
+  0,
+  4
+ ],
+ "_ported": "modelled on the hand-edited Narrow W"
 }

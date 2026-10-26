@@ -190,6 +190,15 @@ M N R G X are hand-modelled. Badge: 21 letters and `?` from the badges, J Q V X 
 are hand-modelled (M and W are stems with a bar, X is two brackets). Every header word and every badge
 was rendered over the art's pixels to check positions.
 
+## Sharp mitred joints by default
+
+Sharp joints drawn with miter joins are now the default everywhere: a model that names no joint radius
+gets sharp joints (radius 0, was 1 px of rounding), one that names no join gets miter (was round), the
+automatic trace keeps its joints sharp instead of rounding them, new glyphs in the glyph editor start
+that way, and the rasteriser that scores models draws each stroke's own join. Every existing model names
+its join and radius, so only automatically traced glyphs change. The Y of the fonts other than Normal and
+Short now has sharp joints where its arms meet the stem.
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

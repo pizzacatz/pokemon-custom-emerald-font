@@ -47,7 +47,7 @@ def main():
             for x in range(W):
                 if px[x, y] in (BADGE_INK, BADGE_SHADOW):
                     bp[x, y] = fill
-        blank.save(os.path.join(OUT, name + '_blank.png'))
+        blank.save(os.path.join(OUT, name + '_blank.png'), transparency=0)   # index 0 is transparent on the GBA
         # background squares, merged into runs along each row; index 0 is transparent on the GBA
         rects = []
         for y in range(H):

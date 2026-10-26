@@ -16,35 +16,7 @@
     ],
     [
      0.5,
-     4.5,
-     0
-    ]
-   ]
-  },
-  {
-   "points": [
-    [
-     0.5,
-     4.5,
-     0
-    ],
-    [
-     0.5,
      11.5,
-     0
-    ]
-   ]
-  },
-  {
-   "points": [
-    [
-     0.5,
-     4.5,
-     0
-    ],
-    [
-     2.5,
-     4.5,
      0
     ]
    ]
@@ -58,7 +30,7 @@
     ],
     [
      2.5,
-     4.5,
+     11.5,
      0
     ]
    ]
@@ -66,21 +38,33 @@
   {
    "points": [
     [
-     2.5,
-     4.5,
+     0.5,
+     3.25,
      0
     ],
     [
+     1.5,
+     4.5
+    ],
+    [
      2.5,
-     11.5,
-     0
+     3.25
     ]
-   ]
+   ],
+   "sharp": true
   }
  ],
  "dots": [],
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "clip_y": [
+  3,
+  12
+ ],
+ "clip_x": [
+  0,
+  3
+ ],
+ "_ported": "modelled on the hand-edited Narrow M"
 }

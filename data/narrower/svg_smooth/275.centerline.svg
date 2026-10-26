@@ -1,3 +1,3 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="160" height="160">
-<path d="M7.777 2.084 C7.296 2.807 6.536 3.945 6.055 4.668 C5.748 5.127 5.500 5.948 5.500 6.500 C5.500 6.833 5.500 7.167 5.500 7.500 C5.500 8.052 5.748 8.873 6.055 9.332 C6.536 10.055 7.296 11.193 7.777 11.916 " fill="none" stroke="#000" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="round"/>
+<path d="M7.777 2.084 C7.111 3.084 6.167 4.500 5.500 5.500 C5.500 6.500 5.500 7.500 5.500 8.500 C6.167 9.500 7.111 10.916 7.777 11.916 " fill="none" stroke="#000" stroke-width="1.0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
 </svg>

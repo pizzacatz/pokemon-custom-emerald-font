@@ -97,7 +97,7 @@ def main():
                 continue
             aliases = [cp] + [c for c in (mp.get(gid, {}).get('unicode', []) + cps.get(gid, {}).get('codepoints', [])) if c != cp]
             name = f'u{cp:04X}'
-            spec = {'char': [chr(c) for c in dict.fromkeys(aliases)] if len(set(aliases)) > 1 else chr(cp), 'rows': [0, 16], 'width': 1, 'joint_radius': 1,
+            spec = {'char': [chr(c) for c in dict.fromkeys(aliases)] if len(set(aliases)) > 1 else chr(cp), 'rows': [0, 16], 'width': 1, 'joint_radius': 0,
                     'strokes': [{'fill': fit(mask)}], 'dots': [], 'join': 'miter',
                     '_ported': 'filled polygon fitted to the pixels by fit_fills.py'}
             with open(os.path.join(d, 'glyph_overrides', name + '.json'), 'w', encoding='utf-8') as f:

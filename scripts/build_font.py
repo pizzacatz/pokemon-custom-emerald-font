@@ -147,7 +147,7 @@ def smooth_glyph(g, gid):
         lay += c
         # caps are pre-extended in smooth.py. A miter longer than MITER_LIMIT stroke widths (an acute joint, or
         # a stroke doubling back on itself) is cut square instead of running out into a spike.
-        pieces.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'round'),
+        pieces.append(to_path(lay.stroke('circular', s.get('width', rec['stroke_width'])*PX, 'butt', s.get('join', 'miter'),
                                          joinlimit=MITER_LIMIT)))
     for d in rec['dots']:
         lay = fontforge.layer(); lay += dot_contour(d)

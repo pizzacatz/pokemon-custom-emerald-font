@@ -10,21 +10,15 @@
  },
  "M": {
   "char": "M",
-  "method": "transfer",
-  "from": "normal",
-  "note": "3 row/column edits",
-  "err": 2.828,
-  "missing": 0,
-  "extra": 2
+  "method": "hand",
+  "from": null,
+  "note": "modelled on the hand-edited Narrow M"
  },
  "W": {
   "char": "W",
-  "method": "transfer",
-  "from": "normal",
-  "note": "3 row/column edits",
-  "err": 4.531,
-  "missing": 0,
-  "extra": 4
+  "method": "hand",
+  "from": null,
+  "note": "modelled on the hand-edited Narrow W"
  },
  "multiply": {
   "char": "×",
@@ -298,12 +292,12 @@
  },
  "u004E": {
   "char": "N",
-  "method": "transfer",
-  "from": "normal",
-  "note": "3 row/column edits",
-  "err": 2.922,
+  "method": "hand",
+  "from": "narrow",
+  "note": "your Narrow N, transferred",
+  "err": 2.234,
   "missing": 0,
-  "extra": 2
+  "extra": 0
  },
  "u004F": {
   "char": "O",
@@ -379,9 +373,9 @@
  },
  "u0059": {
   "char": "Y",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "sharp mitred joints",
   "err": 1.438,
   "missing": 0,
   "extra": 0
@@ -586,12 +580,9 @@
  },
  "u0077": {
   "char": "w",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
-  "err": 0.594,
-  "missing": 0,
-  "extra": 0
+  "note": "modelled on the hand-edited Narrow W / w"
  },
  "u0078": {
   "char": "x",

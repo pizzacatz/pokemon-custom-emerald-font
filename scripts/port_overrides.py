@@ -366,7 +366,7 @@ def trace(mask, ch):
             if len(pts) >= 2:
                 strokes.append({'points': pts, **({'closed': True} if rclosed else {})})
                 strokes += [{'cut': c} for c in cuts]
-    return {'char': ch, 'rows': [0, 16], 'width': 1, 'joint_radius': 1, 'strokes': strokes, 'dots': dots,
+    return {'char': ch, 'rows': [0, 16], 'width': 1, 'joint_radius': 0, 'strokes': strokes, 'dots': dots,
             'join': 'miter', 'dot_shape': 'circle', 'dot_corner': 0.25}
 
 # ---------------------------------------------------------------- scoring + main

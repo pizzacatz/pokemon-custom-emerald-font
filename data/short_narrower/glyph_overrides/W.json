@@ -5,69 +5,66 @@
   16
  ],
  "width": 1,
+ "joint_radius": 1,
  "strokes": [
   {
    "points": [
     [
      0.5,
-     3,
+     3.5,
      0
     ],
     [
      0.5,
-     11,
+     10.5,
      0
     ]
-   ],
-   "closed": false,
-   "width": 1
+   ]
   },
   {
    "points": [
     [
      2.5,
-     3,
-     0
-    ],
-    [
-     2.5,
-     11,
-     0
-    ]
-   ],
-   "closed": false,
-   "width": 1
-  },
-  {
-   "points": [
-    [
-     -0.75,
-     14,
-     0
-    ],
-    [
-     1.0,
-     7.25,
-     0
-    ],
-    [
      3.5,
-     13.5,
+     0
+    ],
+    [
+     2.5,
+     10.5,
      0
     ]
-   ],
-   "closed": false,
-   "width": 1
+   ]
+  },
+  {
+   "points": [
+    [
+     0.5,
+     10.75,
+     0
+    ],
+    [
+     1.5,
+     9.5,
+     0
+    ],
+    [
+     2.5,
+     10.75
+    ]
+   ]
   }
  ],
  "dots": [],
- "joint_radius": 1,
- "join": "bevel",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "clip_y": [
   3,
   11
  ],
- "_ported": "transfer from short_narrow (1 row/column edits)"
+ "clip_x": [
+  0,
+  3
+ ],
+ "_ported": "modelled on the hand-edited Narrow W"
 }

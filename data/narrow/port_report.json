@@ -379,9 +379,9 @@
  },
  "u0059": {
   "char": "Y",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "sharp mitred joints",
   "err": 1.188,
   "missing": 0,
   "extra": 0

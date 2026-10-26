@@ -158,7 +158,7 @@ and are not changed by overrides.
   "char": ["N", "Ñ"],          // character(s) this applies to; accents outside `rows` are still auto-traced
   "rows": [3, 12],             // band of the pixel mask that the override replaces
   "width": 1.0,                // stroke width in px for the glyph (per stroke: "width" on the stroke)
-  "joint_radius": 1.0,         // default rounding radius at polyline joints, px
+  "joint_radius": 0,           // default rounding radius at polyline joints, px (default 0: sharp)
   "strokes": [
     {"points": [[0.5,3.5],[0.5,11.5]]},                     // straight stem
     {"points": [[4.5,3.5],[1.2,6.8,0],[1.2,8.2,0],[4.5,11.5]]}, // 3rd value = that joint's radius, 0 = sharp
@@ -169,9 +169,9 @@ and are not changed by overrides.
   ],
   "dots": [[2.5,1.5,0.5], [4.5,1.5,0.5,"square"], [6.5,1.5,0.5,"rounded",0.2]], // x, y, half-size, shape, corner radius
   "dot_shape": "circle",       // default dot shape: circle | square | rounded; "dot_corner" = default corner radius
-  "join": "round",             // corner style where a stroke bends: round | miter (sharp) | bevel (flat); also per stroke
+  "join": "miter",             // corner style where a stroke bends: miter (sharp, the default) | round | bevel (flat); also per stroke
                                // (miters longer than 4 stroke widths are cut square; the fonts other than Normal use miter)
-  "clip_y": [3, 12]            // keep only this band of rows (and/or "clip_x"); trims round joins flush with cap/baseline
+  "clip_y": [3, 12]            // keep only this band of rows (and/or "clip_x"); trims joins flush with cap/baseline
 }
 ```
 

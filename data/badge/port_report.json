@@ -18,7 +18,7 @@
   ],
   "method": "hand",
   "from": null,
-  "note": "badge alphabet"
+  "note": "modelled on the hand-edited Narrow M"
  },
  "W": {
   "char": [
@@ -27,7 +27,7 @@
   ],
   "method": "hand",
   "from": null,
-  "note": "badge alphabet"
+  "note": "modelled on the hand-edited Narrow W"
  },
  "multiply": {
   "char": "×",
@@ -323,8 +323,11 @@
    "n"
   ],
   "method": "hand",
-  "from": null,
-  "note": "badge alphabet"
+  "from": "narrow",
+  "note": "your Narrow N, transferred",
+  "err": 2.234,
+  "missing": 0,
+  "extra": 0
  },
  "u004F": {
   "char": [
@@ -421,9 +424,9 @@
    "Y",
    "y"
   ],
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "sharp mitred joints",
   "err": 1.438,
   "missing": 0,
   "extra": 0

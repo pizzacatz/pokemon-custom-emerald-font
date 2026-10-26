@@ -3,8 +3,9 @@
 Treatment 2 (data/svg_rounded): exact outline with every corner softened by a small arc.
 Treatment 3 (data/svg_smooth): reconstructed centerline strokes. Each glyph is modelled as a
 graph of pixel centres; chains are split at true corners (>= 90 deg turns), stepped diagonals
-are replaced by straight lines, remaining joints are rounded with Bezier arcs, and the result
-is written as centreline paths (stroked to outlines in build_font.py) plus round dots.
+are replaced by straight lines, remaining joints are kept sharp (mitred when stroked), and the result
+is written as centreline paths (stroked to outlines in build_font.py) plus round dots. A joint is rounded
+only where a model asks for it (a joint radius above 0, or join "round").
 """
 import os, sys, json, math
 sys.path.insert(0, os.path.dirname(__file__))
@@ -12,7 +13,7 @@ from common import *
 
 STROKE_W = 1.0        # px, stroke width of the smooth font
 DOT_R = 0.5           # px, radius of isolated single-pixel dots (keeps row-0 diaeresis inside the ascent)
-JOINT_R = 1.0         # px, max cut-back used when rounding a joint
+JOINT_R = 0.0         # px, default cut-back of a joint (0 = sharp; a model may round a joint with a radius)
 SHORT = 1.5           # px, segments up to this length may be absorbed into a straightened zigzag
 K = 0.5523            # cubic approximation of a quarter circle
 
@@ -323,7 +324,7 @@ def override_strokes(spec):
     out = []
     w = spec.get('width', STROKE_W)
     rdef = spec.get('joint_radius', JOINT_R)
-    jdef = spec.get('join', 'round')
+    jdef = spec.get('join', 'miter')
     for st in spec['strokes']:
         if 'cut' in st and not any(k in st for k in ('points', 'arc', 'circle')):
             continue   # pure cut-mask entries are collected separately (a stroke may also carry its own cut)
@@ -527,7 +528,7 @@ def main():
                            f'<rect x="{d["x"]-d["r"]}" y="{d["y"]-d["r"]}" width="{2*d["r"]}" height="{2*d["r"]}" rx="{0 if d["shape"] == "square" else min(d["corner"], d["r"])}" fill="#000"/>' for d in dots)
         with open(os.path.join(DATA, 'svg_smooth', f'{gid:03d}.centerline.svg'), 'w') as f:
             f.write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="160" height="160">\n'
-                    f'<path d="{d3}" fill="none" stroke="#000" stroke-width="{STROKE_W}" stroke-linecap="butt" stroke-linejoin="round"/>{dots_svg}\n</svg>\n')
+                    f'<path d="{d3}" fill="none" stroke="#000" stroke-width="{STROKE_W}" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>{dots_svg}\n</svg>\n')
     print('glyphs using rounded-outline fallback (contain 2x2 blocks):',
           [(g, ''.join(chr(u) for u in mp[str(g)]['unicode']) or mp[str(g)]['name']) for g in fallback])
     if bad_overrides:

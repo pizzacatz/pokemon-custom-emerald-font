@@ -9,50 +9,90 @@
  ],
  "width": 1,
  "joint_radius": 1,
- "dots": [],
- "dot_shape": "circle",
- "dot_corner": 0.25,
  "strokes": [
   {
    "points": [
     [
      0.5,
-     4.5
+     10.5,
+     0
     ],
     [
      0.5,
-     10.5
+     4,
+     0
+    ],
+    [
+     3.5,
+     10.25,
+     0
+    ],
+    [
+     3.5,
+     4.5,
+     0
     ]
-   ]
+   ],
+   "closed": false,
+   "width": 1
   },
   {
    "points": [
     [
      3.5,
-     4.5
+     10.5
     ],
     [
      3.5,
-     10.5
+     9.0
     ]
-   ]
+   ],
+   "sharp": true
   },
   {
    "points": [
     [
-     1.5,
-     5.25
+     4.25,
+     10.75
     ],
     [
-     2.5,
-     8.75
+     0.5,
+     4
+    ]
+   ]
+  },
+  {
+   "cut": [
+    [
+     2.3454,
+     9.0
+    ],
+    [
+     3.3054,
+     11
+    ],
+    [
+     1.25,
+     11
+    ],
+    [
+     1.25,
+     9.0
     ]
    ]
   }
  ],
+ "dots": [],
  "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
  "clip_y": [
   4,
   11
- ]
+ ],
+ "clip_x": [
+  0,
+  4
+ ],
+ "_ported": "transfer from the hand-edited Narrow N (2 row/column edits)"
 }

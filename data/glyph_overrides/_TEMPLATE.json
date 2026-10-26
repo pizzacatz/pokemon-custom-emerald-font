@@ -5,7 +5,7 @@
   16
  ],
  "width": 1.0,
- "joint_radius": 1.0,
+ "joint_radius": 0,
  "strokes": [
   {
    "points": [
@@ -41,7 +41,7 @@
      7.5
     ]
    ],
-   "_": "polyline; third value = joint radius px, 0 = sharp; join = round | miter (sharp) | bevel (flat), per stroke or glyph-level 'join'",
+   "_": "polyline; third value = joint radius px (default 0 = sharp); join = miter (sharp, the default) | round | bevel (flat), per stroke or glyph-level 'join'",
    "join": "miter"
   },
   {
@@ -176,7 +176,7 @@
   }
  ],
  "_comment": "Copy to <name>.json, set char to the real character (or a list of characters), delete the '_' notes. rows = band of the pixel mask to discard (accents outside it are still traced automatically). clip_y / clip_x = [min, max]: everything outside the band is cut away (trims round joins flush with cap/baseline).",
- "join": "round",
+ "join": "miter",
  "clip_y": [
   3,
   12
