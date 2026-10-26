@@ -1,0 +1,56 @@
+{
+ "char": [
+  "",
+  "①"
+ ],
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 0,
+ "strokes": [
+  {
+   "circle": {
+    "center": [
+     3.5,
+     6.5
+    ],
+    "radius": 3.5
+   }
+  },
+  {
+   "points": [
+    [
+     2.5,
+     4.5,
+     0
+    ],
+    [
+     3.5,
+     4.5,
+     0
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     3.5,
+     4.5,
+     0
+    ],
+    [
+     3.5,
+     8.5,
+     0
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "circle and traced digit fitted to the pixels by fit_circles.py"
+}

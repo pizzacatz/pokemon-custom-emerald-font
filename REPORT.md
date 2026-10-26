@@ -177,6 +177,10 @@ softened pixel art or plain traces:
   E100-E103, the text arrows ↑ ↓ ← → (E079-E07C), the up-down arrow (E038) and ▶ (U+25B6), fitted to
   each font's own pixels by `scripts/fit_fills.py`. The 45-degree slopes run through the pixel centres.
 
+- The circled digits ①–⑨ (E10A–E112) are true circles around the digit (`scripts/fit_circles.py`), not the
+  octagon a trace through the pixel ring gives. The header and badge fonts reuse Normal's, since their
+  pixel ring is a row short.
+
 No advance or code point changed.
 
 ## Lettering from the game's art

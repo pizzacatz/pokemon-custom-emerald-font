@@ -895,5 +895,86 @@
   "method": "fitted",
   "from": null,
   "note": "fit_fills.py"
+ },
+ "uE10A": {
+  "char": [
+   "",
+   "①"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE10B": {
+  "char": [
+   "",
+   "②"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE10C": {
+  "char": [
+   "",
+   "③"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE10D": {
+  "char": [
+   "",
+   "④"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE10E": {
+  "char": [
+   "",
+   "⑤"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE10F": {
+  "char": [
+   "",
+   "⑥"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE110": {
+  "char": [
+   "",
+   "⑦"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE111": {
+  "char": [
+   "",
+   "⑧"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
+ },
+ "uE112": {
+  "char": [
+   "",
+   "⑨"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_circles.py"
  }
 }

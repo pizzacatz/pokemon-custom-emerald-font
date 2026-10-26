@@ -189,6 +189,10 @@ or caps: the arrows (E100-E103, ↑ ↓ ← →, the up-down arrow E038 and ▶)
 row becomes a straight edge through the pixel centres, larger jumps stay steps. In the ported fonts they are
 recorded as method "fitted", which `port_overrides.py` leaves alone, like a hand edit.
 
+The circled digits ①–⑨ (E10A–E112) are a `circle` stroke around the digit, made by
+`scripts/fit_circles.py [font ...]`: the circle is centred on the pixel ring, with a diameter halfway between
+the ring's width and height. The digit inside is traced in the usual convention. They are "fitted" too.
+
 `data/glyph_overrides/_TEMPLATE.json` has every construct with notes; `N.json`, `M.json`, `K.json`,
 `W.json`, `multiply.json` are working examples. Stroke ends get square caps (extended by half the
 width), joints between strokes are unioned, so you can build a glyph from overlapping pieces.
