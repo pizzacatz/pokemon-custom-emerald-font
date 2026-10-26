@@ -20,6 +20,7 @@ glyph models ported over from Normal (see [Other game fonts](#other-game-fonts))
 | **Emerald Rounded Narrow Game** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldRounded{Narrow,Small,Short,SmallNarrow}Game-Regular.ttf` | The game's other Latin fonts as smooth outlines, game spacing and line pitch. |
 | **Emerald Pixel Vector Narrow** / **Small** / **Short** / **Small Narrow** | `build/fonts/EmeraldPixelVector{Narrow,Small,Short,SmallNarrow}-Regular.ttf` | Exact pixel outlines of those fonts (the reference the smooth ones are tuned against). |
 | **Emerald Rounded Narrower** / **Small Narrower** / **Short Narrow** / **Short Narrower Game**, and their Pixel Vector versions | `build/fonts/EmeraldRounded{Narrower,SmallNarrower,ShortNarrow,ShortNarrower}Game-Regular.ttf`, `build/fonts/EmeraldPixelVector{…}-Regular.ttf` | The four extra Latin fonts of [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion), same treatment. |
+| **Emerald Rounded Header Game** / **Badge Game**, and their Pixel Vector versions | `build/fonts/EmeraldRounded{Header,Badge}Game-Regular.ttf` | Lettering baked into the game's art: the summary screen's section headers and the type badges (see [Lettering from the game's art](#lettering-from-the-games-art)). Smooth badge images are in `build/badges/`. |
 
 Each font also ships as `.otf` and as an editable FontForge `.sfd` next to the TTF. The ready-made
 fonts are committed, so you can download them from `build/fonts/` without building anything.
@@ -247,6 +248,29 @@ python3 scripts/port_overrides.py small --replace "a" # ... even if marked "hand
 python3 scripts/review_sheet.py small [--all]          # build/comparisons/small_overrides_review.png
 EMERALD_VARIANT=small ./preview.sh "a"                 # rebuild Emerald Rounded Small Game, preview "a"
 ```
+
+## Lettering from the game's art
+
+Two pieces of capital lettering are drawn into graphics rather than set in a font. Both are built as
+fonts with the same pipeline (overrides in `data/header/` and `data/badge/`, editable in the glyph
+editor), from sheets that `scripts/make_lettering.py header|badge` synthesizes in the game's layout:
+
+- **Header** (`EmeraldRoundedHeaderGame`): the summary screen's section headers (PROFILE, ABILITY, TRAINER
+  MEMO, ITEM, RIBBON, STATS, EXP., MOVES, DESCRIPTION; graphics/summary_screen/tiles.png). A 5×7 capital
+  alphabet with a 6 px advance and a 3 px space, Short's capitals with one middle row fewer. The art shows
+  19 letters and the period; G H J K Q U W Z are Short's with a repeated row removed, `! ? - : / '` are
+  drawn in the same style, and every other cell is Short's with row 9 removed. Lowercase gives capitals.
+- **Badge** (`EmeraldRoundedBadgeGame`): the condensed capitals of the type and contest badges
+  (graphics/types/*.png): 4 px wide (I T Y 3), 7 rows, advance = width + 1. The badges show 21 letters
+  and `?`; J Q V X Z are drawn in their style, other cells are the header font's.
+
+Both sit on the capital band rows 4–10 with the baseline at row 11, like Short. In the art the letters
+are white with a grey shadow one pixel right, down, and right-and-down; the fonts are the letter only.
+
+`scripts/make_badges.py` (run by `./build.sh`) writes `build/badges/`: for every type and contest badge
+a smooth SVG (the pixel background as exact squares, the lettering in the Badge font at the art's letter
+positions with the art's shadow), a letterless 32×16 PNG, and `badges.json` with each badge's text,
+letter positions (x of each letter's left edge, baseline y 11) and colours.
 
 ## Licence
 

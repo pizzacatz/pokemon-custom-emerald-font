@@ -34,7 +34,12 @@ SOURCES = {'narrow': ['normal'], 'short': ['normal'], 'small': ['normal', 'narro
            # pokeemerald-expansion's fonts, ported from the font each one narrows (port them in this order)
            'narrower': ['narrow', 'normal'], 'short_narrow': ['short', 'narrow', 'normal'],
            'short_narrower': ['short_narrow', 'short', 'narrower', 'narrow', 'normal'],
-           'small_narrower': ['small_narrow', 'small', 'narrower', 'narrow', 'normal']}
+           'small_narrower': ['small_narrow', 'small', 'narrower', 'narrow', 'normal'],
+           # the summary screen's header lettering: Short's capitals with a middle row removed
+           'header': ['short', 'normal'],
+           # the type badges' capitals: mostly the header's with a column removed
+           'badge': ['header', 'short', 'normal']}
+CAPS_ONLY = {'header', 'badge'}   # fonts whose lowercase cells hold the capitals: a capital's model serves both
 PREFER_TRANSFER = 1.0  # a fuzzy transfer wins unless a fresh trace scores this much better
 
 def overrides_of(variant):
@@ -397,6 +402,8 @@ def main():
         chs = chars_of(nspec)
         if only and not set(chs) & set(only):
             continue
+        if variant in CAPS_ONLY and all(c.islower() for c in chs):
+            continue                      # drawn by the capital's model (see the end of main)
         if name in existing and report.get(name, {}).get('method') == 'fitted':
             continue                      # solid shapes fitted to this font's own pixels by fit_fills.py
         if name in existing and (not force or (report.get(name, {}).get('method') == 'hand' and not replace)):
@@ -448,6 +455,16 @@ def main():
         with open(os.path.join(tdir, name + '.json'), 'w', encoding='utf-8') as f:
             json.dump(spec, f, indent=1, ensure_ascii=False)
         report[name] = {'char': nspec['char'], 'method': method, 'from': sv, 'note': note, **sc}
+    if variant in CAPS_ONLY:
+        for name, spec in overrides_of(variant).items():
+            chs = chars_of(spec)
+            low = [c.lower() for c in chs if c.isupper() and c.isascii()]
+            if low and not set(low) <= set(chs):
+                spec['char'] = list(dict.fromkeys(chs + low))
+                with open(os.path.join(tdir, name + '.json'), 'w', encoding='utf-8') as f:
+                    json.dump(spec, f, indent=1, ensure_ascii=False)
+                if name in report:
+                    report[name]['char'] = spec['char']
     json.dump(report, open(rpath, 'w'), indent=1, ensure_ascii=False)
     from collections import Counter
     print(variant, dict(Counter(v['method'] for v in report.values())))

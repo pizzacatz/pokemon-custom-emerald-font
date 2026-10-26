@@ -1,0 +1,1238 @@
+{
+ "font": "EmeraldRoundedBadgeGame-Regular.ttf",
+ "units_per_pixel": 100,
+ "badges": {
+  "normal": {
+   "text": "NORMAL",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "N",
+     "x": 1
+    },
+    {
+     "char": "O",
+     "x": 6
+    },
+    {
+     "char": "R",
+     "x": 11
+    },
+    {
+     "char": "M",
+     "x": 16
+    },
+    {
+     "char": "A",
+     "x": 21
+    },
+    {
+     "char": "L",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "normal.svg",
+   "blank": "normal_blank.png"
+  },
+  "fight": {
+   "text": "FIGHT",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "F",
+     "x": 5
+    },
+    {
+     "char": "I",
+     "x": 10
+    },
+    {
+     "char": "G",
+     "x": 14
+    },
+    {
+     "char": "H",
+     "x": 19
+    },
+    {
+     "char": "T",
+     "x": 24
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "fight.svg",
+   "blank": "fight_blank.png"
+  },
+  "flying": {
+   "text": "FLYING",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "F",
+     "x": 2
+    },
+    {
+     "char": "L",
+     "x": 7
+    },
+    {
+     "char": "Y",
+     "x": 12
+    },
+    {
+     "char": "I",
+     "x": 16
+    },
+    {
+     "char": "N",
+     "x": 20
+    },
+    {
+     "char": "G",
+     "x": 25
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "flying.svg",
+   "blank": "flying_blank.png"
+  },
+  "poison": {
+   "text": "POISON",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "P",
+     "x": 2
+    },
+    {
+     "char": "O",
+     "x": 7
+    },
+    {
+     "char": "I",
+     "x": 12
+    },
+    {
+     "char": "S",
+     "x": 16
+    },
+    {
+     "char": "O",
+     "x": 21
+    },
+    {
+     "char": "N",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "poison.svg",
+   "blank": "poison_blank.png"
+  },
+  "ground": {
+   "text": "GROUND",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "G",
+     "x": 1
+    },
+    {
+     "char": "R",
+     "x": 6
+    },
+    {
+     "char": "O",
+     "x": 11
+    },
+    {
+     "char": "U",
+     "x": 16
+    },
+    {
+     "char": "N",
+     "x": 21
+    },
+    {
+     "char": "D",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "ground.svg",
+   "blank": "ground_blank.png"
+  },
+  "rock": {
+   "text": "ROCK",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "R",
+     "x": 6
+    },
+    {
+     "char": "O",
+     "x": 11
+    },
+    {
+     "char": "C",
+     "x": 16
+    },
+    {
+     "char": "K",
+     "x": 21
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "rock.svg",
+   "blank": "rock_blank.png"
+  },
+  "bug": {
+   "text": "BUG",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "B",
+     "x": 8
+    },
+    {
+     "char": "U",
+     "x": 13
+    },
+    {
+     "char": "G",
+     "x": 18
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "bug.svg",
+   "blank": "bug_blank.png"
+  },
+  "ghost": {
+   "text": "GHOST",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "G",
+     "x": 4
+    },
+    {
+     "char": "H",
+     "x": 9
+    },
+    {
+     "char": "O",
+     "x": 14
+    },
+    {
+     "char": "S",
+     "x": 19
+    },
+    {
+     "char": "T",
+     "x": 24
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "ghost.svg",
+   "blank": "ghost_blank.png"
+  },
+  "steel": {
+   "text": "STEEL",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "S",
+     "x": 4
+    },
+    {
+     "char": "T",
+     "x": 9
+    },
+    {
+     "char": "E",
+     "x": 13
+    },
+    {
+     "char": "E",
+     "x": 18
+    },
+    {
+     "char": "L",
+     "x": 23
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "steel.svg",
+   "blank": "steel_blank.png"
+  },
+  "mystery": {
+   "text": "???",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "?",
+     "x": 8
+    },
+    {
+     "char": "?",
+     "x": 13
+    },
+    {
+     "char": "?",
+     "x": 18
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "mystery.svg",
+   "blank": "mystery_blank.png"
+  },
+  "fire": {
+   "text": "FIRE",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "F",
+     "x": 7
+    },
+    {
+     "char": "I",
+     "x": 12
+    },
+    {
+     "char": "R",
+     "x": 16
+    },
+    {
+     "char": "E",
+     "x": 21
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "fire.svg",
+   "blank": "fire_blank.png"
+  },
+  "water": {
+   "text": "WATER",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "W",
+     "x": 4
+    },
+    {
+     "char": "A",
+     "x": 9
+    },
+    {
+     "char": "T",
+     "x": 14
+    },
+    {
+     "char": "E",
+     "x": 18
+    },
+    {
+     "char": "R",
+     "x": 23
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "water.svg",
+   "blank": "water_blank.png"
+  },
+  "grass": {
+   "text": "GRASS",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "G",
+     "x": 4
+    },
+    {
+     "char": "R",
+     "x": 9
+    },
+    {
+     "char": "A",
+     "x": 14
+    },
+    {
+     "char": "S",
+     "x": 19
+    },
+    {
+     "char": "S",
+     "x": 24
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "grass.svg",
+   "blank": "grass_blank.png"
+  },
+  "electric": {
+   "text": "ELECTR",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "E",
+     "x": 2
+    },
+    {
+     "char": "L",
+     "x": 7
+    },
+    {
+     "char": "E",
+     "x": 12
+    },
+    {
+     "char": "C",
+     "x": 17
+    },
+    {
+     "char": "T",
+     "x": 22
+    },
+    {
+     "char": "R",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "electric.svg",
+   "blank": "electric_blank.png"
+  },
+  "psychic": {
+   "text": "PSYCHC",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "P",
+     "x": 2
+    },
+    {
+     "char": "S",
+     "x": 7
+    },
+    {
+     "char": "Y",
+     "x": 12
+    },
+    {
+     "char": "C",
+     "x": 16
+    },
+    {
+     "char": "H",
+     "x": 21
+    },
+    {
+     "char": "C",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "psychic.svg",
+   "blank": "psychic_blank.png"
+  },
+  "ice": {
+   "text": "ICE",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "I",
+     "x": 9
+    },
+    {
+     "char": "C",
+     "x": 13
+    },
+    {
+     "char": "E",
+     "x": 18
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "ice.svg",
+   "blank": "ice_blank.png"
+  },
+  "dragon": {
+   "text": "DRAGON",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "D",
+     "x": 1
+    },
+    {
+     "char": "R",
+     "x": 6
+    },
+    {
+     "char": "A",
+     "x": 11
+    },
+    {
+     "char": "G",
+     "x": 16
+    },
+    {
+     "char": "O",
+     "x": 21
+    },
+    {
+     "char": "N",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "dragon.svg",
+   "blank": "dragon_blank.png"
+  },
+  "dark": {
+   "text": "DARK",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "D",
+     "x": 6
+    },
+    {
+     "char": "A",
+     "x": 11
+    },
+    {
+     "char": "R",
+     "x": 16
+    },
+    {
+     "char": "K",
+     "x": 21
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "dark.svg",
+   "blank": "dark_blank.png"
+  },
+  "fairy": {
+   "text": "FAIRY",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "F",
+     "x": 5
+    },
+    {
+     "char": "A",
+     "x": 10
+    },
+    {
+     "char": "I",
+     "x": 15
+    },
+    {
+     "char": "R",
+     "x": 19
+    },
+    {
+     "char": "Y",
+     "x": 24
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "fairy.svg",
+   "blank": "fairy_blank.png"
+  },
+  "stellar": {
+   "text": "STELLR",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "S",
+     "x": 2
+    },
+    {
+     "char": "T",
+     "x": 7
+    },
+    {
+     "char": "E",
+     "x": 11
+    },
+    {
+     "char": "L",
+     "x": 16
+    },
+    {
+     "char": "L",
+     "x": 21
+    },
+    {
+     "char": "R",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "stellar.svg",
+   "blank": "stellar_blank.png"
+  },
+  "none": {
+   "text": "???",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "?",
+     "x": 8
+    },
+    {
+     "char": "?",
+     "x": 13
+    },
+    {
+     "char": "?",
+     "x": 18
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "none.svg",
+   "blank": "none_blank.png"
+  },
+  "contest_cool": {
+   "text": "COOL",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "C",
+     "x": 6
+    },
+    {
+     "char": "O",
+     "x": 11
+    },
+    {
+     "char": "O",
+     "x": 16
+    },
+    {
+     "char": "L",
+     "x": 21
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "contest_cool.svg",
+   "blank": "contest_cool_blank.png"
+  },
+  "contest_beauty": {
+   "text": "BEAUTY",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "B",
+     "x": 2
+    },
+    {
+     "char": "E",
+     "x": 7
+    },
+    {
+     "char": "A",
+     "x": 12
+    },
+    {
+     "char": "U",
+     "x": 17
+    },
+    {
+     "char": "T",
+     "x": 22
+    },
+    {
+     "char": "Y",
+     "x": 26
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "contest_beauty.svg",
+   "blank": "contest_beauty_blank.png"
+  },
+  "contest_cute": {
+   "text": "CUTE",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "C",
+     "x": 6
+    },
+    {
+     "char": "U",
+     "x": 11
+    },
+    {
+     "char": "T",
+     "x": 16
+    },
+    {
+     "char": "E",
+     "x": 20
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "contest_cute.svg",
+   "blank": "contest_cute_blank.png"
+  },
+  "contest_smart": {
+   "text": "SMART",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "S",
+     "x": 4
+    },
+    {
+     "char": "M",
+     "x": 9
+    },
+    {
+     "char": "A",
+     "x": 14
+    },
+    {
+     "char": "R",
+     "x": 19
+    },
+    {
+     "char": "T",
+     "x": 24
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "contest_smart.svg",
+   "blank": "contest_smart_blank.png"
+  },
+  "contest_tough": {
+   "text": "TOUGH",
+   "size": [
+    32,
+    16
+   ],
+   "baseline": 11,
+   "letters": [
+    {
+     "char": "T",
+     "x": 4
+    },
+    {
+     "char": "O",
+     "x": 8
+    },
+    {
+     "char": "U",
+     "x": 13
+    },
+    {
+     "char": "G",
+     "x": 18
+    },
+    {
+     "char": "H",
+     "x": 23
+    }
+   ],
+   "ink": "#ffffff",
+   "shadow": "#837b73",
+   "shadow_offsets": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "svg": "contest_tough.svg",
+   "blank": "contest_tough_blank.png"
+  }
+ }
+}

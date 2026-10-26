@@ -179,6 +179,17 @@ softened pixel art or plain traces:
 
 No advance or code point changed.
 
+## Lettering from the game's art
+
+The summary screen's section headers and the type badges are lettering drawn into the graphics, not
+text. Both are now fonts (Header and Badge, see the README) built by the normal pipeline from sheets
+synthesized from the art: every letter the art shows is taken from it (one consistent shape per letter
+in both sets), the rest of A–Z is derived or drawn in the same style. Header: 19 letters from the art,
+G H J K Q U W Z from Short with a repeated middle row removed (row 9, or 7 for K and Z, 5 for Q); its
+M N R G X are hand-modelled. Badge: 21 letters and `?` from the badges, J Q V X Z drawn; its M N V W X
+are hand-modelled (M and W are stems with a bar, X is two brackets). Every header word and every badge
+was rendered over the art's pixels to check positions.
+
 ## Known limitations / remaining defects
 
 - `%` and `&` follow the quirky source shapes; the smooth `%` is odd-looking because the pixel

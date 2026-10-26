@@ -1,0 +1,28 @@
+{
+ "char": [
+  "",
+  "○"
+ ],
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "circle": {
+    "center": [
+     4.5,
+     7.5
+    ],
+    "radius": 3
+   }
+  }
+ ],
+ "join": "miter",
+ "dots": [],
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "transfer from short (1 row/column edits)"
+}

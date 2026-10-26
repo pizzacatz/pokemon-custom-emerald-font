@@ -7,6 +7,7 @@ import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'source', 'pokeemerald')
 EXP_SRC = os.path.join(ROOT, 'source', 'pokeemerald-expansion')   # glyphs the expansion adds in blank cells
+DERIVED = os.path.join(ROOT, 'source', 'derived')                  # sheets made by make_lettering.py
 BUILD = os.path.join(ROOT, 'build')
 
 # sheet, width table in src/fonts.c, baseline row, game line pitch (FontInfo.maxLetterHeight; Small Narrow's
@@ -23,6 +24,10 @@ VARIANTS = {
     'small_narrower': dict(sheet='latin_small_narrower.png', widths='gFontSmallNarrowerLatinGlyphWidths', baseline=11, line=12, name='Small Narrower', expansion=True),
     'short_narrow':   dict(sheet='latin_short_narrow.png',   widths='gFontShortNarrowLatinGlyphWidths',   baseline=11, line=14, name='Short Narrow', expansion=True),
     'short_narrower': dict(sheet='latin_short_narrower.png', widths='gFontShortNarrowerLatinGlyphWidths', baseline=11, line=14, name='Short Narrower', expansion=True),
+    # not a text font: the summary screen's section-header lettering, a sheet synthesized by make_lettering.py
+    'header':         dict(sheet='latin_header.png', widths=None, baseline=11, line=14, name='Header', derived=True),
+    # nor this: the type badges' condensed capitals (NORMAL, FIRE, ...), also made by make_lettering.py
+    'badge':          dict(sheet='latin_badge.png', widths=None, baseline=11, line=14, name='Badge', derived=True),
 }
 VARIANT = os.environ.get('EMERALD_VARIANT', 'normal')
 if VARIANT not in VARIANTS:

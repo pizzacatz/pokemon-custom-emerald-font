@@ -1,0 +1,87 @@
+{
+ "fonts": {
+  "exact": {
+   "num_glyphs": 234,
+   "cmap_entries": 252,
+   "missing_required": [],
+   "missing_useful": [],
+   "missing_intended": [],
+   "upm": 1600,
+   "metrics": {
+    "hhea": [
+     1100,
+     -300,
+     0
+    ],
+    "typo": [
+     1100,
+     -300,
+     0
+    ],
+    "win": [
+     1100,
+     300
+    ],
+    "capH": 700,
+    "xH": 700
+   },
+   "empty_mapped_glyphs": [],
+   "vertical_overflow": [],
+   "zero_advance": [],
+   "ink_outside_advance": [
+    [
+     "U+E038",
+     100,
+     800,
+     700
+    ]
+   ]
+  },
+  "smoothgame": {
+   "num_glyphs": 234,
+   "cmap_entries": 252,
+   "missing_required": [],
+   "missing_useful": [],
+   "missing_intended": [],
+   "upm": 1600,
+   "metrics": {
+    "hhea": [
+     1100,
+     -300,
+     0
+    ],
+    "typo": [
+     1100,
+     -300,
+     0
+    ],
+    "win": [
+     1100,
+     300
+    ],
+    "capH": 700,
+    "xH": 700
+   },
+   "empty_mapped_glyphs": [],
+   "vertical_overflow": [],
+   "zero_advance": [],
+   "ink_outside_advance": [
+    [
+     "U+E038",
+     100,
+     800,
+     700
+    ]
+   ]
+  }
+ },
+ "exact_bitmap_roundtrip_mismatches": [],
+ "missing_in_specimen": {
+  "exact": [],
+  "smoothgame": []
+ },
+ "line_height_px_at_32": {
+  "exact": 28,
+  "smoothgame": 28
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "char": "0",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     0.5,
+     4.5,
+     null,
+     -0.3033
+    ],
+    [
+     1.5,
+     3.5
+    ],
+    [
+     3.5,
+     3.5,
+     null,
+     -0.3033
+    ],
+    [
+     4.5,
+     4.5
+    ],
+    [
+     4.5,
+     9.5,
+     null,
+     -0.3033
+    ],
+    [
+     3.5,
+     10.5
+    ],
+    [
+     1.5,
+     10.5,
+     null,
+     -0.3033
+    ],
+    [
+     0.5,
+     9.5,
+     null,
+     0
+    ],
+    [
+     0.5,
+     4.5
+    ]
+   ],
+   "closed": true
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "_ported": "identical from header"
+}

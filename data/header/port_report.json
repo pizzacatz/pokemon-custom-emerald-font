@@ -1,0 +1,728 @@
+{
+ "K": {
+  "char": [
+   "K",
+   "k"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.062,
+  "missing": 0,
+  "extra": 4
+ },
+ "M": {
+  "char": [
+   "M",
+   "m"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "header alphabet"
+ },
+ "W": {
+  "char": [
+   "W",
+   "w"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.844,
+  "missing": 0,
+  "extra": 3
+ },
+ "multiply": {
+  "char": "×",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 8.812,
+  "missing": 2,
+  "extra": 6
+ },
+ "u0021": {
+  "char": "!",
+  "method": "transfer",
+  "from": "normal",
+  "note": "3 row/column edits",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0025": {
+  "char": "%",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.625,
+  "missing": 0,
+  "extra": 4
+ },
+ "u0026": {
+  "char": "&",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 8.094,
+  "missing": 1,
+  "extra": 6
+ },
+ "u0027": {
+  "char": "'",
+  "method": "transfer",
+  "from": "short",
+  "note": "3 row/column edits",
+  "err": 1.078,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0028": {
+  "char": "(",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0029": {
+  "char": ")",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u002C": {
+  "char": ",",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.188,
+  "missing": 0,
+  "extra": 1
+ },
+ "u002E": {
+  "char": ".",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "u002F": {
+  "char": "/",
+  "method": "transfer",
+  "from": "short",
+  "note": "3 row/column edits",
+  "err": 3.719,
+  "missing": 0,
+  "extra": 2
+ },
+ "u0030": {
+  "char": "0",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.5,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0032": {
+  "char": "2",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 4.797,
+  "missing": 0,
+  "extra": 2
+ },
+ "u0033": {
+  "char": "3",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 3.766,
+  "missing": 0,
+  "extra": 3
+ },
+ "u0034": {
+  "char": "4",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 2.531,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0035": {
+  "char": "5",
+  "method": "fuzzy",
+  "from": "normal",
+  "note": "1 row/column edits, 1 px differ",
+  "err": 2.297,
+  "missing": 0,
+  "extra": 1
+ },
+ "u0036": {
+  "char": "6",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 3.406,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0037": {
+  "char": "7",
+  "method": "transfer",
+  "from": "normal",
+  "note": "1 row/column edits",
+  "err": 3.172,
+  "missing": 1,
+  "extra": 1
+ },
+ "u0038": {
+  "char": "8",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 4.438,
+  "missing": 0,
+  "extra": 2
+ },
+ "u0039": {
+  "char": "9",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 3.422,
+  "missing": 0,
+  "extra": 2
+ },
+ "u003A": {
+  "char": ":",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "u003B": {
+  "char": ";",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.188,
+  "missing": 0,
+  "extra": 1
+ },
+ "u003C": {
+  "char": "<",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.625,
+  "missing": 0,
+  "extra": 2
+ },
+ "u003E": {
+  "char": ">",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.625,
+  "missing": 0,
+  "extra": 2
+ },
+ "u003F": {
+  "char": "?",
+  "method": "transfer",
+  "from": "normal",
+  "note": "3 row/column edits",
+  "err": 3.75,
+  "missing": 0,
+  "extra": 2
+ },
+ "u0041": {
+  "char": [
+   "A",
+   "a"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0042": {
+  "char": [
+   "B",
+   "b"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.219,
+  "missing": 0,
+  "extra": 1
+ },
+ "u0043": {
+  "char": [
+   "C",
+   "c"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.5,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0044": {
+  "char": [
+   "D",
+   "d"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0047": {
+  "char": [
+   "G",
+   "g"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "header alphabet"
+ },
+ "u004A": {
+  "char": [
+   "J",
+   "j"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "2 row/column edits",
+  "err": 2.688,
+  "missing": 0,
+  "extra": 1
+ },
+ "u004E": {
+  "char": [
+   "N",
+   "n"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "header alphabet"
+ },
+ "u004F": {
+  "char": [
+   "O",
+   "o"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.5,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0050": {
+  "char": [
+   "P",
+   "p"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0051": {
+  "char": [
+   "Q",
+   "q"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 3.406,
+  "missing": 0,
+  "extra": 1
+ },
+ "u0052": {
+  "char": [
+   "R",
+   "r"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "header alphabet"
+ },
+ "u0053": {
+  "char": [
+   "S",
+   "s"
+  ],
+  "method": "transfer",
+  "from": "normal",
+  "note": "2 row/column edits",
+  "err": 4.875,
+  "missing": 0,
+  "extra": 2
+ },
+ "u0055": {
+  "char": [
+   "U",
+   "u"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.25,
+  "missing": 0,
+  "extra": 0
+ },
+ "u0056": {
+  "char": [
+   "V",
+   "v"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.156,
+  "missing": 0,
+  "extra": 3
+ },
+ "u0058": {
+  "char": [
+   "X",
+   "x"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "header alphabet"
+ },
+ "u0059": {
+  "char": [
+   "Y",
+   "y"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 3.031,
+  "missing": 0,
+  "extra": 0
+ },
+ "u005A": {
+  "char": [
+   "Z",
+   "z"
+  ],
+  "method": "transfer",
+  "from": "normal",
+  "note": "2 row/column edits",
+  "err": 2.344,
+  "missing": 0,
+  "extra": 0
+ },
+ "u00A5": {
+  "char": "¥",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 1.969,
+  "missing": 0,
+  "extra": 0
+ },
+ "u00B7": {
+  "char": "·",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "u2018": {
+  "char": "‘",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 0.906,
+  "missing": 0,
+  "extra": 0
+ },
+ "u201C": {
+  "char": "“",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 1.812,
+  "missing": 0,
+  "extra": 0
+ },
+ "u201D": {
+  "char": "”",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 1.531,
+  "missing": 0,
+  "extra": 0
+ },
+ "u2026": {
+  "char": "…",
+  "method": "identical",
+  "from": "short",
+  "note": "",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "u25B6": {
+  "char": "▶",
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "u2640": {
+  "char": "♀",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.5,
+  "missing": 0,
+  "extra": 0
+ },
+ "u2642": {
+  "char": "♂",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 4.516,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE034": {
+  "char": "",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 2.906,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE038": {
+  "char": "",
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE053": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.141,
+  "missing": 0,
+  "extra": 1
+ },
+ "uE054": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 4.359,
+  "missing": 0,
+  "extra": 1
+ },
+ "uE055": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.641,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE056": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 5.828,
+  "missing": 0,
+  "extra": 2
+ },
+ "uE079": {
+  "char": [
+   "",
+   "↑"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07A": {
+  "char": [
+   "",
+   "↓"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07B": {
+  "char": [
+   "",
+   "←"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE07C": {
+  "char": [
+   "",
+   "→"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE100": {
+  "char": [
+   "",
+   "⬆"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE101": {
+  "char": [
+   "",
+   "⬇"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE102": {
+  "char": [
+   "",
+   "⬅"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE103": {
+  "char": [
+   "",
+   "⮕"
+  ],
+  "method": "fitted",
+  "from": null,
+  "note": "fit_fills.py"
+ },
+ "uE104": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "0 row/column edits",
+  "err": 0.0,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE105": {
+  "char": "",
+  "method": "traced",
+  "from": null,
+  "note": "",
+  "err": 2.906,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE106": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 2.719,
+  "missing": 0,
+  "extra": 1
+ },
+ "uE107": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 1.344,
+  "missing": 0,
+  "extra": 0
+ },
+ "uE108": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 4.344,
+  "missing": 1,
+  "extra": 1
+ },
+ "uE115": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 11.25,
+  "missing": 0,
+  "extra": 3
+ },
+ "uE116": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 11.656,
+  "missing": 0,
+  "extra": 3
+ },
+ "uE117": {
+  "char": "",
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 12.75,
+  "missing": 2,
+  "extra": 9
+ },
+ "uE118": {
+  "char": [
+   "",
+   "○"
+  ],
+  "method": "transfer",
+  "from": "short",
+  "note": "1 row/column edits",
+  "err": 9.062,
+  "missing": 0,
+  "extra": 3
+ }
+}

@@ -133,14 +133,20 @@ def main():
     # (0x38 V_D_ARROW, 0x118 CIRCLE_HOLLOW, 0xF7 in Small) taken from the expansion. The expansion-only fonts
     # use the expansion's sheet throughout. Either way character names and Unicode come from pokeemerald's
     # charmap, except for those expansion cells, which take the expansion's names.
+    # A derived sheet (the summary screen's header lettering) comes with its own width table and is complete.
     base = EXP_SRC if VINFO.get('expansion') else SRC
-    im = Image.open(os.path.join(base, 'graphics/fonts', VINFO['sheet']))
+    if VINFO.get('derived'):
+        im = Image.open(os.path.join(DERIVED, VINFO['sheet']))
+        widths = json.load(open(os.path.join(DERIVED, VINFO['sheet'].replace('.png', '_widths.json'))))
+    else:
+        im = Image.open(os.path.join(base, 'graphics/fonts', VINFO['sheet']))
+        widths = parse_widths(os.path.join(base, 'src/fonts.c'))
     assert im.size == (256, 512) and im.mode == 'P', (im.size, im.mode)
     px = im.load()
-    widths = parse_widths(os.path.join(base, 'src/fonts.c'))
     cmap = parse_charmap(os.path.join(SRC, 'charmap.txt'))
-    xpx = Image.open(os.path.join(EXP_SRC, 'graphics/fonts', VINFO['sheet'])).load()
-    xwidths = parse_widths(os.path.join(EXP_SRC, 'src/fonts.c'))
+    xsheet = 'latin_short.png' if VINFO.get('derived') else VINFO['sheet']
+    xpx = Image.open(os.path.join(EXP_SRC, 'graphics/fonts', xsheet)).load()
+    xwidths = parse_widths(os.path.join(EXP_SRC, 'src/fonts.c'), 'gFontShortLatinGlyphWidths' if VINFO.get('derived') else None)
     xcmap = parse_charmap(os.path.join(EXP_SRC, 'charmap.txt'))
     npx = Image.open(os.path.join(SRC, 'graphics/fonts/latin_normal.png')).load()
     normal_w = parse_widths(os.path.join(SRC, 'src/fonts.c'), 'gFontNormalLatinGlyphWidths')
@@ -154,7 +160,7 @@ def main():
     for gid in range(512):
         fg = cell_mask(px, gid, FG, widths[gid])
         sh = cell_mask(px, gid, SHADOW, widths[gid])
-        source = 'pokeemerald-expansion' if VINFO.get('expansion') else 'pokeemerald'
+        source = 'pokeemerald-expansion' if VINFO.get('expansion') else 'derived' if VINFO.get('derived') else 'pokeemerald'
         if source == 'pokeemerald' and not any(map(any, fg)):
             xfg = cell_mask(xpx, gid, FG, xwidths[gid])
             if any(map(any, xfg)):
@@ -186,7 +192,7 @@ def main():
             'shadow_px': sum(map(sum, sh)),
             'contours': len(contours),
         }
-        if source != 'pokeemerald' and not VINFO.get('expansion'):
+        if source != 'pokeemerald' and not VINFO.get('expansion') and not VINFO.get('derived'):
             entry['source'] = source
         mapping[str(gid)] = entry
         if ink or info['unicode'] or info['name']:

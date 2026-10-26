@@ -1,0 +1,36 @@
+{
+ "char": "/",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 1,
+ "strokes": [
+  {
+   "points": [
+    [
+     5,
+     4
+    ],
+    [
+     0,
+     11
+    ]
+   ]
+  }
+ ],
+ "dots": [],
+ "join": "miter",
+ "dot_shape": "circle",
+ "dot_corner": 0.25,
+ "clip_y": [
+  4,
+  11
+ ],
+ "clip_x": [
+  0,
+  5
+ ],
+ "_ported": "transfer from short (3 row/column edits)"
+}
