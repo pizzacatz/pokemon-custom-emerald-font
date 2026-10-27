@@ -10,7 +10,7 @@
   {
    "points": [
     [
-     0.0,
+     0,
      4.5
     ],
     [
@@ -19,11 +19,11 @@
     ],
     [
      2.5,
-     6.0
+     5.75
     ],
     [
-     0.0,
-     12
+     0,
+     11.5
     ]
    ],
    "sharp": true
@@ -31,23 +31,23 @@
   {
    "cut": [
     [
-     0.0,
+     0,
      11
     ],
     [
-     1.0,
+     1,
      11
     ],
     [
-     1.0,
+     1,
      13
     ],
     [
-     0.0,
+     0,
      13
     ],
     [
-     0.0,
+     0,
      11
     ]
    ]
@@ -57,5 +57,9 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from narrower (2 row/column edits)"
+ "_ported": "transfer from narrower (2 row/column edits)",
+ "clip_x": [
+  0,
+  3
+ ]
 }

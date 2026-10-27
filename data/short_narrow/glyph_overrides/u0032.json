@@ -67,5 +67,9 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from narrow (0 row/column edits)"
+ "_ported": "transfer from narrow (0 row/column edits)",
+ "clip_x": [
+  0,
+  4
+ ]
 }

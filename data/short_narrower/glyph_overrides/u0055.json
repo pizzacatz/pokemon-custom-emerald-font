@@ -26,11 +26,11 @@
      0.3033
     ],
     [
-     1.0,
+     1.25,
      10.5
     ],
     [
-     1.5,
+     1.75,
      10.5,
      null,
      0.3033
@@ -52,5 +52,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from narrower (1 row/column edits)"
+ "_ported": "transfer from narrower (1 row/column edits); tidied by tidy_arcs.py"
 }

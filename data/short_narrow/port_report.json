@@ -121,18 +121,18 @@
  },
  "u0032": {
   "char": "2",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "0 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.297,
   "missing": 0,
   "extra": 0
  },
  "u0033": {
   "char": "3",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "0 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.594,
   "missing": 0,
   "extra": 3
@@ -390,10 +390,16 @@
   "extra": 0
  },
  "u0061": {
-  "char": "a",
-  "method": "transfer",
-  "from": "short",
-  "note": "1 row/column edits",
+  "char": [
+   "a",
+   "à",
+   "á",
+   "â",
+   "ä"
+  ],
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.422,
   "missing": 0,
   "extra": 1

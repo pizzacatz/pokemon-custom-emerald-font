@@ -10,7 +10,7 @@
   {
    "points": [
     [
-     0.0,
+     0,
      2.5
     ],
     [
@@ -18,11 +18,11 @@
      2.5
     ],
     [
-     2.5,
-     4.0
+     3.25,
+     2.5
     ],
     [
-     0.0,
+     0,
      12
     ]
    ],
@@ -31,24 +31,36 @@
   {
    "cut": [
     [
-     0.0,
+     0,
      11
     ],
     [
-     1.0,
+     1,
      11
     ],
     [
-     1.0,
+     1,
      13
     ],
     [
-     0.0,
+     0,
      13
     ],
     [
-     0.0,
+     0,
      11
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     2.5,
+     2.5
+    ],
+    [
+     2.5,
+     4.25
     ]
    ]
   }
@@ -57,5 +69,13 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from narrower (0 row/column edits)"
+ "_ported": "transfer from narrower (0 row/column edits)",
+ "clip_y": [
+  2,
+  11
+ ],
+ "clip_x": [
+  0,
+  3
+ ]
 }

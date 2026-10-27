@@ -19,12 +19,12 @@
      4.5
     ],
     [
-     2.5,
-     5.25
+     3,
+     4
     ],
     [
-     0.5,
-     9
+     -0.25,
+     10.5
     ],
     [
      0.5,
@@ -36,10 +36,58 @@
     ]
    ],
    "sharp": true
+  },
+  {
+   "cut": [
+    [
+     2,
+     4
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     4,
+     6
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "points": [
+    [
+     0.5,
+     9.5
+    ],
+    [
+     0.5,
+     10.25
+    ]
+   ]
   }
  ],
  "dots": [],
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+ "_ported": "hand-modelled in the 67.5 degree corner-arc convention",
+ "clip_x": [
+  0,
+  3
+ ]
 }

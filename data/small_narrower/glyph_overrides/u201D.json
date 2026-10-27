@@ -14,7 +14,7 @@
      4.5
     ],
     [
-     2.5,
+     2.25,
      4.5,
      null,
      0.3033
@@ -38,7 +38,7 @@
      4.5
     ],
     [
-     0.5,
+     0.25,
      4.5,
      null,
      0.3033
@@ -95,5 +95,5 @@
  "join": "miter",
  "dot_shape": "square",
  "dot_corner": 0.25,
- "_ported": "transfer from normal (3 row/column edits)"
+ "_ported": "transfer from normal (3 row/column edits); tidied by tidy_arcs.py"
 }

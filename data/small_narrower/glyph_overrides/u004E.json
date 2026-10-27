@@ -29,7 +29,7 @@
      0
     ],
     [
-     1.5,
+     1.75,
      4.5,
      null,
      -0.3033
@@ -51,5 +51,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention; tidied by tidy_arcs.py"
 }

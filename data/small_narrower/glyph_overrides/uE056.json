@@ -52,7 +52,7 @@
   {
    "points": [
     [
-     1.5,
+     1.75,
      5.5,
      null,
      0.3033
@@ -72,7 +72,7 @@
   {
    "points": [
     [
-     1.5,
+     1.75,
      5.5,
      null,
      -0.3033
@@ -103,7 +103,7 @@
      -0.3033
     ],
     [
-     5.5,
+     5.25,
      7.5,
      0
     ]
@@ -123,7 +123,7 @@
      0.3033
     ],
     [
-     5.5,
+     5.25,
      11.5,
      0
     ],
@@ -162,7 +162,7 @@
      0.3033
     ],
     [
-     5.5,
+     5.75,
      7.5,
      0
     ]
@@ -182,7 +182,7 @@
      -0.3033
     ],
     [
-     6.5,
+     6.25,
      5.5,
      0
     ],
@@ -218,5 +218,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention; tidied by tidy_arcs.py"
 }

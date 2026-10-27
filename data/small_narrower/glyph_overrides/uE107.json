@@ -23,14 +23,14 @@
    "points": [
     [
      3.5,
-     4.5
+     7.5
     ],
     [
      3.5,
      10.5
     ],
     [
-     4.5,
+     4.75,
      10.5,
      null,
      0.3033
@@ -46,10 +46,14 @@
      0.3033
     ],
     [
-     4.5,
+     4.75,
      4.5,
      null,
      0
+    ],
+    [
+     3.5,
+     4.5
     ],
     [
      3.5,
@@ -64,5 +68,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from small_narrow (1 row/column edits)"
+ "_ported": "transfer from small_narrow (1 row/column edits); tidied by tidy_arcs.py"
 }

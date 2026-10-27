@@ -11,11 +11,11 @@
   {
    "points": [
     [
-     2.5,
+     2.0,
      5
     ],
     [
-     2.5,
+     2.0,
      7.5
     ]
    ]
@@ -74,15 +74,15 @@
    "points": [
     [
      0.5,
-     6.5
+     6.0
     ],
     [
-     2.5,
+     2.0,
      4.5
     ],
     [
-     4.5,
-     6.5
+     3.5,
+     6.0
     ]
    ],
    "sharp": true
@@ -91,5 +91,5 @@
  "dots": [],
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+ "_ported": "hand-modelled: stem and arrowhead centred on the ring (the pixels put them half a pixel right)"
 }

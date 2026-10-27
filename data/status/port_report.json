@@ -244,9 +244,9 @@
   "method": "transfer",
   "from": "badge",
   "note": "1 row/column edits",
-  "err": 2.5,
+  "err": 2.438,
   "missing": 0,
-  "extra": 2
+  "extra": 1
  },
  "u0041": {
   "char": [
@@ -257,9 +257,9 @@
    "Ä",
    "a"
   ],
-  "method": "transfer",
-  "from": "badge",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.25,
   "missing": 0,
   "extra": 0
@@ -269,9 +269,9 @@
    "B",
    "b"
   ],
-  "method": "transfer",
-  "from": "badge",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.234,
   "missing": 0,
   "extra": 2
@@ -330,9 +330,9 @@
    "Ñ",
    "n"
   ],
-  "method": "transfer",
-  "from": "header",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.125,
   "missing": 0,
   "extra": 0
@@ -358,9 +358,9 @@
    "P",
    "p"
   ],
-  "method": "transfer",
-  "from": "badge",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.25,
   "missing": 0,
   "extra": 0
@@ -382,9 +382,9 @@
    "R",
    "r"
   ],
-  "method": "transfer",
-  "from": "header",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.172,
   "missing": 0,
   "extra": 0
@@ -394,9 +394,9 @@
    "S",
    "s"
   ],
-  "method": "transfer",
-  "from": "short",
-  "note": "3 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 5.906,
   "missing": 0,
   "extra": 4

@@ -199,6 +199,13 @@ The circled digits ①–⑨ (E10A–E112) are a `circle` stroke around the digi
 `scripts/fit_circles.py [font ...]`: the circle is centred on the pixel ring, with a diameter halfway between
 the ring's width and height. The digit inside is traced in the usual convention. They are "fitted" too.
 
+`scripts/tidy_arcs.py [font ...]` evens out ported and traced models (it leaves Normal, "hand" and
+"fitted" models alone). Each bowl's flat top or bottom is centred between the corner arcs on either
+side; porting left some half a pixel off (Narrower's O ran 1.0–1.5 over its middle column, now 1.25–1.75).
+In Small Narrower it also applies the arc style of its hand-edited letters: a corner arc from a stem to
+the next column is 0.75 px across, so a 3 px bowl has a 0.5 px flat. Small Narrower's traced glyphs get the
+same arcs in `smooth.py`.
+
 `data/glyph_overrides/_TEMPLATE.json` has every construct with notes; `N.json`, `M.json`, `K.json`,
 `W.json`, `multiply.json` are working examples. Stroke ends get square caps (extended by half the
 width), joints between strokes are unioned, so you can build a glyph from overlapping pieces.

@@ -410,6 +410,9 @@ def smooth_glyph(mask, char=None, plain=False):
         base = smooth_glyph(mask, char, plain=True)
         try:
             spec = trace(mask, char)
+            from tidy_arcs import INSET, inset_spec
+            if VARIANT in INSET:
+                inset_spec(spec, INSET[VARIANT])   # the font's hand-drawn arc width (Small Narrower)
             conv = (override_strokes(spec), [norm_dot(d, spec['dot_shape'], spec['dot_corner']) for d in spec['dots']],
                     override_cuts(spec))
         except Exception:

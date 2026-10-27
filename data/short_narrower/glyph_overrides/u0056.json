@@ -28,18 +28,42 @@
     ],
     [
      2.5,
-     6.5
+     6.25
     ],
     [
      0.5,
-     9
+     10
     ]
    ],
    "sharp": true
+  },
+  {
+   "cut": [
+    [
+     3,
+     6.25
+    ],
+    [
+     0.5,
+     11
+    ],
+    [
+     3,
+     11.25
+    ],
+    [
+     3,
+     6.5
+    ]
+   ]
   }
  ],
  "dots": [],
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "hand-modelled in the 67.5 degree corner-arc convention"
+ "_ported": "hand-modelled in the 67.5 degree corner-arc convention",
+ "clip_x": [
+  0,
+  3
+ ]
 }

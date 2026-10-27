@@ -181,9 +181,9 @@
  },
  "u0038": {
   "char": "8",
-  "method": "transfer",
-  "from": "normal",
-  "note": "0 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 4.438,
   "missing": 0,
   "extra": 2
@@ -396,10 +396,16 @@
   "extra": 2
  },
  "u0061": {
-  "char": "a",
+  "char": [
+   "a",
+   "à",
+   "á",
+   "â",
+   "ä"
+  ],
   "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 2.234,
   "missing": 0,
   "extra": 0

@@ -129,7 +129,7 @@
   "char": "2",
   "method": "hand",
   "from": null,
-  "note": "diagonal refitted",
+  "note": "edited in the glyph editor",
   "err": 3.297,
   "missing": 0,
   "extra": 0
@@ -139,9 +139,9 @@
   "method": "transfer",
   "from": "normal",
   "note": "1 row/column edits",
-  "err": 3.594,
+  "err": 3.469,
   "missing": 0,
-  "extra": 3
+  "extra": 1
  },
  "u0034": {
   "char": "4",
@@ -238,9 +238,9 @@
   "method": "transfer",
   "from": "normal",
   "note": "1 row/column edits",
-  "err": 3.0,
+  "err": 2.375,
   "missing": 0,
-  "extra": 1
+  "extra": 0
  },
  "u0041": {
   "char": "A",
@@ -685,7 +685,7 @@
  },
  "u2640": {
   "char": "♀",
-  "method": "traced",
+  "method": "hand",
   "from": null,
   "note": "",
   "err": 2.812,

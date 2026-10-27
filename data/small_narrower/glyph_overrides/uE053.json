@@ -20,7 +20,7 @@
      0
     ],
     [
-     2.0,
+     1.75,
      3.5,
      null,
      -0.3033
@@ -36,7 +36,7 @@
      -0.3033
     ],
     [
-     2.0,
+     1.75,
      6.5
     ],
     [
@@ -65,7 +65,7 @@
      9.5
     ],
     [
-     4.5,
+     4.75,
      9.5,
      null,
      0.3033
@@ -90,7 +90,7 @@
      9.5
     ],
     [
-     4.5,
+     4.75,
      9.5,
      null,
      -0.3033
@@ -110,5 +110,5 @@
  "join": "miter",
  "dot_shape": "square",
  "dot_corner": 0.25,
- "_ported": "fuzzy from narrower (5 row/column edits, 2 px differ)"
+ "_ported": "fuzzy from narrower (5 row/column edits, 2 px differ); tidied by tidy_arcs.py"
 }

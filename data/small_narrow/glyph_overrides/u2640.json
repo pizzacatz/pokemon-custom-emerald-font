@@ -10,20 +10,6 @@
   {
    "points": [
     [
-     0.5,
-     9.5,
-     0
-    ],
-    [
-     2.5,
-     9.5,
-     0
-    ]
-   ]
-  },
-  {
-   "points": [
-    [
      2.5,
      7.5,
      0
@@ -77,26 +63,12 @@
   {
    "points": [
     [
-     2.5,
+     2.0,
      7.5,
      0
     ],
     [
-     2.5,
-     9.5,
-     0
-    ]
-   ]
-  },
-  {
-   "points": [
-    [
-     2.5,
-     9.5,
-     0
-    ],
-    [
-     2.5,
+     2.0,
      10.5,
      0
     ]
@@ -105,12 +77,12 @@
   {
    "points": [
     [
-     2.5,
+     0.5,
      9.5,
      0
     ],
     [
-     4.5,
+     3.5,
      9.5,
      0
     ]
@@ -121,5 +93,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "hand-modelled: stem and cross centred on the ring (the pixels put them half a pixel right)"
 }

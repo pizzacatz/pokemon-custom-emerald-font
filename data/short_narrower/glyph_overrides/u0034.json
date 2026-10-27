@@ -10,7 +10,7 @@
   {
    "points": [
     [
-     3.0,
+     3,
      8.5
     ],
     [
@@ -24,7 +24,7 @@
      0
     ],
     [
-     2.0,
+     2.5,
      2.5,
      null,
      0
@@ -45,5 +45,9 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from narrower (0 row/column edits)"
+ "_ported": "transfer from narrower (0 row/column edits)",
+ "clip_y": [
+  2,
+  11
+ ]
 }

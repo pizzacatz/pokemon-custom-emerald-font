@@ -29,7 +29,7 @@
      0
     ],
     [
-     1.5,
+     1.75,
      3.5,
      null,
      -0.3033
@@ -46,7 +46,7 @@
      -0.3033
     ],
     [
-     1.5,
+     1.75,
      6.5,
      0
     ],
@@ -75,7 +75,8 @@
    "points": [
     [
      3.5,
-     8.5,
+     9.5,
+     0,
      0
     ],
     [
@@ -85,7 +86,13 @@
      0.3033
     ],
     [
-     4.5,
+     4.25,
+     11.5,
+     null,
+     0
+    ],
+    [
+     4.75,
      11.5,
      null,
      0.3033
@@ -102,10 +109,21 @@
      0.3033
     ],
     [
-     4.5,
+     4.75,
+     7.5,
+     null,
+     0
+    ],
+    [
+     4.25,
      7.5,
      null,
      0.3033
+    ],
+    [
+     3.5,
+     8.5,
+     0
     ]
    ],
    "closed": true
@@ -115,5 +133,5 @@
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "traced from the pixels in the 67.5 degree corner-arc convention"
+ "_ported": "traced from the pixels in the 67.5 degree corner-arc convention; tidied by tidy_arcs.py"
 }
