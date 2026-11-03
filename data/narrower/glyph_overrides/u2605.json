@@ -1,0 +1,47 @@
+{
+ "char": "★",
+ "rows": [
+  0,
+  16
+ ],
+ "width": 1,
+ "joint_radius": 0,
+ "join": "miter",
+ "strokes": [
+  {
+   "points": [
+    [
+     6.5,
+     7
+    ],
+    [
+     3,
+     9.5
+    ],
+    [
+     4.5,
+     5.4
+    ],
+    [
+     6,
+     9.5
+    ],
+    [
+     2.5,
+     7
+    ]
+   ],
+   "closed": true
+  }
+ ],
+ "dots": [
+  {
+   "x": 4.5,
+   "y": 7.4,
+   "r": 0.5
+  }
+ ],
+ "dot_shape": "square",
+ "dot_corner": 0.25,
+ "_ported": "identical from narrow"
+}

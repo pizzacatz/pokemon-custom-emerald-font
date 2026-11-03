@@ -994,5 +994,23 @@
   "method": "fitted",
   "from": null,
   "note": "fit_circles.py"
+ },
+ "u25BC": {
+  "char": "▼",
+  "method": "identical",
+  "from": "normal",
+  "note": "",
+  "err": 4.031,
+  "missing": 0,
+  "extra": 0
+ },
+ "u2605": {
+  "char": "★",
+  "method": "identical",
+  "from": "normal",
+  "note": "",
+  "err": 12.781,
+  "missing": 12,
+  "extra": 0
  }
 }
