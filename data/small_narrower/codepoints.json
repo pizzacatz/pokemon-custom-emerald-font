@@ -1307,6 +1307,22 @@
   "name": "ext.circle_hollow",
   "source": "pua+unicode-equivalent"
  },
+ "281": {
+  "codepoints": [
+   57625,
+   9733
+  ],
+  "name": "ext.star",
+  "source": "pua+unicode-equivalent"
+ },
+ "282": {
+  "codepoints": [
+   57626,
+   9660
+  ],
+  "name": "ext.triangle_upside_down",
+  "source": "pua+unicode-equivalent"
+ },
  "464": {
   "codepoints": [
    57808

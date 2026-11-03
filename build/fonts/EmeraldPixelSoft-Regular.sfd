@@ -4,7 +4,7 @@ FullName: Emerald Pixel Soft Regular
 FamilyName: Emerald Pixel Soft
 Weight: Regular
 Copyright: Outlines derived from the Latin "normal" bitmap font of Pokémon Emerald as decompiled by the pret/pokeemerald project. Original artwork © Nintendo / Creatures / GAME FREAK; no licence for the artwork is asserted here. Conversion scripts: Emerald Rounded project.
-UComments: "2026-10-26: Created with FontForge (http://fontforge.org)"
+UComments: "2026-11-3: Created with FontForge (http://fontforge.org)"
 Version: 1.0
 ItalicAngle: 0
 UnderlinePosition: -160
@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 218 1871209157 4714962]
+XUID: [1021 718 2079580755 7618891]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1793024177
-ModificationTime: 1793024178
+CreationTime: 1793700808
+ModificationTime: 1793700809
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 5
@@ -62,7 +62,7 @@ NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-BeginChars: 1114278 232
+BeginChars: 1114280 234
 
 StartChar: .notdef
 Encoding: 1114112 -1 0
@@ -11116,8 +11116,122 @@ SplineSet
 EndSplineSet
 EndChar
 
+StartChar: ext.star
+Encoding: 1114231 57625 185
+AltUni2: 002605.ffffffff.0
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+400 770 m 2
+ 400 786.569 413.431 800 430 800 c 2
+ 470 800 l 2
+ 486.569 800 500 786.569 500 770 c 2
+ 500 730 l 2
+ 500 713.431 513.431 700 530 700 c 2
+ 570 700 l 2
+ 586.569 700 600 686.569 600 670 c 2
+ 600 630 l 2
+ 600 613.431 613.431 600 630 600 c 2
+ 770 600 l 2
+ 786.569 600 800 586.569 800 570 c 2
+ 800 530 l 2
+ 800 513.431 786.569 500 770 500 c 2
+ 730 500 l 2
+ 713.431 500 700 486.569 700 470 c 2
+ 700 430 l 2
+ 700 413.431 686.569 400 670 400 c 2
+ 630 400 l 2
+ 613.431 400 600 386.569 600 370 c 2
+ 600 330 l 2
+ 600 313.431 613.431 300 630 300 c 2
+ 670 300 l 2
+ 686.569 300 700 286.569 700 270 c 2
+ 700 130 l 2
+ 700 113.43 686.569 100 670 100 c 2
+ 530 100 l 2
+ 513.431 100 500 113.43 500 130 c 2
+ 500 170 l 2
+ 500 186.57 486.569 200 470 200 c 2
+ 430 200 l 2
+ 413.431 200 400 186.57 400 170 c 2
+ 400 130 l 2
+ 400 113.43 386.569 100 370 100 c 2
+ 230 100 l 2
+ 213.431 100 200 113.43 200 130 c 2
+ 200 270 l 2
+ 200 286.569 213.431 300 230 300 c 2
+ 270 300 l 2
+ 286.569 300 300 313.431 300 330 c 2
+ 300 370 l 2
+ 300 386.569 286.569 400 270 400 c 2
+ 230 400 l 2
+ 213.431 400 200 413.431 200 430 c 2
+ 200 470 l 2
+ 200 486.569 186.569 500 170 500 c 2
+ 130 500 l 2
+ 113.431 500 100 513.431 100 530 c 2
+ 100 570 l 2
+ 100 586.569 113.431 600 130 600 c 2
+ 270 600 l 2
+ 286.569 600 300 613.431 300 630 c 2
+ 300 670 l 2
+ 300 686.569 313.431 700 330 700 c 2
+ 370 700 l 2
+ 386.569 700 400 713.431 400 730 c 2
+ 400 770 l 2
+EndSplineSet
+EndChar
+
+StartChar: ext.triangle_upside_down
+Encoding: 1114232 57626 186
+AltUni2: 0025bc.ffffffff.0
+Width: 1000
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+100 770 m 2
+ 100 786.569 113.431 800 130 800 c 2
+ 770 800 l 2
+ 786.569 800 800 786.569 800 770 c 2
+ 800 630 l 2
+ 800 613.431 786.569 600 770 600 c 2
+ 730 600 l 2
+ 713.431 600 700 586.569 700 570 c 2
+ 700 430 l 2
+ 700 413.431 686.569 400 670 400 c 2
+ 630 400 l 2
+ 613.431 400 600 386.569 600 370 c 2
+ 600 230 l 2
+ 600 213.431 586.569 200 570 200 c 2
+ 530 200 l 2
+ 513.431 200 500 186.57 500 170 c 2
+ 500 130 l 2
+ 500 113.43 486.569 100 470 100 c 2
+ 430 100 l 2
+ 413.431 100 400 113.43 400 130 c 2
+ 400 170 l 2
+ 400 186.57 386.569 200 370 200 c 2
+ 330 200 l 2
+ 313.431 200 300 213.431 300 230 c 2
+ 300 370 l 2
+ 300 386.569 286.569 400 270 400 c 2
+ 230 400 l 2
+ 213.431 400 200 413.431 200 430 c 2
+ 200 570 l 2
+ 200 586.569 186.569 600 170 600 c 2
+ 130 600 l 2
+ 113.431 600 100 613.431 100 630 c 2
+ 100 770 l 2
+EndSplineSet
+EndChar
+
 StartChar: ext.emoji_underscore
-Encoding: 1114231 57808 185
+Encoding: 1114233 57808 187
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11137,7 +11251,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_pipe
-Encoding: 1114232 57809 186
+Encoding: 1114234 57809 188
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11157,7 +11271,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_highbar
-Encoding: 1114233 57810 187
+Encoding: 1114235 57810 189
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11177,7 +11291,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_tilde
-Encoding: 1114234 57811 188
+Encoding: 1114236 57811 190
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11229,7 +11343,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_left_paren
-Encoding: 1114235 57812 189
+Encoding: 1114237 57812 191
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11281,7 +11395,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_right_paren
-Encoding: 1114236 57813 190
+Encoding: 1114238 57813 192
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11333,7 +11447,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_union
-Encoding: 1114237 57814 191
+Encoding: 1114239 57814 193
 AltUni2: 002282.ffffffff.0
 Width: 800
 VWidth: 0
@@ -11378,7 +11492,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_greater_than
-Encoding: 1114238 57815 192
+Encoding: 1114240 57815 194
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11452,7 +11566,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_left_eye
-Encoding: 1114239 57816 193
+Encoding: 1114241 57816 195
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11500,7 +11614,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_right_eye
-Encoding: 1114240 57817 194
+Encoding: 1114242 57817 196
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11548,7 +11662,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_at
-Encoding: 1114241 57818 195
+Encoding: 1114243 57818 197
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11650,7 +11764,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_semicolon
-Encoding: 1114242 57819 196
+Encoding: 1114244 57819 198
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11692,7 +11806,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_plus
-Encoding: 1114243 57820 197
+Encoding: 1114245 57820 199
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11728,7 +11842,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_minus
-Encoding: 1114244 57821 198
+Encoding: 1114246 57821 200
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11748,7 +11862,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_equals
-Encoding: 1114245 57822 199
+Encoding: 1114247 57822 201
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11777,7 +11891,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_spiral
-Encoding: 1114246 57823 200
+Encoding: 1114248 57823 202
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11876,7 +11990,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_tongue
-Encoding: 1114247 57824 201
+Encoding: 1114249 57824 203
 Width: 800
 VWidth: 0
 Flags: HW
@@ -11929,7 +12043,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_triangle_outline
-Encoding: 1114248 57825 202
+Encoding: 1114250 57825 204
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12002,7 +12116,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_acute
-Encoding: 1114249 57826 203
+Encoding: 1114251 57826 205
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12031,7 +12145,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_grave
-Encoding: 1114250 57827 204
+Encoding: 1114252 57827 206
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12060,7 +12174,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_circle
-Encoding: 1114251 57828 205
+Encoding: 1114253 57828 207
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12112,7 +12226,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_triangle
-Encoding: 1114252 57829 206
+Encoding: 1114254 57829 208
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12156,7 +12270,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_square
-Encoding: 1114253 57830 207
+Encoding: 1114255 57830 209
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12176,7 +12290,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_heart
-Encoding: 1114254 57831 208
+Encoding: 1114256 57831 210
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12236,7 +12350,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_moon
-Encoding: 1114255 57832 209
+Encoding: 1114257 57832 211
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12298,7 +12412,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_note
-Encoding: 1114256 57833 210
+Encoding: 1114258 57833 212
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12346,7 +12460,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_ball
-Encoding: 1114257 57834 211
+Encoding: 1114259 57834 213
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12417,7 +12531,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_bolt
-Encoding: 1114258 57835 212
+Encoding: 1114260 57835 214
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12485,7 +12599,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_leaf
-Encoding: 1114259 57836 213
+Encoding: 1114261 57836 215
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12554,7 +12668,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_fire
-Encoding: 1114260 57837 214
+Encoding: 1114262 57837 216
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12630,7 +12744,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_water
-Encoding: 1114261 57838 215
+Encoding: 1114263 57838 217
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12682,7 +12796,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_left_fist
-Encoding: 1114262 57839 216
+Encoding: 1114264 57839 218
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12757,7 +12871,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_right_fist
-Encoding: 1114263 57840 217
+Encoding: 1114265 57840 219
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12832,7 +12946,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_bigwheel
-Encoding: 1114264 57841 218
+Encoding: 1114266 57841 220
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12926,7 +13040,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_smallwheel
-Encoding: 1114265 57842 219
+Encoding: 1114267 57842 221
 Width: 800
 VWidth: 0
 Flags: HW
@@ -12982,7 +13096,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_sphere
-Encoding: 1114266 57843 220
+Encoding: 1114268 57843 222
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13032,7 +13146,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_irritated
-Encoding: 1114267 57844 221
+Encoding: 1114269 57844 223
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13095,7 +13209,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_mischievous
-Encoding: 1114268 57845 222
+Encoding: 1114270 57845 224
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13167,7 +13281,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_happy
-Encoding: 1114269 57846 223
+Encoding: 1114271 57846 225
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13231,7 +13345,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_angry
-Encoding: 1114270 57847 224
+Encoding: 1114272 57847 226
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13312,7 +13426,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_surprised
-Encoding: 1114271 57848 225
+Encoding: 1114273 57848 227
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13393,7 +13507,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_bigsmile
-Encoding: 1114272 57849 226
+Encoding: 1114274 57849 228
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13475,7 +13589,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_evil
-Encoding: 1114273 57850 227
+Encoding: 1114275 57850 229
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13557,7 +13671,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_tired
-Encoding: 1114274 57851 228
+Encoding: 1114276 57851 230
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13630,7 +13744,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_neutral
-Encoding: 1114275 57852 229
+Encoding: 1114277 57852 231
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13668,7 +13782,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_shocked
-Encoding: 1114276 57853 230
+Encoding: 1114278 57853 232
 Width: 800
 VWidth: 0
 Flags: HW
@@ -13787,7 +13901,7 @@ EndSplineSet
 EndChar
 
 StartChar: ext.emoji_biganger
-Encoding: 1114277 57854 231
+Encoding: 1114279 57854 233
 Width: 800
 VWidth: 0
 Flags: HW

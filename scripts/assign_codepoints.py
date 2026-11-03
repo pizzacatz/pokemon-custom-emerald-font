@@ -31,6 +31,8 @@ UNICODE_FOR_NAME = {
     'CIRCLE_6': 0x2465, 'CIRCLE_7': 0x2466, 'CIRCLE_8': 0x2467, 'CIRCLE_9': 0x2468,
     'EMOJI_UNION': 0x2282,              # annotated as ⊂ in charmap.txt itself
     'CIRCLE_HOLLOW': 0x25CB,            # white circle (pokeemerald-expansion glyph)
+    'STAR': 0x2605,                     # black star, 4x effective (pokeemerald-expansion glyph)
+    'TRIANGLE_UPSIDE_DOWN': 0x25BC,     # black down-pointing triangle, 1/4x effective (ditto)
     'UNK_SPACER': None, 'SPACER': None,
 }
 

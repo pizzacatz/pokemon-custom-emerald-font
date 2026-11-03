@@ -39,5 +39,9 @@
  ],
  "dots": [],
  "dot_shape": "circle",
- "dot_corner": 0.25
+ "dot_corner": 0.25,
+ "clip_x": [
+  1,
+  8
+ ]
 }

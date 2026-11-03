@@ -130,7 +130,7 @@ def svg_for(contours, w=CELL, h=CELL):
 
 def main():
     # Fonts from pokeemerald use its sheet, with cells that are blank there but inked in pokeemerald-expansion
-    # (0x38 V_D_ARROW, 0x118 CIRCLE_HOLLOW, 0xF7 in Small) taken from the expansion. The expansion-only fonts
+    # (0x38 V_D_ARROW, 0x118 CIRCLE_HOLLOW, 0x119 STAR, 0x11A TRIANGLE_UPSIDE_DOWN, 0xF7 in Small) taken from the expansion. The expansion-only fonts
     # use the expansion's sheet throughout. Either way character names and Unicode come from pokeemerald's
     # charmap, except for those expansion cells, which take the expansion's names.
     # A derived sheet (the summary screen's header lettering) comes with its own width table and is complete.
