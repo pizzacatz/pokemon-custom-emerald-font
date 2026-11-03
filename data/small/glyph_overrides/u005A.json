@@ -18,11 +18,11 @@
      4.5
     ],
     [
-     3.5,
-     5.5
+     4,
+     4
     ],
     [
-     0.5,
+     0.75,
      10.5
     ],
     [
@@ -35,11 +35,31 @@
     ]
    ],
    "sharp": true
+  },
+  {
+   "points": [
+    [
+     4,
+     4
+    ],
+    [
+     0,
+     12
+    ]
+   ]
   }
  ],
  "dots": [],
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "transfer from normal (3 row/column edits); diagonal endpoints refitted by hand"
+ "_ported": "transfer from normal (3 row/column edits); diagonal endpoints refitted by hand",
+ "clip_y": [
+  4,
+  11
+ ],
+ "clip_x": [
+  0,
+  4
+ ]
 }

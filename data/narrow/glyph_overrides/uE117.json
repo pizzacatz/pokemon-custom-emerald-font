@@ -40,5 +40,9 @@
  "dots": [],
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "identical from normal"
+ "_ported": "identical from normal",
+ "clip_x": [
+  1,
+  8
+ ]
 }

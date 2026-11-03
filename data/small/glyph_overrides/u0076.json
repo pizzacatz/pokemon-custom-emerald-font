@@ -16,12 +16,12 @@
     ],
     [
      0.5,
-     8.5,
+     9.5,
      0
     ],
     [
      1.5,
-     10.75,
+     10.5,
      0
     ],
     [
@@ -35,10 +35,34 @@
    ],
    "closed": false,
    "sharp": true
+  },
+  {
+   "cut": [
+    [
+     1,
+     11
+    ],
+    [
+     2,
+     11
+    ],
+    [
+     2,
+     12
+    ],
+    [
+     1,
+     12
+    ],
+    [
+     1,
+     11
+    ]
+   ]
   }
  ],
  "dots": [],
- "join": "bevel",
+ "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
  "_ported": "fuzzy from normal (2 row/column edits, 1 px differ)"

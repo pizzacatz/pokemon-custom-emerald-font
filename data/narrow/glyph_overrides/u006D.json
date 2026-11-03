@@ -17,17 +17,33 @@
     [
      0.5,
      6.5,
-     0
+     0,
+     -0.3033
+    ],
+    [
+     1.5,
+     7.5
+    ],
+    [
+     1.5,
+     8.5
     ]
    ],
-   "closed": false
+   "closed": false,
+   "sharp": true
   },
   {
    "points": [
     [
-     0.5,
-     6.5,
+     1.5,
+     11.5,
      0
+    ],
+    [
+     1.5,
+     7.5,
+     null,
+     -0.3033
     ],
     [
      2.5,
@@ -44,27 +60,17 @@
      11.5
     ]
    ],
-   "closed": false
-  },
-  {
-   "points": [
-    [
-     1.5,
-     6.5,
-     0
-    ],
-    [
-     1.5,
-     11.5,
-     0
-    ]
-   ],
-   "closed": false
+   "closed": false,
+   "sharp": true
   }
  ],
  "dots": [],
  "join": "miter",
  "dot_shape": "circle",
  "dot_corner": 0.25,
- "_ported": "fuzzy from normal (1 row/column edits, 1 px differ)"
+ "_ported": "fuzzy from normal (1 row/column edits, 1 px differ)",
+ "clip_y": [
+  6,
+  12
+ ]
 }

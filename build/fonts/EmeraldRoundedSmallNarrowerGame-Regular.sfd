@@ -15,14 +15,14 @@ InvalidEm: 0
 LayerCount: 2
 Layer: 0 0 "Back" 1
 Layer: 1 0 "Fore" 0
-XUID: [1021 569 379614359 12921669]
+XUID: [1021 390 1191234222 133414]
 StyleMap: 0x0000
 FSType: 0
 OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
-CreationTime: 1793079904
-ModificationTime: 1793079905
+CreationTime: 1793081825
+ModificationTime: 1793081827
 PfmFamily: 16
 TTFWeight: 400
 TTFWidth: 3
@@ -2725,8 +2725,8 @@ SplineSet
  200 0 l 1
  200 100 l 1
 0 100 m 1
- 175 100 l 1
- 175 0 l 1
+ 100 100 l 1
+ 100 0 l 1
  0 0 l 1
  0 100 l 1
 EndSplineSet

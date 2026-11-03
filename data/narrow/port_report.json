@@ -496,9 +496,9 @@
  },
  "u006D": {
   "char": "m",
-  "method": "fuzzy",
-  "from": "normal",
-  "note": "1 row/column edits, 1 px differ",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.625,
   "missing": 0,
   "extra": 1
@@ -847,9 +847,9 @@
  },
  "uE117": {
   "char": "",
-  "method": "identical",
-  "from": "normal",
-  "note": "",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 7.562,
   "missing": 0,
   "extra": 0

@@ -40,9 +40,9 @@
  },
  "u0025": {
   "char": "%",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 2.375,
   "missing": 0,
   "extra": 0
@@ -58,9 +58,9 @@
  },
  "u0027": {
   "char": "'",
-  "method": "transfer",
-  "from": "normal",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.188,
   "missing": 0,
   "extra": 1
@@ -112,27 +112,27 @@
  },
  "u0030": {
   "char": "0",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.5,
   "missing": 0,
   "extra": 0
  },
  "u0032": {
   "char": "2",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.797,
   "missing": 0,
   "extra": 1
  },
  "u0033": {
   "char": "3",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.469,
   "missing": 0,
   "extra": 1
@@ -148,45 +148,45 @@
  },
  "u0035": {
   "char": "5",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 1.938,
   "missing": 0,
   "extra": 0
  },
  "u0036": {
   "char": "6",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.406,
   "missing": 0,
   "extra": 0
  },
  "u0037": {
   "char": "7",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.781,
   "missing": 0,
   "extra": 1
  },
  "u0038": {
   "char": "8",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 4.438,
   "missing": 0,
   "extra": 2
  },
  "u0039": {
   "char": "9",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.562,
   "missing": 0,
   "extra": 0
@@ -229,9 +229,9 @@
  },
  "u003F": {
   "char": "?",
-  "method": "transfer",
-  "from": "normal",
-  "note": "4 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.312,
   "missing": 0,
   "extra": 0
@@ -247,9 +247,9 @@
  },
  "u0042": {
   "char": "B",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.219,
   "missing": 0,
   "extra": 1
@@ -319,27 +319,27 @@
  },
  "u0051": {
   "char": "Q",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 3.641,
   "missing": 0,
   "extra": 0
  },
  "u0052": {
   "char": "R",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 1.844,
   "missing": 0,
   "extra": 1
  },
  "u0053": {
   "char": "S",
-  "method": "transfer",
-  "from": "normal",
-  "note": "3 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 4.875,
   "missing": 0,
   "extra": 2
@@ -355,9 +355,9 @@
  },
  "u0056": {
   "char": "V",
-  "method": "traced",
+  "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 1.656,
   "missing": 0,
   "extra": 0
@@ -366,7 +366,7 @@
   "char": "X",
   "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 2.375,
   "missing": 0,
   "extra": 0
@@ -383,8 +383,8 @@
  "u005A": {
   "char": "Z",
   "method": "hand",
-  "from": "normal",
-  "note": "3 row/column edits; diagonal refitted",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.844,
   "missing": 0,
   "extra": 0
@@ -442,9 +442,9 @@
  },
  "u0066": {
   "char": "f",
-  "method": "fuzzy",
-  "from": "normal",
-  "note": "3 row/column edits, 1 px differ",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.031,
   "missing": 0,
   "extra": 2
@@ -478,27 +478,27 @@
  },
  "u006A": {
   "char": "j",
-  "method": "transfer",
-  "from": "normal",
-  "note": "5 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.484,
   "missing": 0,
   "extra": 1
  },
  "u006B": {
   "char": "k",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.359,
   "missing": 0,
   "extra": 1
  },
  "u006D": {
   "char": "m",
-  "method": "fuzzy",
-  "from": "normal",
-  "note": "2 row/column edits, 1 px differ",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.688,
   "missing": 0,
   "extra": 1
@@ -547,9 +547,9 @@
  },
  "u0072": {
   "char": "r",
-  "method": "transfer",
-  "from": "normal",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.203,
   "missing": 0,
   "extra": 0
@@ -565,9 +565,9 @@
  },
  "u0074": {
   "char": "t",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 1.594,
   "missing": 0,
   "extra": 1
@@ -589,9 +589,9 @@
  },
  "u0076": {
   "char": "v",
-  "method": "fuzzy",
-  "from": "normal",
-  "note": "2 row/column edits, 1 px differ",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.828,
   "missing": 0,
   "extra": 1
@@ -606,25 +606,25 @@
   "char": "x",
   "method": "hand",
   "from": null,
-  "note": "",
+  "note": "edited in the glyph editor",
   "err": 2.375,
   "missing": 0,
   "extra": 0
  },
  "u0079": {
   "char": "y",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "2 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 2.344,
   "missing": 0,
   "extra": 2
  },
  "u007A": {
   "char": "z",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.609,
   "missing": 0,
   "extra": 3
@@ -676,9 +676,9 @@
  },
  "u201D": {
   "char": "”",
-  "method": "transfer",
-  "from": "narrow",
-  "note": "1 row/column edits",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor",
   "err": 3.281,
   "missing": 0,
   "extra": 1
@@ -994,5 +994,11 @@
   "method": "fitted",
   "from": null,
   "note": "fit_circles.py"
+ },
+ "u0031": {
+  "char": "1",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor"
  }
 }
