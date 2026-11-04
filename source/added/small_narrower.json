@@ -1,0 +1,37 @@
+{
+ "_note": "Glyphs Emerald's font has no cell for, drawn here in the font's own style and put in a blank, unnamed sheet cell by extract.py ('#' = ink; the game's shadow is added below and right). Rows start at the top of the 16 px cell; the digits run from row 4 to row 10, baseline 11. A diagonal fraction: 1 at the top left, a slash, a small 2 or 4 at the bottom right; 6 px of ink and a 7 px advance, like %. Requested for Showdown Advance's replay speed (x½, x¼).",
+ "glyphs": [
+  {
+   "cell": "0x1BD",
+   "char": "½",
+   "width": 7,
+   "top": 3,
+   "rows": [
+    "#...#.",
+    "#..#..",
+    "#..#..",
+    "..#...",
+    "..#.##",
+    ".#...#",
+    ".#..#.",
+    "....##"
+   ]
+  },
+  {
+   "cell": "0x1BC",
+   "char": "¼",
+   "width": 7,
+   "top": 3,
+   "rows": [
+    "#...#.",
+    "#..#..",
+    "#..#..",
+    "..#...",
+    "..##.#",
+    ".#.###",
+    ".#...#",
+    "......"
+   ]
+  }
+ ]
+}

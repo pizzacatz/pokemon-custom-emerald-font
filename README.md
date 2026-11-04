@@ -57,6 +57,10 @@ On Windows or macOS, double-click a TTF and choose Install.
   (U+E118 and ○ U+25CB), Pokémon Champions' effectiveness marks 0x119 STAR (4×; U+E119 and ★ U+2605) and
   0x11A TRIANGLE_UPSIDE_DOWN (¼×; U+E11A and ▼ U+25BC) in all five fonts, and 0xF7 EMOJI_DIZZYEGG (U+E0F7)
   in Small. The expansion's own four fonts have the two marks too.
+- Glyphs the game has no cell for are drawn in `source/added/<font>.json` (pixel art in the font's style;
+  the shadow is added automatically) and put in a blank, unnamed sheet cell by `extract.py`, so both the
+  Pixel Vector and the Rounded font get them. Small Narrower has ½ (U+00BD, cell 0x1BD) and ¼ (U+00BC,
+  cell 0x1BC), 7 px wide, for Showdown Advance's replay speed.
 - Licensing: pokeemerald's own LICENSE file covers the decompiled *code*; the glyph artwork is
   Nintendo / Creatures / GAME FREAK property and no licence for it is asserted here. These fonts are
   a fan conversion for personal use.

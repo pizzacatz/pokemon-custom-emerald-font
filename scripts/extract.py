@@ -151,6 +151,9 @@ def main():
     npx = Image.open(os.path.join(SRC, 'graphics/fonts/latin_normal.png')).load()
     normal_w = parse_widths(os.path.join(SRC, 'src/fonts.c'), 'gFontNormalLatinGlyphWidths')
     exp_cells = [g for g in range(512) if not any(map(any, cell_mask(npx, g, FG, normal_w[g])))]
+    # glyphs the game has no cell for, drawn in source/added/<variant>.json (see its _note)
+    added_path = os.path.join(ROOT, 'source', 'added', VARIANT + '.json')
+    extra = {int(g['cell'], 16): g for g in (json.load(open(added_path, encoding='utf-8'))['glyphs'] if os.path.exists(added_path) else [])}
     added = []
     os.makedirs(os.path.join(DATA, 'masks'), exist_ok=True)
     os.makedirs(os.path.join(DATA, 'svg_exact'), exist_ok=True)
@@ -167,7 +170,16 @@ def main():
                 fg, sh, source = xfg, cell_mask(xpx, gid, SHADOW, xwidths[gid]), 'pokeemerald-expansion'
                 widths[gid] = xwidths[gid]
                 added.append(gid)
-        if gid in exp_cells and any(map(any, fg)):
+        if gid in extra:
+            g = extra[gid]
+            assert not any(map(any, fg)) and gid not in cmap, f'cell {gid:#x} is not blank'
+            fg = [[1 if g['top'] <= y < g['top'] + len(g['rows']) and x < len(g['rows'][0]) and g['rows'][y - g['top']][x] == '#' else 0
+                   for x in range(CELL)] for y in range(CELL)]
+            sh = [[1 if not fg[y][x] and any(fg[y - dy][x - dx] for dx, dy in ((1, 0), (0, 1), (1, 1)) if y >= dy and x >= dx) else 0
+                   for x in range(CELL)] for y in range(CELL)]
+            widths[gid], source = g['width'], 'added'
+            cmap[gid] = {'unicode': [ord(g['char'])], 'name': None}
+        elif gid in exp_cells and any(map(any, fg)):
             cmap[gid] = xcmap.get(gid, {'unicode': [], 'name': None})
         ink = sum(map(sum, fg))
         ink_cols = [x for x in range(CELL) if any(fg[y][x] for y in range(CELL))]
@@ -192,7 +204,7 @@ def main():
             'shadow_px': sum(map(sum, sh)),
             'contours': len(contours),
         }
-        if source != 'pokeemerald' and not VINFO.get('expansion') and not VINFO.get('derived'):
+        if source == 'added' or (source != 'pokeemerald' and not VINFO.get('expansion') and not VINFO.get('derived')):
             entry['source'] = source
         mapping[str(gid)] = entry
         if ink or info['unicode'] or info['name']:

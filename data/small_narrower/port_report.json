@@ -1023,5 +1023,17 @@
   "method": "fitted",
   "from": null,
   "note": "fit_circles.py"
+ },
+ "u00BC": {
+  "char": "¼",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor"
+ },
+ "u00BD": {
+  "char": "½",
+  "method": "hand",
+  "from": null,
+  "note": "edited in the glyph editor"
  }
 }

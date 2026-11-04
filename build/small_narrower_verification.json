@@ -1,8 +1,8 @@
 {
  "fonts": {
   "exact": {
-   "num_glyphs": 236,
-   "cmap_entries": 256,
+   "num_glyphs": 238,
+   "cmap_entries": 258,
    "missing_required": [],
    "missing_useful": [],
    "missing_intended": [],
@@ -40,8 +40,8 @@
    ]
   },
   "smoothgame": {
-   "num_glyphs": 236,
-   "cmap_entries": 256,
+   "num_glyphs": 238,
+   "cmap_entries": 258,
    "missing_required": [],
    "missing_useful": [],
    "missing_intended": [],

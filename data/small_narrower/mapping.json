@@ -6058,29 +6058,35 @@
  },
  "444": {
   "id": 444,
-  "unicode": [],
+  "unicode": [
+   188
+  ],
   "name": null,
-  "width": 3,
-  "ink": 0,
-  "ink_xmin": null,
-  "ink_xmax": null,
-  "ink_ymin": null,
-  "ink_ymax": null,
-  "shadow_px": 0,
-  "contours": 0
+  "width": 7,
+  "ink": 16,
+  "ink_xmin": 0,
+  "ink_xmax": 6,
+  "ink_ymin": 3,
+  "ink_ymax": 10,
+  "shadow_px": 23,
+  "contours": 5,
+  "source": "added"
  },
  "445": {
   "id": 445,
-  "unicode": [],
+  "unicode": [
+   189
+  ],
   "name": null,
-  "width": 3,
-  "ink": 0,
-  "ink_xmin": null,
-  "ink_xmax": null,
-  "ink_ymin": null,
-  "ink_ymax": null,
-  "shadow_px": 0,
-  "contours": 0
+  "width": 7,
+  "ink": 16,
+  "ink_xmin": 0,
+  "ink_xmax": 6,
+  "ink_ymin": 3,
+  "ink_ymax": 11,
+  "shadow_px": 26,
+  "contours": 7,
+  "source": "added"
  },
  "446": {
   "id": 446,

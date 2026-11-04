@@ -1323,6 +1323,20 @@
   "name": "ext.triangle_upside_down",
   "source": "pua+unicode-equivalent"
  },
+ "444": {
+  "codepoints": [
+   188
+  ],
+  "name": null,
+  "source": "charmap"
+ },
+ "445": {
+  "codepoints": [
+   189
+  ],
+  "name": null,
+  "source": "charmap"
+ },
  "464": {
   "codepoints": [
    57808
